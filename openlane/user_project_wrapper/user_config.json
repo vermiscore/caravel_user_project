@@ -1,0 +1,72 @@
+{
+	"//": "Design files",
+	"VERILOG_FILES": [
+		"dir::../../verilog/rtl/defines.v",
+		"dir::../../verilog/rtl/user_project_wrapper.v"
+	],
+	"PNR_SDC_FILE": "dir::signoff.sdc",
+	
+	"//": "Hardening strategy variables (this is for 1-Macro-First Hardening). Visit https://docs.google.com/document/d/1pf-wbpgjeNEM-1TcvX2OJTkHjqH_C9p-LURCASS0Zo8 for more info",
+	"SYNTH_ELABORATE_ONLY": true,
+	"PL_RESIZER_DESIGN_OPTIMIZATIONS": false,
+	"PL_RESIZER_TIMING_OPTIMIZATIONS": false,
+	"PL_RESIZER_BUFFER_INPUT_PORTS": false,
+	"FP_PDN_ENABLE_RAILS": false,
+	"GRT_REPAIR_ANTENNAS": false,
+	"RUN_FILL_INSERTION": false,
+	"RUN_TAP_DECAP_INSERTION": false,
+	"RUN_CTS": false,
+
+	"//": "Macros configurations",
+	"MACROS": {
+		"user_proj_example": {
+			"gds": [
+				"dir::../../gds/user_proj_example.gds"
+			],
+			"lef": [
+				"dir::../../lef/user_proj_example.lef"
+			],
+			"instances": {
+				"mprj": {
+					"location": [60, 15],
+					"orientation": "N"
+				}
+			},
+			"nl": [
+				"dir::../../verilog/gl/user_proj_example.v"
+			],
+			"spef": {
+				"min_*": [
+					"dir::../../spef/multicorner/user_proj_example.min.spef"
+				],
+				"nom_*": [
+					"dir::../../spef/multicorner/user_proj_example.nom.spef"
+				],
+				"max_*": [
+					"dir::../../spef/multicorner/user_proj_example.max.spef"
+				]
+			},
+			"libs": {
+				"*": "dir::../../lib/user_proj_example.lib"
+			}
+		}
+	},
+	"PDN_MACRO_CONNECTIONS": ["mprj vccd1 vssd1 vccd1 vssd1"],
+
+	"//": "PDN configurations",
+	"FP_PDN_VOFFSET": 5,
+	"FP_PDN_HOFFSET": 5,
+	"FP_PDN_VWIDTH": 3.1,
+	"FP_PDN_HWIDTH": 3.1,
+	"FP_PDN_VSPACING": 15.5,
+	"FP_PDN_HSPACING": 15.5,
+	"FP_PDN_VPITCH": 180,
+	"FP_PDN_HPITCH": 180,
+	"FP_PDN_CHECK_NODES": false,
+
+	"//": "Magic variables",
+	"MAGIC_DRC_USE_GDS": true,
+
+	"ROUTING_CORES": 1,
+	"MAX_TRANSITION_CONSTRAINT": 1.5
+}
