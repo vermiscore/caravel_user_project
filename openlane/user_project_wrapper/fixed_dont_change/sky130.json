@@ -1,6 +1,6 @@
 {
 	"DESIGN_NAME": "user_project_wrapper",
-    "CLOCK_PORT": "wb_clk_i",
+	"CLOCK_PORT": "wb_clk_i",
 	"SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
 	"SIGNOFF_SDC_FILE": "dir::signoff.sdc",
 	"MAGIC_DEF_LABELS": 0,
