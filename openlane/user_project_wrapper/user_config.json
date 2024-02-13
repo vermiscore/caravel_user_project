@@ -49,7 +49,7 @@
 					"dir::../../spef/multicorner/user_proj_example.max.spef"
 				]
 			},
-			"libs": {
+			"lib": {
 				"*": "dir::../../lib/user_proj_example.lib"
 			}
 		}
