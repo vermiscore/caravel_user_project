@@ -54,7 +54,7 @@
 			}
 		}
 	},
-	"PDN_MACRO_CONNECTIONS": ["mprj vccd2 vssd2 VPWR VGND"],
+	"PDN_MACRO_CONNECTIONS": ["mprj vccd2 vssd2 vccd1 vssd1"],
 
 	"//": "PDN configurations",
 	"FP_PDN_VOFFSET": 5,
