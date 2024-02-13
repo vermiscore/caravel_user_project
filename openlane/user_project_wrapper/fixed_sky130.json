@@ -1,4 +1,5 @@
 {
+	"//": "You should not edit this",
 	"FP_SIZING": "absolute",
 	"DIE_AREA": [0, 0, 2920, 3520],
 	"FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
