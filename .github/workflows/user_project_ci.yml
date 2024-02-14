@@ -173,6 +173,7 @@ jobs:
 
       - name: Install OpenLane 2
         run: |
+          sudo apt-get install python3-tk
           cd $GITHUB_WORKSPACE
           make openlane
 
