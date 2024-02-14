@@ -46,7 +46,7 @@ ifeq ($(PDK),sky130A)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 	export OPENLANE_TAG?=2023.07.19
-	MPW_TAG ?= mpw-9e
+	MPW_TAG ?= mpw-9g
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -64,7 +64,7 @@ ifeq ($(PDK),sky130B)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 	export OPENLANE_TAG?=2023.07.19
-	MPW_TAG ?= mpw-9e
+	MPW_TAG ?= mpw-9g
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -85,7 +85,7 @@ ifeq ($(PDK),gf180mcuD)
 	CARAVEL_REPO := https://github.com/efabless/caravel-gf180mcu
 	CARAVEL_TAG := $(MPW_TAG)
 	#OPENLANE_TAG=ddfeab57e3e8769ea3d40dda12be0460e09bb6d9
-	export OPEN_PDKS_COMMIT?=e6f9c8876da77220403014b116761b0b2d79aab4
+	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 	export OPENLANE_TAG?=2023.02.23
 
 endif
@@ -336,21 +336,33 @@ setup-timing-scripts: $(TIMING_ROOT)
 	@( cd $(TIMING_ROOT) && git pull )
 	@#( cd $(TIMING_ROOT) && git fetch && git checkout $(MPW_TAG); )
 
-.PHONY: setup-cocotb
-setup-cocotb: 
-	@pip install caravel-cocotb==1.0.0 
+.PHONY: install-caravel-cocotb
+install-caravel-cocotb:
+	rm -rf ./venv-cocotb
+	$(PYTHON_BIN) -m venv ./venv-cocotb
+	./venv-cocotb/bin/$(PYTHON_BIN) -m pip install --upgrade --no-cache-dir pip
+	./venv-cocotb/bin/$(PYTHON_BIN) -m pip install --upgrade --no-cache-dir caravel-cocotb
+
+.PHONY: setup-cocotb-env
+setup-cocotb-env:
 	@(python3 $(PROJECT_ROOT)/verilog/dv/setup-cocotb.py $(CARAVEL_ROOT) $(MCW_ROOT) $(PDK_ROOT) $(PDK) $(PROJECT_ROOT))
 
 .PHONY: setup-cocotb
 setup-cocotb: install-caravel-cocotb setup-cocotb-env simenv-cocotb
 
-.PHONY: cocotb-verify-rtl
-cocotb-verify-rtl: 
-	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && caravel_cocotb -tl counter_tests/counter_tests.yaml -v )
+.PHONY: cocotb-verify-all-rtl
+cocotb-verify-all-rtl: 
+	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml )
 	
-.PHONY: cocotb-verify-gl
-cocotb-verify-gl: 
-	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && caravel_cocotb -tl counter_tests/counter_tests_gl.yaml -v -verbosity quiet)
+.PHONY: cocotb-verify-all-gl
+cocotb-verify-all-gl:
+	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests_gl.yaml -verbosity quiet)
+
+$(cocotb-dv-targets-rtl): cocotb-verify-%-rtl: 
+	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -t $*  )
+	
+$(cocotb-dv-targets-gl): cocotb-verify-%-gl:
+	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -t $* -verbosity quiet)
 
 ./verilog/gl/user_project_wrapper.v:
 	$(error you don't have $@)

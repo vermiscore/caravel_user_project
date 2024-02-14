@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        targets: ["pdk-with-volare", "install_mcw", "openlane", "setup-timing-scripts", "precheck"]
+        targets: ["pdk-with-volare", "install_mcw", "setup-timing-scripts", "precheck"]
     needs: [download_caravel]
     steps:
       - uses: actions/checkout@v2
@@ -66,7 +66,6 @@ jobs:
       - name: Setup Environment Variables
         run: |
           echo "PDK_ROOT=$GITHUB_WORKSPACE/pdk" >> $GITHUB_ENV
-          echo "OPENLANE_ROOT=$GITHUB_WORKSPACE/openlane_src" >> $GITHUB_ENV
           echo "CARAVEL_ROOT=$GITHUB_WORKSPACE/caravel" >> $GITHUB_ENV
           echo "MCW_ROOT=$GITHUB_WORKSPACE/mgmt_core_wrapper" >> $GITHUB_ENV
           echo "TIMING_ROOT=$GITHUB_WORKSPACE/timing-scripts" >> $GITHUB_ENV
@@ -78,9 +77,6 @@ jobs:
           if [[ "${{ matrix.targets }}" == "install_mcw" ]]; then
             echo "dep_name=mgmt_core_wrapper" >> $GITHUB_ENV
             echo "dep_root=${{ env.MCW_ROOT }}" >> $GITHUB_ENV
-          elif [[ "${{ matrix.targets }}" == "openlane" ]]; then
-            echo "dep_name=openlane" >> $GITHUB_ENV
-            echo "dep_root=${{ env.OPENLANE_ROOT }}" >> $GITHUB_ENV
           elif [[ "${{ matrix.targets }}" == "pdk-with-volare" ]]; then
             echo "dep_name=pdk" >> $GITHUB_ENV
             echo "dep_root=${{ env.PDK_ROOT }}" >> $GITHUB_ENV
@@ -165,16 +161,7 @@ jobs:
           tar -xf /tmp/pdk.tar -C $PDK_ROOT .
 
       - name: Download openlane Tarball
-        uses: actions/download-artifact@v2
-        with:
-          name: openlane-tarball
-          path: /tmp
-
-      - name: Unpack openlane Tarball
-        run: |
-          sudo mkdir -p ${{ env.OPENLANE_ROOT }}
-          sudo chown -R $USER:$USER ${{ env.OPENLANE_ROOT }}
-          tar -xf /tmp/openlane.tar -C $OPENLANE_ROOT .
+        run: make openlane
 
       - name: Harden using Openlane
         run: |
