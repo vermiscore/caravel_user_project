@@ -37,10 +37,10 @@ cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/pnl/${MACRO}.pnl.v" 
 
 
 # Copy SPEF files (nominal, minimum, maximum)
-cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/nom_/"* "${PROJECT_ROOT}/spef/multicorner/${MACRO}.nom.spef"
-cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/nom_/"* "${PROJECT_ROOT}/spef/${MACRO}.spef"
-cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/min_/"* "${PROJECT_ROOT}/spef/multicorner/${MACRO}.min.spef"
-cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/max_/"* "${PROJECT_ROOT}/spef/multicorner/${MACRO}.max.spef"
+cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/nom/"* "${PROJECT_ROOT}/spef/multicorner/${MACRO}.nom.spef"
+cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/nom/"* "${PROJECT_ROOT}/spef/${MACRO}.spef"
+cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/min/"* "${PROJECT_ROOT}/spef/multicorner/${MACRO}.min.spef"
+cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/spef/max/"* "${PROJECT_ROOT}/spef/multicorner/${MACRO}.max.spef"
 
 # Copy LIB files
 cp "${PROJECT_ROOT}/openlane/${MACRO}/runs/${RUN_TAG}/final/lib/nom"*"tt"*"/"* "${PROJECT_ROOT}/lib/${MACRO}.lib"
