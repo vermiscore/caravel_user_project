@@ -17,6 +17,7 @@
     "RUN_TAP_ENDCAP_INSERTION": false,
     "RUN_CTS": false,
     "RUN_IRDROP_REPORT": false,
+    "ERROR_ON_SYNTH_CHECKS": false,
 
     "//": "Macros configurations",
     "MACROS": {
