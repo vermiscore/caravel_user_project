@@ -47,15 +47,15 @@ ifeq ($(PDK),sky130A)
 	export OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 	export OPENLANE_TAG?=2023.07.19-1
-	MPW_TAG ?= 2024.09.12-1
+	MPW_TAG ?= CC2509-test
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
-	CARAVEL_REPO := https://github.com/efabless/caravel-lite
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
 	CARAVEL_TAG := $(MPW_TAG)
 else
 	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/efabless/caravel
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel
 	CARAVEL_TAG := $(MPW_TAG)
 endif
 
@@ -70,11 +70,11 @@ ifeq ($(PDK),sky130B)
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
-	CARAVEL_REPO := https://github.com/efabless/caravel-lite
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
 	CARAVEL_TAG := $(MPW_TAG)
 else
 	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/efabless/caravel
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel
 	CARAVEL_TAG := $(MPW_TAG)
 endif
 
@@ -84,7 +84,7 @@ ifeq ($(PDK),gf180mcuD)
 
 	MPW_TAG ?= gfmpw-1c
 	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/efabless/caravel-gf180mcu
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel-gf180mcu
 	CARAVEL_TAG := $(MPW_TAG)
 	#OPENLANE_TAG=ddfeab57e3e8769ea3d40dda12be0460e09bb6d9
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
@@ -243,7 +243,7 @@ precheck:
 		rm -rf $(PRECHECK_ROOT) && sleep 2;\
 	fi
 	@echo "Installing Precheck.."
-	@git clone --depth=1 --branch $(MPW_TAG) https://github.com/efabless/mpw_precheck.git $(PRECHECK_ROOT)
+	@git clone --depth=1 --branch $(MPW_TAG) https://github.com/chipfoundry/mpw_precheck.git $(PRECHECK_ROOT)
 	@docker pull efabless/mpw_precheck:latest
 
 .PHONY: run-precheck
@@ -329,7 +329,7 @@ check_dependencies:
 export CUP_ROOT=$(shell pwd)
 export TIMING_ROOT?=$(shell pwd)/dependencies/timing-scripts
 export PROJECT_ROOT=$(CUP_ROOT)
-timing-scripts-repo=https://github.com/efabless/timing-scripts.git
+timing-scripts-repo=https://github.com/chipfoundry/timing-scripts.git
 
 $(TIMING_ROOT):
 	@mkdir -p $(CUP_ROOT)/dependencies
