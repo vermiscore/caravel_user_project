@@ -1,6 +1,6 @@
 # Caravel User Project
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![User CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml)  [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml) 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![User CI](https://github.com/chipfoundry/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/chipfoundry/caravel_project_example/actions/workflows/user_project_ci.yml)  [![Caravel Build](https://github.com/chipfoundry/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/chipfoundry/caravel_project_example/actions/workflows/caravel_build.yml) 
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 
 ## Overview
 
-This repository contains a sample user project for the [Caravel](https://github.com/efabless/caravel.git) chip user space. It includes a simple counter demonstrating how to use Caravel's utilities such as IO pads, logic analyzer probes, and the Wishbone port. The repository also follows the recommended structure for open-mpw shuttle projects.
+This repository contains a sample user project for the [Caravel](https://github.com/chipfoundry/caravel.git) chip user space. It includes a simple counter demonstrating how to use Caravel's utilities such as IO pads, logic analyzer probes, and the Wishbone port. The repository also follows the recommended structure for open-mpw shuttle projects.
 
 ## Prerequisites
 
@@ -30,9 +30,9 @@ This repository contains a sample user project for the [Caravel](https://github.
 
 ### Starting Your Project
 
-1. Create a new repository based on the [caravel_user_project](https://github.com/efabless/caravel_user_project/) template. Ensure your repo is public and includes a README.
+1. Create a new repository based on the [caravel_user_project](https://github.com/chipfoundry/caravel_user_project/) template. Ensure your repo is public and includes a README.
 
-   - Follow [this link](https://github.com/efabless/caravel_user_project/generate) to create your repository.
+   - Follow [this link](https://github.com/chipfoundry/caravel_user_project/generate) to create your repository.
    - Clone the repository using:
 
      ```bash
@@ -123,7 +123,7 @@ This repository contains a sample user project for the [Caravel](https://github.
    make run-precheck
    ```
 
-8. You're done! Submit your project at [Efabless Open Shuttle Program](https://efabless.com/open_shuttle_program/).
+8. You're done! Submit your project at [chipfoundry Open Shuttle Program](https://chipfoundry.com/open_shuttle_program/).
 
 ### GPIO Configuration
 
@@ -161,7 +161,7 @@ Refer to [ReadTheDocs](https://caravel-sim-infrastructure.readthedocs.io/en/late
 
 ## User Project Wrapper Requirements
 
-Your hardened `user_project_wrapper` must match the [golden user_project_wrapper](https://github.com/efabless/caravel/blob/master/gds/user_project_wrapper_empty.gds.gz) in:
+Your hardened `user_project_wrapper` must match the [golden user_project_wrapper](https://github.com/chipfoundry/caravel/blob/master/gds/user_project_wrapper_empty.gds.gz) in:
 
 - Area (2.920um x 3.520um)
 - Top module name "user_project_wrapper"
@@ -176,7 +176,7 @@ You can change the PDN Vertical and Horizontal Pitch & Offset.
 
 ![Pitch](./_static/pitch.png)
 
-We run an XOR check between your hardened `user_project_wrapper` GDS and the golden wrapper GDS as part of the [mpw-precheck](https://github.com/efabless/mpw_precheck) tool.
+We run an XOR check between your hardened `user_project_wrapper` GDS and the golden wrapper GDS as part of the [mpw-precheck](https://github.com/chipfoundry/mpw_precheck) tool.
 
 ## Hardening the User Project using OpenLane
 
@@ -198,7 +198,7 @@ There are three options for hardening the user project macro using OpenLane:
 
    ![Option 1](./_static/option1.png)
 
-   Example: [caravel_user_project](https://github.com/efabless/caravel_user_project)
+   Example: [caravel_user_project](https://github.com/chipfoundry/caravel_user_project)
 
 2. **Option 2**: Flatten the user macro(s) with the user_project_wrapper.
 
@@ -208,9 +208,9 @@ There are three options for hardening the user project macro using OpenLane:
 
    ![Option 3](./_static/option3.png)
 
-   Example: [clear](https://github.com/efabless/clear)
+   Example: [clear](https://github.com/chipfoundry/clear)
 
-For more details, refer to the [Knowledgebase article](https://info.efabless.com/knowledge-base/top-level-integration-and-power-management).
+For more details, refer to the [Knowledgebase article](https://info.chipfoundry.com/knowledge-base/top-level-integration-and-power-management).
 
 ### Running OpenLane
 
@@ -256,7 +256,7 @@ Optional variables:
 
 ## Running MPW Precheck Locally
 
-Install the [mpw-precheck](https://github.com/efabless/mpw_precheck) by running:
+Install the [mpw-precheck](https://github.com/chipfoundry/mpw_precheck) by running:
 
 ```bash
 make precheck
@@ -301,6 +301,6 @@ A summary of timing results is provided at the end.
 - ✔️ Full Chip Simulation passes for RTL and GL.
 - ✔️ Hardened Macros are LVS and DRC clean.
 - ✔️ Contains a gate-level netlist for `user_project_wrapper` at `verilog/gl/user_project_wrapper.v`.
-- ✔️ Hardened `user_project_wrapper` matches the [pin order](https://github.com/efabless/caravel/blob/master/openlane/user_project_wrapper_empty/pin_order.cfg).
-- ✔️ Matches the [fixed wrapper configuration](https://github.com/efabless/caravel/blob/master/openlane/user_project_wrapper_empty/fixed_wrapper_cfgs.tcl).
-- ✔️ Design passes the [mpw-precheck](https://github.com/efabless/mpw_precheck).
+- ✔️ Hardened `user_project_wrapper` matches the [pin order](https://github.com/chipfoundry/caravel/blob/master/openlane/user_project_wrapper_empty/pin_order.cfg).
+- ✔️ Matches the [fixed wrapper configuration](https://github.com/chipfoundry/caravel/blob/master/openlane/user_project_wrapper_empty/fixed_wrapper_cfgs.tcl).
+- ✔️ Design passes the [mpw-precheck](https://github.com/chipfoundry/mpw_precheck).
