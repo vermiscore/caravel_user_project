@@ -47,15 +47,15 @@ ifeq ($(PDK),sky130A)
 	export OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 	export OPENLANE_TAG?=2023.07.19-1
-	MPW_TAG ?= 2024.09.12-1
+	MPW_TAG ?= CC2509-test
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
-	CARAVEL_REPO := https://github.com/efabless/caravel-lite
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
 	CARAVEL_TAG := $(MPW_TAG)
 else
 	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/efabless/caravel
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel
 	CARAVEL_TAG := $(MPW_TAG)
 endif
 
@@ -70,11 +70,11 @@ ifeq ($(PDK),sky130B)
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
-	CARAVEL_REPO := https://github.com/efabless/caravel-lite
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
 	CARAVEL_TAG := $(MPW_TAG)
 else
 	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/efabless/caravel
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel
 	CARAVEL_TAG := $(MPW_TAG)
 endif
 
@@ -84,7 +84,7 @@ ifeq ($(PDK),gf180mcuD)
 
 	MPW_TAG ?= gfmpw-1c
 	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/efabless/caravel-gf180mcu
+	CARAVEL_REPO := https://github.com/chipfoundry/caravel-gf180mcu
 	CARAVEL_TAG := $(MPW_TAG)
 	#OPENLANE_TAG=ddfeab57e3e8769ea3d40dda12be0460e09bb6d9
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
@@ -109,12 +109,12 @@ install:
 # Install DV setup
 .PHONY: simenv
 simenv:
-	docker pull efabless/dv:latest
+	docker pull chipfoundry/dv:latest
 
 # Install cocotb docker
 .PHONY: simenv-cocotb
 simenv-cocotb:
-	docker pull efabless/dv:cocotb
+	docker pull chipfoundry/dv:cocotb
 
 .PHONY: setup
 setup: check_dependencies install check-env install_mcw openlane pdk-with-volare setup-timing-scripts setup-cocotb precheck
@@ -151,7 +151,7 @@ docker_run_verify=\
 		-e CORE_VERILOG_PATH=$(TARGET_PATH)/mgmt_core_wrapper/verilog \
 		-e CARAVEL_VERILOG_PATH=$(TARGET_PATH)/caravel/verilog \
 		-e MCW_ROOT=$(MCW_ROOT) \
-		efabless/dv:latest \
+		chipfoundry/dv:latest \
 		sh -c $(verify_command)
 
 .PHONY: harden
@@ -243,8 +243,8 @@ precheck:
 		rm -rf $(PRECHECK_ROOT) && sleep 2;\
 	fi
 	@echo "Installing Precheck.."
-	@git clone --depth=1 --branch $(MPW_TAG) https://github.com/efabless/mpw_precheck.git $(PRECHECK_ROOT)
-	@docker pull efabless/mpw_precheck:latest
+	@git clone --depth=1 --branch $(MPW_TAG) https://github.com/chipfoundry/mpw_precheck.git $(PRECHECK_ROOT)
+	@docker pull chipfoundry/mpw_precheck:latest
 
 .PHONY: run-precheck
 run-precheck: check-pdk check-precheck enable-lvs-pdk
@@ -260,7 +260,7 @@ run-precheck: check-pdk check-precheck enable-lvs-pdk
 		-e PDK_ROOT=$(PDK_ROOT) \
 		-e PDKPATH=$(PDKPATH) \
 		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
-		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK) license makefile default documentation consistency gpio_defines xor magic_drc klayout_feol klayout_beol klayout_offgrid klayout_met_min_ca_density klayout_pin_label_purposes_overlapping_drawing klayout_zeroarea"; \
+		chipfoundry/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK) license makefile default documentation consistency gpio_defines xor magic_drc klayout_feol klayout_beol klayout_offgrid klayout_met_min_ca_density klayout_pin_label_purposes_overlapping_drawing klayout_zeroarea"; \
 	else \
 		$(eval INPUT_DIRECTORY := $(shell pwd)) \
 		cd $(PRECHECK_ROOT) && \
@@ -273,7 +273,7 @@ run-precheck: check-pdk check-precheck enable-lvs-pdk
 		-e PDK_ROOT=$(PDK_ROOT) \
 		-e PDKPATH=$(PDKPATH) \
 		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
-		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"; \
+		chipfoundry/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"; \
 	fi
 
 .PHONY: enable-lvs-pdk
@@ -289,7 +289,7 @@ $(LVS_BLOCKS): lvs-% : ./lvs/%/lvs_config.json check-pdk check-precheck
 	-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
 	-v $(PDK_ROOT):$(PDK_ROOT) \
 	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
-	efabless/mpw_precheck:latest bash -c "export PYTHONPATH=$(PRECHECK_ROOT) ; cd $(PRECHECK_ROOT) ; python3 checks/lvs_check/lvs.py --pdk_path $(PDK_ROOT)/$(PDK) --design_directory $(INPUT_DIRECTORY) --output_directory $(INPUT_DIRECTORY)/lvs --design_name $* --config_file $(INPUT_DIRECTORY)/lvs/$*/lvs_config.json"
+	chipfoundry/mpw_precheck:latest bash -c "export PYTHONPATH=$(PRECHECK_ROOT) ; cd $(PRECHECK_ROOT) ; python3 checks/lvs_check/lvs.py --pdk_path $(PDK_ROOT)/$(PDK) --design_directory $(INPUT_DIRECTORY) --output_directory $(INPUT_DIRECTORY)/lvs --design_name $* --config_file $(INPUT_DIRECTORY)/lvs/$*/lvs_config.json"
 
 .PHONY: clean
 clean:
@@ -329,7 +329,7 @@ check_dependencies:
 export CUP_ROOT=$(shell pwd)
 export TIMING_ROOT?=$(shell pwd)/dependencies/timing-scripts
 export PROJECT_ROOT=$(CUP_ROOT)
-timing-scripts-repo=https://github.com/efabless/timing-scripts.git
+timing-scripts-repo=https://github.com/chipfoundry/timing-scripts.git
 
 $(TIMING_ROOT):
 	@mkdir -p $(CUP_ROOT)/dependencies
@@ -388,7 +388,7 @@ create-spef-mapping: ./verilog/gl/user_project_wrapper.v
 		-v $(MCW_ROOT):$(MCW_ROOT) \
 		-v $(TIMING_ROOT):$(TIMING_ROOT) \
 		-w $(shell pwd) \
-		efabless/timing-scripts:latest \
+		chipfoundry/timing-scripts:latest \
 		python3 $(TIMING_ROOT)/scripts/generate_spef_mapping.py \
 			-i ./verilog/gl/user_project_wrapper.v \
 			-o ./env/spef-mapping.tcl \
@@ -408,7 +408,7 @@ extract-parasitics: ./verilog/gl/user_project_wrapper.v
 		-v $(MCW_ROOT):$(MCW_ROOT) \
 		-v $(TIMING_ROOT):$(TIMING_ROOT) \
 		-w $(shell pwd) \
-		efabless/timing-scripts:latest \
+		chipfoundry/timing-scripts:latest \
 		python3 $(TIMING_ROOT)/scripts/get_macros.py \
 			-i ./verilog/gl/user_project_wrapper.v \
 			-o ./tmp-macros-list \
