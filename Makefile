@@ -117,7 +117,7 @@ simenv-cocotb:
 	docker pull chipfoundry/dv:cocotb
 
 .PHONY: setup
-setup: check_dependencies install check-env install_mcw openlane pdk-with-volare setup-timing-scripts setup-cocotb precheck
+setup: check_dependencies install check-env install_mcw openlane pdk-with-ciel setup-timing-scripts setup-cocotb precheck
 
 # Openlane
 blocks=$(shell cd openlane && find * -maxdepth 0 -type d)
@@ -278,7 +278,7 @@ run-precheck: check-pdk check-precheck enable-lvs-pdk
 
 .PHONY: enable-lvs-pdk
 enable-lvs-pdk:
-	$(UPRJ_ROOT)/venv/bin/volare enable $(OPEN_PDKS_COMMIT_LVS)
+	$(UPRJ_ROOT)/venv/bin/ciel enable $(OPEN_PDKS_COMMIT_LVS)
 
 BLOCKS = $(shell cd lvs && find * -maxdepth 0 -type d)
 LVS_BLOCKS = $(foreach block, $(BLOCKS), lvs-$(block))
