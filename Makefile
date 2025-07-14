@@ -15,6 +15,7 @@
 # SPDX-License-Identifier: Apache-2.0
 MAKEFLAGS+=--warn-undefined-variables
 
+OPENLANE2_TAG ?= 2.0.3
 export CARAVEL_ROOT?=$(PWD)/caravel
 export UPRJ_ROOT?=$(PWD)
 PRECHECK_ROOT?=${HOME}/mpw_precheck
@@ -88,7 +89,7 @@ ifeq ($(PDK),gf180mcuD)
 	CARAVEL_TAG := $(MPW_TAG)
 	#OPENLANE_TAG=ddfeab57e3e8769ea3d40dda12be0460e09bb6d9
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19
+	export OPENLANE_TAG?=2023.02.23
 
 endif
 
@@ -120,10 +121,6 @@ simenv-cocotb:
 setup: check_dependencies install check-env install_mcw openlane pdk-with-ciel setup-timing-scripts setup-cocotb precheck
 
 # Openlane
-blocks=$(shell cd openlane && find * -maxdepth 0 -type d)
-.PHONY: $(blocks)
-$(blocks): % :
-	$(MAKE) -C openlane $*
 
 dv_patterns=$(shell cd verilog/dv && find * -maxdepth 0 -type d)
 cocotb-dv_patterns=$(shell cd verilog/dv/cocotb && find . -name "*.c"  | sed -e 's|^.*/||' -e 's/.c//')
@@ -200,13 +197,20 @@ what:
 
 # Install Openlane
 .PHONY: openlane
-openlane:
-	@if [ "$$(realpath $${OPENLANE_ROOT})" = "$$(realpath $$(pwd)/openlane)" ]; then\
-		echo "OPENLANE_ROOT is set to '$$(pwd)/openlane' which contains openlane config files"; \
-		echo "Please set it to a different directory"; \
-		exit 1; \
-	fi
-	cd openlane && $(MAKE) openlane
+openlane: openlane2-venv openlane2-docker-container
+	# openlane installed
+
+OPENLANE2_TAG_DOCKER=$(subst -,,$(OPENLANE2_TAG))
+.PHONY: openlane2-docker-container
+openlane2-docker-container:
+	docker pull ghcr.io/efabless/openlane2:$(OPENLANE2_TAG_DOCKER)
+
+openlane2-venv: $(PROJECT_ROOT)/openlane2-venv/manifest.txt
+$(PROJECT_ROOT)/openlane2-venv/manifest.txt:
+	rm -rf openlane2-venv
+	python3 -m venv $(PROJECT_ROOT)/openlane2-venv
+	PYTHONPATH= $(PROJECT_ROOT)/openlane2-venv/bin/python3 -m pip install openlane==$(OPENLANE2_TAG)
+	PYTHONPATH= $(PROJECT_ROOT)/openlane2-venv/bin/python3 -m pip freeze > $(PROJECT_ROOT)/openlane2-venv/manifest.txt
 
 #### Not sure if the targets following are of any use
 
@@ -326,7 +330,7 @@ check_dependencies:
 	fi
 
 
-export CUP_ROOT=$(shell pwd)
+export CUP_ROOT?=$(shell pwd)
 export TIMING_ROOT?=$(shell pwd)/dependencies/timing-scripts
 export PROJECT_ROOT=$(CUP_ROOT)
 timing-scripts-repo=https://github.com/chipfoundry/timing-scripts.git
@@ -371,7 +375,7 @@ $(cocotb-dv-targets-gl): cocotb-verify-%-gl:
 ./verilog/gl/user_project_wrapper.v:
 	$(error you don't have $@)
 
-./env/spef-mapping.tcl: 
+./env/spef-mapping.tcl:
 	@echo "run the following:"
 	@echo "make extract-parasitics"
 	@echo "make create-spef-mapping"
@@ -420,7 +424,7 @@ extract-parasitics: ./verilog/gl/user_project_wrapper.v
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk rcx-user_project_wrapper
 	@cat ./tmp-macros-list
 	@rm ./tmp-macros-list
-	
+
 .PHONY: caravel-sta
 caravel-sta: ./env/spef-mapping.tcl
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-typ -j3
@@ -433,5 +437,10 @@ caravel-sta: ./env/spef-mapping.tcl
 		| xargs -I {} bash -c "head -n7 {} | tail -n1"
 	@echo =================================================================================================
 	@echo "You can find results for all corners in $(CUP_ROOT)/signoff/caravel/openlane-signoff/timing/"
-	@echo "Check summary.log of a specific corner to point to reports with reg2reg violations" 
+	@echo "Check summary.log of a specific corner to point to reports with reg2reg violations"
 	@echo "Cap and slew violations are inside summary.log file itself"
+
+blocks=$(shell cd $(PROJECT_ROOT)/openlane && find * -maxdepth 0 -type d)
+.PHONY: $(blocks)
+$(blocks): % :
+	$(MAKE) -C openlane $*
