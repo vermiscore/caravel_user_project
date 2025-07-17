@@ -180,6 +180,10 @@ openlane2-venv: librelane-venv
 openlane2-docker-container: librelane-docker-image
 librelane-%:
 	$(MAKE) -C openlane $@
+	
+# Alias to install with Ciel
+pdk-with-volare:
+	$(MAKE) pdk-with-ciel
 
 #### Not sure if the targets following are of any use
 
