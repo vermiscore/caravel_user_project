@@ -13,9 +13,11 @@
 # limitations under the License.
 #
 # SPDX-License-Identifier: Apache-2.0
-MAKEFLAGS+=--warn-undefined-variables
+export CUP_ROOT ?= $(shell pwd)
+export TIMING_ROOT ?= $(shell pwd)/dependencies/timing-scripts
+export PROJECT_ROOT = $(CUP_ROOT)
+MAKEFLAGS += --warn-undefined-variables
 
-OPENLANE2_TAG ?= 2.0.3
 export CARAVEL_ROOT?=$(PWD)/caravel
 export UPRJ_ROOT?=$(PWD)
 PRECHECK_ROOT?=${HOME}/mpw_precheck
@@ -44,53 +46,43 @@ export DISABLE_LVS?=0
 export ROOTLESS
 
 ifeq ($(PDK),sky130A)
-	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
-	export OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
-	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19-1
-	MPW_TAG ?= CC2509
-
+SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
+export OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
+export OPEN_PDKS_COMMIT?=0fe599b2afb6708d281543108caf8310912f54af
+MPW_TAG ?= CC2509
 ifeq ($(CARAVEL_LITE),1)
-	CARAVEL_NAME := caravel-lite
-	CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
-	CARAVEL_TAG := $(MPW_TAG)
+CARAVEL_NAME := caravel-lite
+CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
+CARAVEL_TAG := $(MPW_TAG)
 else
-	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/chipfoundry/caravel
-	CARAVEL_TAG := $(MPW_TAG)
+CARAVEL_NAME := caravel
+CARAVEL_REPO := https://github.com/chipfoundry/caravel
+CARAVEL_TAG := $(MPW_TAG)
 endif
-
 endif
 
 ifeq ($(PDK),sky130B)
-	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
-	export OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
-	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19-1
-	MPW_TAG ?= 2024.09.12-1
-
+SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
+export OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
+export OPEN_PDKS_COMMIT?=0fe599b2afb6708d281543108caf8310912f54af
+MPW_TAG ?= 2024.09.12-1
 ifeq ($(CARAVEL_LITE),1)
-	CARAVEL_NAME := caravel-lite
-	CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
-	CARAVEL_TAG := $(MPW_TAG)
+CARAVEL_NAME := caravel-lite
+CARAVEL_REPO := https://github.com/chipfoundry/caravel-lite
+CARAVEL_TAG := $(MPW_TAG)
 else
-	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/chipfoundry/caravel
-	CARAVEL_TAG := $(MPW_TAG)
+CARAVEL_NAME := caravel
+CARAVEL_REPO := https://github.com/chipfoundry/caravel
+CARAVEL_TAG := $(MPW_TAG)
 endif
-
 endif
 
 ifeq ($(PDK),gf180mcuD)
-
-	MPW_TAG ?= gfmpw-1c
-	CARAVEL_NAME := caravel
-	CARAVEL_REPO := https://github.com/chipfoundry/caravel-gf180mcu
-	CARAVEL_TAG := $(MPW_TAG)
-	#OPENLANE_TAG=ddfeab57e3e8769ea3d40dda12be0460e09bb6d9
-	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.02.23
-
+MPW_TAG ?= gfmpw-1c
+CARAVEL_NAME := caravel
+CARAVEL_REPO := https://github.com/chipfoundry/caravel-gf180mcu
+CARAVEL_TAG := $(MPW_TAG)
+export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 endif
 
 # Include Caravel Makefile Targets
@@ -151,9 +143,6 @@ docker_run_verify=\
 		chipfoundry/dv:latest \
 		sh -c $(verify_command)
 
-.PHONY: harden
-harden: $(blocks)
-
 .PHONY: verify
 verify: $(dv-targets-rtl)
 
@@ -178,39 +167,19 @@ $(dv-targets-gl-sdf): SIM=GL_SDF
 $(dv-targets-gl-sdf): verify-%-gl-sdf: $(dv_base_dependencies)
 	$(docker_run_verify)
 
-clean-targets=$(blocks:%=clean-%)
-.PHONY: $(clean-targets)
-$(clean-targets): clean-% :
-	rm -f ./verilog/gl/$*.v
-	rm -f ./spef/$*.spef
-	rm -f ./sdc/$*.sdc
-	rm -f ./sdf/$*.sdf
-	rm -f ./gds/$*.gds
-	rm -f ./mag/$*.mag
-	rm -f ./lef/$*.lef
-	rm -f ./maglef/*.maglef
-
 make_what=setup $(blocks) $(dv-targets-rtl) $(dv-targets-gl) $(dv-targets-gl-sdf) $(clean-targets)
 .PHONY: what
 what:
 	# $(make_what)
 
-# Install Openlane
-.PHONY: openlane
-openlane: openlane2-venv openlane2-docker-container
-	# openlane installed
-
-OPENLANE2_TAG_DOCKER=$(subst -,,$(OPENLANE2_TAG))
-.PHONY: openlane2-docker-container
-openlane2-docker-container:
-	docker pull ghcr.io/efabless/openlane2:$(OPENLANE2_TAG_DOCKER)
-
-openlane2-venv: $(PROJECT_ROOT)/openlane2-venv/manifest.txt
-$(PROJECT_ROOT)/openlane2-venv/manifest.txt:
-	rm -rf openlane2-venv
-	python3 -m venv $(PROJECT_ROOT)/openlane2-venv
-	PYTHONPATH= $(PROJECT_ROOT)/openlane2-venv/bin/python3 -m pip install openlane==$(OPENLANE2_TAG)
-	PYTHONPATH= $(PROJECT_ROOT)/openlane2-venv/bin/python3 -m pip freeze > $(PROJECT_ROOT)/openlane2-venv/manifest.txt
+# Install LibreLane
+.PHONY: librelane openlane librelane-% openlane2-venv openlane2-docker-container
+openlane: librelane
+librelane: librelane-venv
+openlane2-venv: librelane-venv
+openlane2-docker-container: librelane-docker-image
+librelane-%:
+	$(MAKE) -C openlane $@
 
 #### Not sure if the targets following are of any use
 
@@ -329,10 +298,6 @@ check_dependencies:
 		mkdir $(PWD)/dependencies; \
 	fi
 
-
-export CUP_ROOT?=$(shell pwd)
-export TIMING_ROOT?=$(shell pwd)/dependencies/timing-scripts
-export PROJECT_ROOT=$(CUP_ROOT)
 timing-scripts-repo=https://github.com/chipfoundry/timing-scripts.git
 
 $(TIMING_ROOT):
@@ -444,3 +409,18 @@ blocks=$(shell cd $(PROJECT_ROOT)/openlane && find * -maxdepth 0 -type d)
 .PHONY: $(blocks)
 $(blocks): % :
 	$(MAKE) -C openlane $*
+
+.PHONY: harden
+harden: $(blocks)
+
+clean-targets=$(blocks:%=clean-%)
+.PHONY: $(clean-targets)
+$(clean-targets): clean-% :
+	rm -f ./verilog/gl/$*.v
+	rm -f ./spef/$*.spef
+	rm -f ./sdc/$*.sdc
+	rm -f ./sdf/$*.sdf
+	rm -f ./gds/$*.gds
+	rm -f ./mag/$*.mag
+	rm -f ./lef/$*.lef
+	rm -f ./maglef/*.maglef
