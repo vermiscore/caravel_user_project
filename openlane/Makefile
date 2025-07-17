@@ -57,7 +57,7 @@ docker_mounts += -m $(MCW_ROOT)
 endif
 
 ifeq ($(LIBRELANE_USE_NIX),1)
-librelane_run = nix run github:chipfoundry/openlane-2/$(LIBRELANE_TAG) --
+librelane_run = nix run github:chipfoundry/openlane-2/$(CF_LIBRELANE_TAG) --
 else
 librelane_docker_args = $(shell test -t 0 || echo "--docker-no-tty")
 librelane_run = $(PROJECT_ROOT)/openlane/.venv/bin/python3 -m librelane $(docker_mounts) $(librelane_docker_args) --dockerized 
@@ -96,3 +96,13 @@ $(PROJECT_ROOT)/openlane/.venv/manifest.txt:
 	PYTHONPATH= $(PROJECT_ROOT)/openlane/.venv/bin/python3 -m pip install --upgrade pip
 	PYTHONPATH= $(PROJECT_ROOT)/openlane/.venv/bin/python3 -m pip install "https://github.com/chipfoundry/openlane-2/tarball/$(CF_LIBRELANE_TAG)"
 	PYTHONPATH= $(PROJECT_ROOT)/openlane/.venv/bin/python3 -m pip freeze > $@
+
+.PHONY: librelane-nix
+librelane-nix:
+	@if ! command -v nix > /dev/null; then\
+		echo "Nix not found. Please install Nix using the LibreLane documentation:"; \
+		echo "	https://librelane.readthedocs.io/en/latest/getting_started/common/nix_installation/index.html"; \
+	else \
+		echo "Activating LibreLane Nix environment…"; \
+		nix develop github:chipfoundry/openlane-2/$(CF_LIBRELANE_TAG); \
+	fi
