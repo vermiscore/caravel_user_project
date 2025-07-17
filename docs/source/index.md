@@ -188,7 +188,9 @@ Install OpenLane with:
 make openlane
 ```
 
-For more detailed instructions, refer to the [ReadTheDocs](https://openlane.readthedocs.io/en/latest/getting_started/index.html).
+Newer versions of Caravel User Project use LibreLane, a rewrite of OpenLane that initially started at Efabless at OpenLane 2.0
+
+For more detailed instructions on configuring your design, refer to the official documentation at [ReadTheDocs](https://librelane.readthedocs.io/en/latest/getting_started/index.html).
 
 ### Hardening Options
 
