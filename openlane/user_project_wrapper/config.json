@@ -64,7 +64,7 @@
     "FP_PDN_HSPACING": 15.5,
     "FP_PDN_VPITCH": 180,
     "FP_PDN_HPITCH": 180,
-    "QUIT_ON_PDN_VIOLATIONS": false,
+    "ERROR_ON_PDN_VIOLATIONS": false,
 
     "//": "Magic variables",
     "MAGIC_DRC_USE_GDS": true,
@@ -89,7 +89,7 @@
         "vssa1",
         "vssa2"
     ],
-    "FP_PDN_CORE_RING": 1,
+    "FP_PDN_CORE_RING": true,
     "FP_PDN_CORE_RING_VWIDTH": 3.1,
     "FP_PDN_CORE_RING_HWIDTH": 3.1,
     "FP_PDN_CORE_RING_VOFFSET": 12.45,
@@ -98,7 +98,10 @@
     "FP_PDN_CORE_RING_HSPACING": 1.7,
     "CLOCK_PORT": "wb_clk_i",
     "SIGNOFF_SDC_FILE": "dir::signoff.sdc",
-    "MAGIC_DEF_LABELS": 0,
+    "MAGIC_DEF_LABELS": false,
     "CLOCK_PERIOD": 25,
-    "MAGIC_ZEROIZE_ORIGIN": 0
+    "MAGIC_ZEROIZE_ORIGIN": false,
+    "meta": {
+        "version": 2
+    }
 }

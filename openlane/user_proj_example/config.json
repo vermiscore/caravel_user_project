@@ -65,5 +65,8 @@
         "RT_MAX_LAYER": "Metal4",
         "SYNTH_MAX_FANOUT": 4,
         "PL_TARGET_DENSITY_PCT": 45
+    },
+    "meta": {
+        "version": 2
     }
 }
