@@ -115,7 +115,7 @@ library (user_project_wrapper) {
   }
 
   cell ("user_project_wrapper") {
-    area : 533473.562 
+    area : 13548.028 
     is_macro_cell : true;
     pin("user_clock2") {
       direction : input;
