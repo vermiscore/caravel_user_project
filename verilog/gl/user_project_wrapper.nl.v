@@ -1,4 +1,4 @@
-module user_project_wrapper (user_clock2,
+module user_project_wrapper (user_clock2, VSUBS,
     wb_clk_i,
     wb_rst_i,
     wbs_ack_o,
@@ -18,6 +18,7 @@ module user_project_wrapper (user_clock2,
     wbs_dat_o,
     wbs_sel_i);
  input user_clock2;
+ inout VSUBS;
  input wb_clk_i;
  input wb_rst_i;
  output wbs_ack_o;
@@ -67,14 +68,15 @@ module user_project_wrapper (user_clock2,
     la_data_in[10],
     la_data_in[9],
     la_data_in[8]}),
+    .VGND(VSUBS),
     .selected_arm({io_out[5],
     io_out[4],
     io_out[3],
     io_out[2],
     io_out[1],
     io_out[0]}));
- sky130_fd_sc_hd__conb_1 TIE_ZERO_zero_ (.LO(zero_));
- sky130_fd_sc_hd__conb_1 TIE_ONE_one_ (.HI(one_));
+ sky130_fd_sc_hd__conb_1 TIE_ZERO_zero_ (.LO(zero_), .VNB(VSUBS));
+ sky130_fd_sc_hd__conb_1 TIE_ONE_one_ (.HI(one_), .VNB(VSUBS));
  assign io_oeb[10] = one_;
  assign io_oeb[11] = one_;
  assign io_oeb[12] = one_;
