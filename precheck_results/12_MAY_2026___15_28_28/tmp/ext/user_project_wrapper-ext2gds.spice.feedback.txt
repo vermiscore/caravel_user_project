@@ -1,0 +1,14 @@
+box 141707 6107 141825 6217
+feedback add "device missing 1 terminal;
+ connecting remainder to node VGND" pale
+box 141707 5767 141825 5941
+feedback add "device missing 1 terminal;
+ connecting remainder to node VPWR" pale
+box 139439 6311 139759 6421
+feedback add "device missing 1 terminal;
+ connecting remainder to node VGND" pale
+box 139067 6587 139397 6761
+feedback add "device missing 1 terminal;
+ connecting remainder to node VPWR" pale
+box 141195 7511 141321 7529
+feedback add "Could not determine device boundary" pale

@@ -71,4 +71,6 @@ module user_project_wrapper (user_clock2,
     io_out[2],
     io_out[1],
     io_out[0]}));
+assign io_oeb[6:0] = 7'b0;
+    assign io_oeb[37:7] = 31'h7FFFFFFF;
 endmodule
