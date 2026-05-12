@@ -16,3 +16,4 @@
 openlane2-venv
 design_info.yaml
 verilog/gl/user_project_wrapper.v
+.github/workflows/
