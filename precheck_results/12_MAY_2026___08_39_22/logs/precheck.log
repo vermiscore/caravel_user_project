@@ -1,0 +1,51 @@
+2026-05-12 08:39:22 [INFO] Extracting compressed files in: /tmp/tmpofaozfbi/repo
+2026-05-12 08:39:22 [INFO] make uncompress produced 2 gds/*.gds file(s): user_proj_example.gds, user_project_wrapper.gds (make exit 0)
+2026-05-12 08:39:22 [INFO] Project type: digital
+2026-05-12 08:39:22 [INFO] GDS hash (user_project_wrapper): 643df9543160e82a8fcb5fb43c83e7f8d04a24a5
+2026-05-12 08:39:22 [INFO] Tools: KLayout v0.29.2 | Magic v8.3.471
+2026-05-12 08:39:22 [INFO] PDK: SKY130A unknown
+2026-05-12 08:39:22 [INFO] Running 13 checks: [topcell_check, gpio_defines, xor, klayout_feol, klayout_beol, klayout_offgrid, klayout_met_min_ca_density, klayout_pin_label_purposes_overlapping_drawing, klayout_zeroarea, spike_check, illegal_cellname_check, lvs, oeb]
+2026-05-12 08:39:22 [INFO] Single top cell 'user_project_wrapper' found
+2026-05-12 08:39:22 [INFO] GPIO defines: parsing verilog/rtl/user_defines.v
+2026-05-12 08:39:23 [INFO] GPIO defines report: /tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/gpio_defines.report
+2026-05-12 08:39:41 [INFO] Total XOR differences: 0
+2026-05-12 08:39:41 [INFO] Running: klayout -b -r /usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/sky130A_mr.drc -rd input=/tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds -rd topcell=user_project_wrapper -rd report=/tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/klayout_feol_check.xml -rd thr=2 -rd feol=true
+2026-05-12 08:40:17 [INFO] No DRC violations found
+2026-05-12 08:40:17 [INFO] Running: klayout -b -r /usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/sky130A_mr.drc -rd input=/tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds -rd topcell=user_project_wrapper -rd report=/tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/klayout_beol_check.xml -rd thr=2 -rd beol=true
+2026-05-12 08:42:18 [INFO] No DRC violations found
+2026-05-12 08:42:18 [INFO] Running: klayout -b -r /usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/sky130A_mr.drc -rd input=/tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds -rd topcell=user_project_wrapper -rd report=/tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/klayout_offgrid_check.xml -rd thr=2 -rd offgrid=true
+2026-05-12 08:42:40 [INFO] No DRC violations found
+2026-05-12 08:42:40 [INFO] Running: klayout -b -r /usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/met_min_ca_density.lydrc -rd input=/tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds -rd topcell=user_project_wrapper -rd report=/tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/klayout_met_min_ca_density_check.xml -rd thr=2
+2026-05-12 08:42:51 [INFO] No DRC violations found
+2026-05-12 08:42:51 [INFO] Running: klayout -b -r /usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/pin_label_purposes_overlapping_drawing.rb.drc -rd input=/tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds -rd topcell=user_project_wrapper -rd report=/tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/klayout_pin_label_purposes_overlapping_drawing_check.xml -rd thr=2 -rd top_cell_name=user_project_wrapper
+2026-05-12 08:42:58 [INFO] No DRC violations found
+2026-05-12 08:42:58 [INFO] Running: klayout -b -r /usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/zeroarea.rb.drc -rd input=/tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds -rd topcell=user_project_wrapper -rd report=/tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/klayout_zeroarea_check.xml -rd thr=2 -rd cleaned_output=/tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/user_project_wrapper_no_zero_areas.gds
+2026-05-12 08:43:03 [INFO] No DRC violations found
+2026-05-12 08:43:03 [INFO] Running: bash /usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/gdsArea0 -V -m /tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/outputs/reports/spike_check.xml /tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds
+2026-05-12 08:43:09 [INFO] No spikes found
+2026-05-12 08:43:09 [INFO] Loading LVS environment from /tmp/tmpofaozfbi/repo/lvs/user_project_wrapper/lvs_config.json
+2026-05-12 08:43:09 [INFO] EXTRACT_FLATGLOB: 
+2026-05-12 08:43:09 [INFO] EXTRACT_ABSTRACT: *__fill_* *__fakediode_* *__tapvpwrvgnd_*
+2026-05-12 08:43:09 [INFO] EXTRACT_CREATE_SUBCUT: 
+2026-05-12 08:43:09 [INFO] LVS_FLATTEN: 
+2026-05-12 08:43:09 [INFO] LVS_NOFLATTEN: 
+2026-05-12 08:43:09 [INFO] LVS_IGNORE: 
+2026-05-12 08:43:09 [INFO] LVS_SPICE_FILES: /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+2026-05-12 08:43:09 [INFO] LVS_VERILOG_FILES: /tmp/tmpofaozfbi/repo/verilog/gl/ucb_top.v /tmp/tmpofaozfbi/repo/verilog/gl/user_project_wrapper.v
+2026-05-12 08:43:09 [INFO] LAYOUT_FILE: /tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds
+2026-05-12 08:43:09 [INFO] Running: run_be_checks --nooeb
+2026-05-12 08:43:09 [INFO] LVS output directory: /tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22
+2026-05-12 08:45:30 [ERROR] LVS FAILED (stat=1), see /tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/logs/LVS_check.log
+2026-05-12 08:45:30 [INFO] Loading LVS environment from /tmp/tmpofaozfbi/repo/lvs/user_project_wrapper/lvs_config.json
+2026-05-12 08:45:30 [INFO] EXTRACT_FLATGLOB: 
+2026-05-12 08:45:30 [INFO] EXTRACT_ABSTRACT: *__fill_* *__fakediode_* *__tapvpwrvgnd_*
+2026-05-12 08:45:30 [INFO] EXTRACT_CREATE_SUBCUT: 
+2026-05-12 08:45:30 [INFO] LVS_FLATTEN: 
+2026-05-12 08:45:30 [INFO] LVS_NOFLATTEN: 
+2026-05-12 08:45:30 [INFO] LVS_IGNORE: 
+2026-05-12 08:45:30 [INFO] LVS_SPICE_FILES: /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+2026-05-12 08:45:30 [INFO] LVS_VERILOG_FILES: /tmp/tmpofaozfbi/repo/verilog/gl/ucb_top.v /tmp/tmpofaozfbi/repo/verilog/gl/user_project_wrapper.v
+2026-05-12 08:45:30 [INFO] LAYOUT_FILE: /tmp/tmpofaozfbi/repo/gds/user_project_wrapper.gds
+2026-05-12 08:45:30 [INFO] Running: run_oeb_check --noextract
+2026-05-12 08:45:30 [INFO] OEB output directory: /tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22
+2026-05-12 08:45:32 [ERROR] OEB FAILED (stat=6), see /tmp/tmpofaozfbi/repo/precheck_results/12_MAY_2026___08_39_22/logs/OEB_check.log
