@@ -1,0 +1,3665 @@
+DESIGN NAME: user_project_wrapper
+WORK_ROOT   : /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb
+LOG_ROOT    : /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/logs
+SIGNOFF_ROOT: /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/outputs/reports
+ 
+Running CVC for oeb check...
+Creating /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/user_project_wrapper.cdl.gz
+CVC: Circuit Validation Check  Version 1.1.7
+CVC: Log output to /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/cvc.oeb.log
+CVC: Error output to /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/cvc.oeb.error.gz
+CVC: Debug output to /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/cvc.oeb.debug.gz
+CVC: Start: Tue May 12 09:40:53 2026
+
+Using the following parameters for CVC (Circuit Validation Check) from /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/cvcrc.oeb
+CVC_TOP = 'user_project_wrapper'
+CVC_NETLIST = '/tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/user_project_wrapper.cdl.gz'
+CVC_MODE = 'user_project_wrapper'
+CVC_MODEL_FILE = '/usr/local/lib/python3.9/site-packages/cf_precheck/be_checks/tech/sky130A/cvc.models'
+CVC_POWER_FILE = '/tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/cvc.power.user_project_wrapper'
+CVC_FUSE_FILE = ''
+CVC_REPORT_FILE = '/tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/cvc.oeb.log'
+CVC_REPORT_TITLE = 'CVC user_project_wrapper'
+CVC_CIRCUIT_ERROR_LIMIT = '100'
+CVC_SEARCH_LIMIT = '100'
+CVC_LEAK_LIMIT = '0.0002'
+CVC_SOI = 'false'
+CVC_SCRC = 'false'
+CVC_VTH_GATES = 'false'
+CVC_MIN_VTH_GATES = 'false'
+CVC_IGNORE_VTH_FLOATING = 'false'
+CVC_IGNORE_NO_LEAK_FLOATING = 'false'
+CVC_LEAK_OVERVOLTAGE = 'true'
+CVC_LOGIC_DIODES = 'false'
+CVC_ANALOG_GATES = 'true'
+CVC_BACKUP_RESULTS = 'false'
+CVC_MOS_DIODE_ERROR_THRESHOLD = '0'
+CVC_SHORT_ERROR_THRESHOLD = '0'
+CVC_BIAS_ERROR_THRESHOLD = '0'
+CVC_FORWARD_ERROR_THRESHOLD = '0'
+CVC_FLOATING_ERROR_THRESHOLD = '0'
+CVC_GATE_ERROR_THRESHOLD = '0'
+CVC_LEAK?_ERROR_THRESHOLD = '0'
+CVC_EXPECTED_ERROR_THRESHOLD = '0'
+CVC_OVERVOLTAGE_ERROR_THRESHOLD = '0'
+CVC_PARALLEL_CIRCUIT_PORT_LIMIT = '0'
+CVC_CELL_ERROR_LIMIT_FILE = ''
+CVC_CELL_CHECKSUM_FILE = ''
+CVC_LARGE_CIRCUIT_SIZE = '10000000'
+CVC_NET_CHECK_FILE = ''
+CVC_MODEL_CHECK_FILE = ''
+End of parameters
+
+CVC: Reading device model settings...
+CVC: Reading power settings...
+CVC: Parsing netlist /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/user_project_wrapper.cdl.gz
+
+Cdl fixed data size 829266
+Usage CDL: Time: 0  Memory: 28424  I/O: 8  Swap: 0
+CVC: Counting and linking...
+CVC: Assigning IDs ...
+Usage DB: Time: 0  Memory: 33704  I/O: 8  Swap: 0
+CVC: 42767(42767) instances, 71528(71528) nets, 143727(143727) devices.
+Setting power for mode...
+Setting models...
+CVC: Setting models ...
+Setting model tolerances...
+** Stage 1/7: Enter command ?> c 6
+
+> c 6
+continuing for 6 step(s)
+CVC: Shorting switches...
+ model short...
+	Shorted 231 short
+ model sky130_fd_pr__res_generic_l1...
+	Shorted 0 sky130_fd_pr__res_generic_l1
+ model sky130_fd_pr__res_generic_m1...
+	Shorted 0 sky130_fd_pr__res_generic_m1
+ model sky130_fd_pr__res_generic_m2...
+	Shorted 0 sky130_fd_pr__res_generic_m2
+ model sky130_fd_pr__res_generic_m3...
+	Shorted 0 sky130_fd_pr__res_generic_m3
+ model sky130_fd_pr__res_generic_m4...
+	Shorted 0 sky130_fd_pr__res_generic_m4
+ model sky130_fd_pr__res_generic_m5...
+	Shorted 0 sky130_fd_pr__res_generic_m5
+Setting instance power...
+CVC: Linking devices...
+
+Usage EQUIV: Time: 0  Memory: 50800  I/O: 72  Swap: 0
+Power nets 396
+CVC: Shorting non conducting resistors...
+CVC: Calculating resistor voltages...
+Usage RES: Time: 0  Memory: 50800  I/O: 72  Swap: 0
+Power nets 396
+CVC: Calculating min/max voltages...
+Processing trivial nets found 0 trivial nets
+WARNING: unknown min gate at net->device: /Xu_ucb/net25 -> /Xu_ucb(ucb_top)/X_09036_(BV_sky130_fd_sc_hd__and4_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net162 -> /Xu_ucb(ucb_top)/X_06883_(BV_sky130_fd_sc_hd__mux2_1)/MX7
+WARNING: unknown min gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_09068_(BV_sky130_fd_sc_hd__mux2_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net1055 -> /Xu_ucb(ucb_top)/X_07504_(BV_sky130_fd_sc_hd__a22o_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net641 -> /Xu_ucb(ucb_top)/X_09723_(BV_sky130_fd_sc_hd__a22o_1)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net658 -> /Xu_ucb(ucb_top)/X_10343_(BV_sky130_fd_sc_hd__a2111o_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net1121 -> /Xu_ucb(ucb_top)/X_05695_(BV_sky130_fd_sc_hd__o21ai_2)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09619_(BV_sky130_fd_sc_hd__o22ai_4)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06094_(BV_sky130_fd_sc_hd__o21ai_4)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_10009_(BV_sky130_fd_sc_hd__o21a_1)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09671_(BV_sky130_fd_sc_hd__a211o_1)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net14 -> /Xu_ucb(ucb_top)/X_05696_(BV_sky130_fd_sc_hd__o22a_1)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_07949_(BV_sky130_fd_sc_hd__o22a_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06194_(BV_sky130_fd_sc_hd__o2bb2a_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_06245_(BV_sky130_fd_sc_hd__o22a_2)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_10710_(BV_sky130_fd_sc_hd__o22a_4)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09030_(BV_sky130_fd_sc_hd__o21ba_1)/MX7
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09846_(BV_sky130_fd_sc_hd__o31a_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1123 -> /Xu_ucb(ucb_top)/X_07378_(BV_sky130_fd_sc_hd__o21ai_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09561_(BV_sky130_fd_sc_hd__o2bb2a_4)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09999_(BV_sky130_fd_sc_hd__o32a_1)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09339_(BV_sky130_fd_sc_hd__o2bb2a_2)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net719 -> /Xu_ucb(ucb_top)/X_08553_(BV_sky130_fd_sc_hd__xor2_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1143 -> /Xu_ucb(ucb_top)/X_05481_(BV_sky130_fd_sc_hd__nor2_4)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09683_(BV_sky130_fd_sc_hd__or2_1)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09660_(BV_sky130_fd_sc_hd__nor2_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06195_(BV_sky130_fd_sc_hd__a2bb2o_2)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09283_(BV_sky130_fd_sc_hd__a2bb2o_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09088_(BV_sky130_fd_sc_hd__nor4_1)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net1148 -> /Xu_ucb(ucb_top)/X_05416_(BV_sky130_fd_sc_hd__or4_4)/MX9
+WARNING: unknown min gate at net->device: /Xu_ucb/net1147 -> /Xu_ucb(ucb_top)/X_05419_(BV_sky130_fd_sc_hd__or2_4)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net6 -> /Xu_ucb(ucb_top)/X_05417_(BV_sky130_fd_sc_hd__or2_2)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1141 -> /Xu_ucb(ucb_top)/X_05436_(BV_sky130_fd_sc_hd__nor2_8)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net14 -> /Xu_ucb(ucb_top)/X_05697_(BV_sky130_fd_sc_hd__a221oi_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net303 -> /Xu_ucb(ucb_top)/X_09339_(BV_sky130_fd_sc_hd__o2bb2a_2)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09999_(BV_sky130_fd_sc_hd__o32a_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09112_(BV_sky130_fd_sc_hd__and4b_4)/MX10
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12907_(BV_sky130_fd_sc_hd__dfrtp_4)/MX13
+WARNING: unknown max gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09116_(BV_sky130_fd_sc_hd__and4bb_4)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09561_(BV_sky130_fd_sc_hd__o2bb2a_4)/MX10
+WARNING: unknown max gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_07990_(BV_sky130_fd_sc_hd__o21ai_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09921_(BV_sky130_fd_sc_hd__o31a_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1306 -> /Xu_ucb(ucb_top)/X_10800_(BV_sky130_fd_sc_hd__dfrtp_2)/MX13
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12842_(BV_sky130_fd_sc_hd__dfstp_1)/MX26
+WARNING: unknown max gate at net->device: /Xu_ucb/net653 -> /Xu_ucb(ucb_top)/X_10201_(BV_sky130_fd_sc_hd__o22a_4)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net16 -> /Xu_ucb(ucb_top)/X_05699_(BV_sky130_fd_sc_hd__o2bb2a_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net969 -> /Xu_ucb(ucb_top)/X_09091_(BV_sky130_fd_sc_hd__nand2_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net9 -> /Xu_ucb(ucb_top)/X_06046_(BV_sky130_fd_sc_hd__nand2b_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_154_clk -> /Xu_ucb(ucb_top)/Xclkload214(BV_sky130_fd_sc_hd__clkinvlp_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net9 -> /Xu_ucb(ucb_top)/X_06047_(BV_sky130_fd_sc_hd__xnor2_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1377 -> /Xu_ucb(ucb_top)/X_12529_(BV_sky130_fd_sc_hd__dfrtp_1)/MX12
+WARNING: unknown max gate at net->device: /Xu_ucb/net1447 -> /Xu_ucb(ucb_top)/X_05430_(BV_sky130_fd_sc_hd__nand2_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net7 -> /Xu_ucb(ucb_top)/X_05696_(BV_sky130_fd_sc_hd__o22a_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net583 -> /Xu_ucb(ucb_top)/X_09746_(BV_sky130_fd_sc_hd__a22o_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net594 -> /Xu_ucb(ucb_top)/X_09731_(BV_sky130_fd_sc_hd__a211o_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net701 -> /Xu_ucb(ucb_top)/X_06952_(BV_sky130_fd_sc_hd__mux2_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09339_(BV_sky130_fd_sc_hd__o2bb2a_2)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net68 -> /Xu_ucb(ucb_top)/X_10718_(BV_sky130_fd_sc_hd__a41o_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net939 -> /Xu_ucb(ucb_top)/X_09106_(BV_sky130_fd_sc_hd__and2_2)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1137 -> /Xu_ucb(ucb_top)/X_09108_(BV_sky130_fd_sc_hd__and4b_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06144_(BV_sky130_fd_sc_hd__o21ai_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12907_(BV_sky130_fd_sc_hd__dfrtp_4)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09624_(BV_sky130_fd_sc_hd__and3b_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1136 -> /Xu_ucb(ucb_top)/X_09145_(BV_sky130_fd_sc_hd__and4bb_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1137 -> /Xu_ucb(ucb_top)/X_09119_(BV_sky130_fd_sc_hd__and4bb_2)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1306 -> /Xu_ucb(ucb_top)/X_10800_(BV_sky130_fd_sc_hd__dfrtp_2)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12842_(BV_sky130_fd_sc_hd__dfstp_1)/MX31
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09030_(BV_sky130_fd_sc_hd__o21ba_1)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_07703_(BV_sky130_fd_sc_hd__o22a_2)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net13 -> /Xu_ucb(ucb_top)/X_06246_(BV_sky130_fd_sc_hd__xor2_4)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09227_(BV_sky130_fd_sc_hd__o2bb2a_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09395_(BV_sky130_fd_sc_hd__o22ai_4)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net300 -> /Xu_ucb(ucb_top)/X_10792_(BV_sky130_fd_sc_hd__a2bb2o_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1020 -> /Xu_ucb(ucb_top)/X_07204_(BV_sky130_fd_sc_hd__and2_4)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_05541_(BV_sky130_fd_sc_hd__o21ai_2)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net1129 -> /Xu_ucb(ucb_top)/X_09069_(BV_sky130_fd_sc_hd__o21ai_2)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net303 -> /Xu_ucb(ucb_top)/X_09340_(BV_sky130_fd_sc_hd__a2bb2o_2)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_154_clk -> /Xu_ucb(ucb_top)/Xclkload214(BV_sky130_fd_sc_hd__clkinvlp_4)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1057 -> /Xu_ucb(ucb_top)/X_07719_(BV_sky130_fd_sc_hd__a2111o_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net9 -> /Xu_ucb(ucb_top)/X_06047_(BV_sky130_fd_sc_hd__xnor2_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net931 -> /Xu_ucb(ucb_top)/X_09122_(BV_sky130_fd_sc_hd__and2_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1377 -> /Xu_ucb(ucb_top)/X_12529_(BV_sky130_fd_sc_hd__dfrtp_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09124_(BV_sky130_fd_sc_hd__and4_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net937 -> /Xu_ucb(ucb_top)/X_09285_(BV_sky130_fd_sc_hd__and3_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net653 -> /Xu_ucb(ucb_top)/X_10363_(BV_sky130_fd_sc_hd__o22a_1)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net623 -> /Xu_ucb(ucb_top)/X_09740_(BV_sky130_fd_sc_hd__a22o_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net613 -> /Xu_ucb(ucb_top)/X_09955_(BV_sky130_fd_sc_hd__a221o_1)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09020_(BV_sky130_fd_sc_hd__o21a_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net819 -> /Xu_ucb(ucb_top)/X_05765_(BV_sky130_fd_sc_hd__a221o_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net15 -> /Xu_ucb(ucb_top)/X_05697_(BV_sky130_fd_sc_hd__a221oi_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net448 -> /Xu_ucb(ucb_top)/X_09702_(BV_sky130_fd_sc_hd__o21a_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net300 -> /Xu_ucb(ucb_top)/X_10787_(BV_sky130_fd_sc_hd__mux2_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_09068_(BV_sky130_fd_sc_hd__mux2_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_10001_(BV_sky130_fd_sc_hd__a21boi_2)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_10001_(BV_sky130_fd_sc_hd__a21boi_2)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net719 -> /Xu_ucb(ucb_top)/X_08553_(BV_sky130_fd_sc_hd__xor2_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1055 -> /Xu_ucb(ucb_top)/X_07504_(BV_sky130_fd_sc_hd__a22o_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net300 -> /Xu_ucb(ucb_top)/X_10778_(BV_sky130_fd_sc_hd__o21ai_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09625_(BV_sky130_fd_sc_hd__a21oi_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09644_(BV_sky130_fd_sc_hd__a31o_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_10718_(BV_sky130_fd_sc_hd__a41o_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_10716_(BV_sky130_fd_sc_hd__a31oi_2)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09013_(BV_sky130_fd_sc_hd__and3_1)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09124_(BV_sky130_fd_sc_hd__and4_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09019_(BV_sky130_fd_sc_hd__nand2_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net958 -> /Xu_ucb(ucb_top)/X_09171_(BV_sky130_fd_sc_hd__and2_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net941 -> /Xu_ucb(ucb_top)/X_09118_(BV_sky130_fd_sc_hd__and2_4)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1446 -> /Xu_ucb(ucb_top)/X_05416_(BV_sky130_fd_sc_hd__or4_4)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1446 -> /Xu_ucb(ucb_top)/X_05422_(BV_sky130_fd_sc_hd__or4bb_4)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net1149 -> /Xu_ucb(ucb_top)/X_05444_(BV_sky130_fd_sc_hd__or3_4)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09088_(BV_sky130_fd_sc_hd__nor4_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09101_(BV_sky130_fd_sc_hd__nor4b_1)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1446 -> /Xu_ucb(ucb_top)/X_05437_(BV_sky130_fd_sc_hd__or4b_4)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09088_(BV_sky130_fd_sc_hd__nor4_1)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net1149 -> /Xu_ucb(ucb_top)/X_05416_(BV_sky130_fd_sc_hd__or4_4)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1148 -> /Xu_ucb(ucb_top)/X_05479_(BV_sky130_fd_sc_hd__or4b_4)/MX10
+WARNING: unknown min gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09103_(BV_sky130_fd_sc_hd__nor4b_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1136 -> /Xu_ucb(ucb_top)/X_09096_(BV_sky130_fd_sc_hd__and4b_1)/MX10
+WARNING: unknown max gate at net->device: /Xu_ucb/net1130 -> /Xu_ucb(ucb_top)/X_09124_(BV_sky130_fd_sc_hd__and4_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net1136 -> /Xu_ucb(ucb_top)/X_09110_(BV_sky130_fd_sc_hd__and4b_2)/MX2
+CVC: Ignoring invalid calculations...
+CVC:   Removed 28945 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX1: Time: 0  Memory: 55876  I/O: 128  Swap: 0
+Power nets 29341
+! Checking forward bias diode errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Checking pmos source/drain vs bias errors: 
+
+! Checking pmos gate vs source errors: 
+
+Usage ERROR: Time: 0  Memory: 55876  I/O: 136  Swap: 0
+Saving min/max voltages...
+CVC: Propagating Simulation voltages 1...
+Usage SIM1: Time: 0  Memory: 55876  I/O: 136  Swap: 0
+Power nets 29341
+Saving simulation voltages...
+CVC: Propagating Simulation voltages 3...
+Usage SIM2: Time: 0  Memory: 55876  I/O: 136  Swap: 0
+Power nets 29341
+Added 0 latch voltages
+CVC: Calculating min/max voltages...
+Processing trivial nets found 0 trivial nets
+WARNING: unknown max gate at net->device: /Xu_ucb/net14 -> /Xu_ucb(ucb_top)/X_05697_(BV_sky130_fd_sc_hd__a221oi_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net303 -> /Xu_ucb(ucb_top)/X_09339_(BV_sky130_fd_sc_hd__o2bb2a_2)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09999_(BV_sky130_fd_sc_hd__o32a_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net6 -> /Xu_ucb(ucb_top)/X_05417_(BV_sky130_fd_sc_hd__or2_2)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1135 -> /Xu_ucb(ucb_top)/X_09110_(BV_sky130_fd_sc_hd__and4b_2)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/net1147 -> /Xu_ucb(ucb_top)/X_05419_(BV_sky130_fd_sc_hd__or2_4)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09112_(BV_sky130_fd_sc_hd__and4b_4)/MX10
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12907_(BV_sky130_fd_sc_hd__dfrtp_4)/MX13
+WARNING: unknown max gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09116_(BV_sky130_fd_sc_hd__and4bb_4)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09116_(BV_sky130_fd_sc_hd__and4bb_4)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09145_(BV_sky130_fd_sc_hd__and4bb_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09119_(BV_sky130_fd_sc_hd__and4bb_2)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09561_(BV_sky130_fd_sc_hd__o2bb2a_4)/MX10
+WARNING: unknown max gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_07990_(BV_sky130_fd_sc_hd__o21ai_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09921_(BV_sky130_fd_sc_hd__o31a_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1306 -> /Xu_ucb(ucb_top)/X_10800_(BV_sky130_fd_sc_hd__dfrtp_2)/MX13
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_12857_(BV_sky130_fd_sc_hd__dfrtp_2)/MX16
+WARNING: unknown max gate at net->device: /Xu_ucb/net68 -> /Xu_ucb(ucb_top)/X_10717_(BV_sky130_fd_sc_hd__and2b_1)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_146_clk -> /Xu_ucb(ucb_top)/Xclkload218(BV_sky130_fd_sc_hd__inv_8)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1148 -> /Xu_ucb(ucb_top)/X_05434_(BV_sky130_fd_sc_hd__or3b_4)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12842_(BV_sky130_fd_sc_hd__dfstp_1)/MX26
+WARNING: unknown max gate at net->device: /Xu_ucb/net1447 -> /Xu_ucb(ucb_top)/X_05416_(BV_sky130_fd_sc_hd__or4_4)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1447 -> /Xu_ucb(ucb_top)/X_05422_(BV_sky130_fd_sc_hd__or4bb_4)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/net1148 -> /Xu_ucb(ucb_top)/X_05422_(BV_sky130_fd_sc_hd__or4bb_4)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net300 -> /Xu_ucb(ucb_top)/X_10786_(BV_sky130_fd_sc_hd__o21ba_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_147_clk -> /Xu_ucb(ucb_top)/Xclkload219(BV_sky130_fd_sc_hd__clkinv_8)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net1148 -> /Xu_ucb(ucb_top)/X_05444_(BV_sky130_fd_sc_hd__or3_4)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net653 -> /Xu_ucb(ucb_top)/X_10201_(BV_sky130_fd_sc_hd__o22a_4)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09088_(BV_sky130_fd_sc_hd__nor4_1)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net13 -> /Xu_ucb(ucb_top)/X_06246_(BV_sky130_fd_sc_hd__xor2_4)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09141_(BV_sky130_fd_sc_hd__nor4b_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1130 -> /Xu_ucb(ucb_top)/X_09101_(BV_sky130_fd_sc_hd__nor4b_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net16 -> /Xu_ucb(ucb_top)/X_05699_(BV_sky130_fd_sc_hd__o2bb2a_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net969 -> /Xu_ucb(ucb_top)/X_09091_(BV_sky130_fd_sc_hd__nand2_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_126_clk -> /Xu_ucb(ucb_top)/Xclkload209(BV_sky130_fd_sc_hd__inv_6)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_128_clk -> /Xu_ucb(ucb_top)/Xclkload221(BV_sky130_fd_sc_hd__clkinv_2)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net1149 -> /Xu_ucb(ucb_top)/X_05437_(BV_sky130_fd_sc_hd__or4b_4)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1447 -> /Xu_ucb(ucb_top)/X_05437_(BV_sky130_fd_sc_hd__or4b_4)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net9 -> /Xu_ucb(ucb_top)/X_06046_(BV_sky130_fd_sc_hd__nand2b_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09622_(BV_sky130_fd_sc_hd__nor2_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_154_clk -> /Xu_ucb(ucb_top)/Xclkload214(BV_sky130_fd_sc_hd__clkinvlp_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_145_clk -> /Xu_ucb(ucb_top)/Xclkload217(BV_sky130_fd_sc_hd__bufinv_16)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1125 -> /Xu_ucb(ucb_top)/X_07719_(BV_sky130_fd_sc_hd__a2111o_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1146 -> /Xu_ucb(ucb_top)/X_05465_(BV_sky130_fd_sc_hd__nor2_8)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1140 -> /Xu_ucb(ucb_top)/X_05467_(BV_sky130_fd_sc_hd__nor2_8)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09638_(BV_sky130_fd_sc_hd__or2_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net9 -> /Xu_ucb(ucb_top)/X_06047_(BV_sky130_fd_sc_hd__xnor2_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1147 -> /Xu_ucb(ucb_top)/X_05449_(BV_sky130_fd_sc_hd__nor2_4)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1377 -> /Xu_ucb(ucb_top)/X_12529_(BV_sky130_fd_sc_hd__dfrtp_1)/MX12
+WARNING: unknown max gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_12881_(BV_sky130_fd_sc_hd__dfrtp_1)/MX15
+WARNING: unknown max gate at net->device: /Xu_ucb/net1447 -> /Xu_ucb(ucb_top)/X_05430_(BV_sky130_fd_sc_hd__nand2_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net7 -> /Xu_ucb(ucb_top)/X_05696_(BV_sky130_fd_sc_hd__o22a_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net583 -> /Xu_ucb(ucb_top)/X_09746_(BV_sky130_fd_sc_hd__a22o_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net358 -> /Xu_ucb(ucb_top)/X_08537_(BV_sky130_fd_sc_hd__xor2_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net594 -> /Xu_ucb(ucb_top)/X_09731_(BV_sky130_fd_sc_hd__a211o_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net659 -> /Xu_ucb(ucb_top)/X_09842_(BV_sky130_fd_sc_hd__a211o_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net701 -> /Xu_ucb(ucb_top)/X_06952_(BV_sky130_fd_sc_hd__mux2_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net701 -> /Xu_ucb(ucb_top)/X_06952_(BV_sky130_fd_sc_hd__mux2_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09339_(BV_sky130_fd_sc_hd__o2bb2a_2)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net68 -> /Xu_ucb(ucb_top)/X_10718_(BV_sky130_fd_sc_hd__a41o_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09092_(BV_sky130_fd_sc_hd__nor4b_2)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net939 -> /Xu_ucb(ucb_top)/X_09106_(BV_sky130_fd_sc_hd__and2_2)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09108_(BV_sky130_fd_sc_hd__and4b_1)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/net1137 -> /Xu_ucb(ucb_top)/X_09108_(BV_sky130_fd_sc_hd__and4b_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06144_(BV_sky130_fd_sc_hd__o21ai_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net1137 -> /Xu_ucb(ucb_top)/X_09112_(BV_sky130_fd_sc_hd__and4b_4)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_144_clk -> /Xu_ucb(ucb_top)/X_12907_(BV_sky130_fd_sc_hd__dfrtp_4)/MX26
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12907_(BV_sky130_fd_sc_hd__dfrtp_4)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_148_clk -> /Xu_ucb(ucb_top)/X_12882_(BV_sky130_fd_sc_hd__dfxtp_1)/MX23
+WARNING: unknown max gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09624_(BV_sky130_fd_sc_hd__and3b_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1136 -> /Xu_ucb(ucb_top)/X_09116_(BV_sky130_fd_sc_hd__and4bb_4)/MX13
+WARNING: unknown max gate at net->device: /Xu_ucb/net1136 -> /Xu_ucb(ucb_top)/X_09145_(BV_sky130_fd_sc_hd__and4bb_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09145_(BV_sky130_fd_sc_hd__and4bb_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1135 -> /Xu_ucb(ucb_top)/X_09119_(BV_sky130_fd_sc_hd__and4bb_2)/MX13
+WARNING: unknown max gate at net->device: /Xu_ucb/net1137 -> /Xu_ucb(ucb_top)/X_09119_(BV_sky130_fd_sc_hd__and4bb_2)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_09693_(BV_sky130_fd_sc_hd__a21bo_1)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_206_clk -> /Xu_ucb(ucb_top)/X_10800_(BV_sky130_fd_sc_hd__dfrtp_2)/MX26
+WARNING: unknown max gate at net->device: /Xu_ucb/net1306 -> /Xu_ucb(ucb_top)/X_10800_(BV_sky130_fd_sc_hd__dfrtp_2)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net4 -> /Xu_ucb(ucb_top)/X_05450_(BV_sky130_fd_sc_hd__or3b_4)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_12842_(BV_sky130_fd_sc_hd__dfstp_1)/MX31
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_144_clk -> /Xu_ucb(ucb_top)/X_12842_(BV_sky130_fd_sc_hd__dfstp_1)/MX30
+WARNING: unknown max gate at net->device: /Xu_ucb/net4 -> /Xu_ucb(ucb_top)/X_05455_(BV_sky130_fd_sc_hd__or4bb_4)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09030_(BV_sky130_fd_sc_hd__o21ba_1)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net25 -> /Xu_ucb(ucb_top)/X_05398_(BV_sky130_fd_sc_hd__inv_2)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_07703_(BV_sky130_fd_sc_hd__o22a_2)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net13 -> /Xu_ucb(ucb_top)/X_06246_(BV_sky130_fd_sc_hd__xor2_4)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09227_(BV_sky130_fd_sc_hd__o2bb2a_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09395_(BV_sky130_fd_sc_hd__o22ai_4)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_139_clk -> /Xu_ucb(ucb_top)/Xclkload229(BV_sky130_fd_sc_hd__clkinv_4)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net300 -> /Xu_ucb(ucb_top)/X_10792_(BV_sky130_fd_sc_hd__a2bb2o_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net1121 -> /Xu_ucb(ucb_top)/X_05845_(BV_sky130_fd_sc_hd__a2bb2o_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net5 -> /Xu_ucb(ucb_top)/X_05421_(BV_sky130_fd_sc_hd__nand2b_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net1020 -> /Xu_ucb(ucb_top)/X_07204_(BV_sky130_fd_sc_hd__and2_4)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_05541_(BV_sky130_fd_sc_hd__o21ai_2)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net1129 -> /Xu_ucb(ucb_top)/X_09069_(BV_sky130_fd_sc_hd__o21ai_2)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1121 -> /Xu_ucb(ucb_top)/X_05895_(BV_sky130_fd_sc_hd__a2bb2o_2)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net303 -> /Xu_ucb(ucb_top)/X_09340_(BV_sky130_fd_sc_hd__a2bb2o_2)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/net1128 -> /Xu_ucb(ucb_top)/X_10731_(BV_sky130_fd_sc_hd__nor2_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_154_clk -> /Xu_ucb(ucb_top)/Xclkload214(BV_sky130_fd_sc_hd__clkinvlp_4)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net112 -> /Xu_ucb(ucb_top)/Xfanout111(BV_sky130_fd_sc_hd__dlymetal6s2s_1)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net1057 -> /Xu_ucb(ucb_top)/X_07719_(BV_sky130_fd_sc_hd__a2111o_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net8 -> /Xu_ucb(ucb_top)/X_05997_(BV_sky130_fd_sc_hd__or2_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net9 -> /Xu_ucb(ucb_top)/X_06047_(BV_sky130_fd_sc_hd__xnor2_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net931 -> /Xu_ucb(ucb_top)/X_09122_(BV_sky130_fd_sc_hd__and2_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1141 -> /Xu_ucb(ucb_top)/X_05469_(BV_sky130_fd_sc_hd__nor2_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/clknet_leaf_160_clk -> /Xu_ucb(ucb_top)/X_12529_(BV_sky130_fd_sc_hd__dfrtp_1)/MX26
+WARNING: unknown max gate at net->device: /Xu_ucb/net1377 -> /Xu_ucb(ucb_top)/X_12529_(BV_sky130_fd_sc_hd__dfrtp_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09124_(BV_sky130_fd_sc_hd__and4_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net937 -> /Xu_ucb(ucb_top)/X_09285_(BV_sky130_fd_sc_hd__and3_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net653 -> /Xu_ucb(ucb_top)/X_10363_(BV_sky130_fd_sc_hd__o22a_1)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net623 -> /Xu_ucb(ucb_top)/X_09740_(BV_sky130_fd_sc_hd__a22o_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net613 -> /Xu_ucb(ucb_top)/X_09955_(BV_sky130_fd_sc_hd__a221o_1)/MX11
+WARNING: unknown min gate at net->device: /Xu_ucb/net1136 -> /Xu_ucb(ucb_top)/X_09124_(BV_sky130_fd_sc_hd__and4_1)/MX7
+WARNING: unknown min gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_10009_(BV_sky130_fd_sc_hd__o21a_1)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net1055 -> /Xu_ucb(ucb_top)/X_07504_(BV_sky130_fd_sc_hd__a22o_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net641 -> /Xu_ucb(ucb_top)/X_09723_(BV_sky130_fd_sc_hd__a22o_1)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_07949_(BV_sky130_fd_sc_hd__o22a_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net658 -> /Xu_ucb(ucb_top)/X_10343_(BV_sky130_fd_sc_hd__a2111o_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net1121 -> /Xu_ucb(ucb_top)/X_05695_(BV_sky130_fd_sc_hd__o21ai_2)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09619_(BV_sky130_fd_sc_hd__o22ai_4)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06194_(BV_sky130_fd_sc_hd__o2bb2a_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1122 -> /Xu_ucb(ucb_top)/X_06245_(BV_sky130_fd_sc_hd__o22a_2)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09030_(BV_sky130_fd_sc_hd__o21ba_1)/MX7
+WARNING: unknown min gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06094_(BV_sky130_fd_sc_hd__o21ai_4)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09339_(BV_sky130_fd_sc_hd__o2bb2a_2)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net162 -> /Xu_ucb(ucb_top)/X_06883_(BV_sky130_fd_sc_hd__mux2_1)/MX7
+WARNING: unknown min gate at net->device: /Xu_ucb/net657 -> /Xu_ucb(ucb_top)/X_09881_(BV_sky130_fd_sc_hd__a211o_1)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net14 -> /Xu_ucb(ucb_top)/X_05696_(BV_sky130_fd_sc_hd__o22a_1)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_10710_(BV_sky130_fd_sc_hd__o22a_4)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09846_(BV_sky130_fd_sc_hd__o31a_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1123 -> /Xu_ucb(ucb_top)/X_07378_(BV_sky130_fd_sc_hd__o21ai_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09561_(BV_sky130_fd_sc_hd__o2bb2a_4)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net655 -> /Xu_ucb(ucb_top)/X_09999_(BV_sky130_fd_sc_hd__o32a_1)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net1143 -> /Xu_ucb(ucb_top)/X_05481_(BV_sky130_fd_sc_hd__nor2_4)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1120 -> /Xu_ucb(ucb_top)/X_06195_(BV_sky130_fd_sc_hd__a2bb2o_2)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net656 -> /Xu_ucb(ucb_top)/X_09283_(BV_sky130_fd_sc_hd__a2bb2o_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09088_(BV_sky130_fd_sc_hd__nor4_1)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net1148 -> /Xu_ucb(ucb_top)/X_05416_(BV_sky130_fd_sc_hd__or4_4)/MX9
+WARNING: unknown min gate at net->device: /Xu_ucb/net6 -> /Xu_ucb(ucb_top)/X_05417_(BV_sky130_fd_sc_hd__or2_2)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net719 -> /Xu_ucb(ucb_top)/X_08553_(BV_sky130_fd_sc_hd__xor2_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09683_(BV_sky130_fd_sc_hd__or2_1)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1141 -> /Xu_ucb(ucb_top)/X_05436_(BV_sky130_fd_sc_hd__nor2_8)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09660_(BV_sky130_fd_sc_hd__nor2_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1147 -> /Xu_ucb(ucb_top)/X_05419_(BV_sky130_fd_sc_hd__or2_4)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net68 -> /Xu_ucb(ucb_top)/X_10718_(BV_sky130_fd_sc_hd__a41o_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09022_(BV_sky130_fd_sc_hd__and3b_1)/MX7
+WARNING: unknown min gate at net->device: /Xu_ucb/net25 -> /Xu_ucb(ucb_top)/X_09037_(BV_sky130_fd_sc_hd__a31o_1)/MX9
+WARNING: unknown min gate at net->device: /Xu_ucb/net1416 -> /Xu_ucb(ucb_top)/X_10765_(BV_sky130_fd_sc_hd__and3_2)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net13 -> /Xu_ucb(ucb_top)/X_06246_(BV_sky130_fd_sc_hd__xor2_4)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net300 -> /Xu_ucb(ucb_top)/X_10792_(BV_sky130_fd_sc_hd__a2bb2o_1)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net950 -> /Xu_ucb(ucb_top)/X_09117_(BV_sky130_fd_sc_hd__and2_4)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net1057 -> /Xu_ucb(ucb_top)/X_07719_(BV_sky130_fd_sc_hd__a2111o_1)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net9 -> /Xu_ucb(ucb_top)/X_06047_(BV_sky130_fd_sc_hd__xnor2_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net12 -> /Xu_ucb(ucb_top)/X_06196_(BV_sky130_fd_sc_hd__and2_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09629_(BV_sky130_fd_sc_hd__and4_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net25 -> /Xu_ucb(ucb_top)/X_09036_(BV_sky130_fd_sc_hd__and4_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net959 -> /Xu_ucb(ucb_top)/X_09406_(BV_sky130_fd_sc_hd__and3_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net701 -> /Xu_ucb(ucb_top)/X_06952_(BV_sky130_fd_sc_hd__mux2_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net431 -> /Xu_ucb(ucb_top)/X_09695_(BV_sky130_fd_sc_hd__o21a_1)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_10716_(BV_sky130_fd_sc_hd__a31oi_2)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09625_(BV_sky130_fd_sc_hd__a21oi_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_10001_(BV_sky130_fd_sc_hd__a21boi_2)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net301 -> /Xu_ucb(ucb_top)/X_09561_(BV_sky130_fd_sc_hd__o2bb2a_4)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_09073_(BV_sky130_fd_sc_hd__o21ai_1)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net1446 -> /Xu_ucb(ucb_top)/X_05416_(BV_sky130_fd_sc_hd__or4_4)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1446 -> /Xu_ucb(ucb_top)/X_05422_(BV_sky130_fd_sc_hd__or4bb_4)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net1149 -> /Xu_ucb(ucb_top)/X_05444_(BV_sky130_fd_sc_hd__or3_4)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09088_(BV_sky130_fd_sc_hd__nor4_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09101_(BV_sky130_fd_sc_hd__nor4b_1)/MX5
+WARNING: unknown min gate at net->device: /Xu_ucb/net1446 -> /Xu_ucb(ucb_top)/X_05437_(BV_sky130_fd_sc_hd__or4b_4)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net1129 -> /Xu_ucb(ucb_top)/X_09069_(BV_sky130_fd_sc_hd__o21ai_2)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1128 -> /Xu_ucb(ucb_top)/X_10731_(BV_sky130_fd_sc_hd__nor2_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1146 -> /Xu_ucb(ucb_top)/X_05465_(BV_sky130_fd_sc_hd__nor2_8)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net21 -> /Xu_ucb(ucb_top)/X_05897_(BV_sky130_fd_sc_hd__or2_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1147 -> /Xu_ucb(ucb_top)/X_05449_(BV_sky130_fd_sc_hd__nor2_4)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net21 -> /Xu_ucb(ucb_top)/X_05896_(BV_sky130_fd_sc_hd__nand2_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_05415_(BV_sky130_fd_sc_hd__and3_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net474 -> /Xu_ucb(ucb_top)/X_09992_(BV_sky130_fd_sc_hd__a22o_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net358 -> /Xu_ucb(ucb_top)/X_08537_(BV_sky130_fd_sc_hd__xor2_1)/MX4
+WARNING: unknown min gate at net->device: /Xu_ucb/net613 -> /Xu_ucb(ucb_top)/X_09955_(BV_sky130_fd_sc_hd__a221o_1)/MX6
+WARNING: unknown min gate at net->device: /Xu_ucb/net659 -> /Xu_ucb(ucb_top)/X_09213_(BV_sky130_fd_sc_hd__or4_1)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net594 -> /Xu_ucb(ucb_top)/X_09731_(BV_sky130_fd_sc_hd__a211o_1)/MX2
+WARNING: unknown min gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09088_(BV_sky130_fd_sc_hd__nor4_1)/MX1
+WARNING: unknown min gate at net->device: /Xu_ucb/net1149 -> /Xu_ucb(ucb_top)/X_05416_(BV_sky130_fd_sc_hd__or4_4)/MX3
+WARNING: unknown min gate at net->device: /Xu_ucb/net1148 -> /Xu_ucb(ucb_top)/X_05479_(BV_sky130_fd_sc_hd__or4b_4)/MX10
+WARNING: unknown min gate at net->device: /Xu_ucb/net1132 -> /Xu_ucb(ucb_top)/X_09103_(BV_sky130_fd_sc_hd__nor4b_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net659 -> /Xu_ucb(ucb_top)/X_09213_(BV_sky130_fd_sc_hd__or4_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09020_(BV_sky130_fd_sc_hd__o21a_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net1130 -> /Xu_ucb(ucb_top)/X_09116_(BV_sky130_fd_sc_hd__and4bb_4)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net14 -> /Xu_ucb(ucb_top)/X_05696_(BV_sky130_fd_sc_hd__o22a_1)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net86 -> /Xu_ucb(ucb_top)/X_06721_(BV_sky130_fd_sc_hd__mux2_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1135 -> /Xu_ucb(ucb_top)/X_09108_(BV_sky130_fd_sc_hd__and4b_1)/MX10
+WARNING: unknown max gate at net->device: /Xu_ucb/net1130 -> /Xu_ucb(ucb_top)/X_09145_(BV_sky130_fd_sc_hd__and4bb_1)/MX11
+WARNING: unknown max gate at net->device: /Xu_ucb/net302 -> /Xu_ucb(ucb_top)/X_09340_(BV_sky130_fd_sc_hd__a2bb2o_2)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1130 -> /Xu_ucb(ucb_top)/X_09124_(BV_sky130_fd_sc_hd__and4_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net972 -> /Xu_ucb(ucb_top)/X_09285_(BV_sky130_fd_sc_hd__and3_1)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09024_(BV_sky130_fd_sc_hd__o21a_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_09068_(BV_sky130_fd_sc_hd__mux2_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net448 -> /Xu_ucb(ucb_top)/X_09970_(BV_sky130_fd_sc_hd__a221o_1)/MX8
+WARNING: unknown max gate at net->device: /Xu_ucb/net1055 -> /Xu_ucb(ucb_top)/X_07504_(BV_sky130_fd_sc_hd__a22o_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09013_(BV_sky130_fd_sc_hd__and3_1)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net1134 -> /Xu_ucb(ucb_top)/X_09124_(BV_sky130_fd_sc_hd__and4_1)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09019_(BV_sky130_fd_sc_hd__nand2_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09666_(BV_sky130_fd_sc_hd__o21ai_1)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net301 -> /Xu_ucb(ucb_top)/X_09561_(BV_sky130_fd_sc_hd__o2bb2a_4)/MX3
+WARNING: unknown max gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_10001_(BV_sky130_fd_sc_hd__a21boi_2)/MX9
+WARNING: unknown max gate at net->device: /Xu_ucb/net979 -> /Xu_ucb(ucb_top)/X_10001_(BV_sky130_fd_sc_hd__a21boi_2)/MX7
+WARNING: unknown max gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09625_(BV_sky130_fd_sc_hd__a21oi_1)/MX0
+WARNING: unknown min gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09141_(BV_sky130_fd_sc_hd__nor4b_1)/MX7
+WARNING: unknown min gate at net->device: /Xu_ucb/net1131 -> /Xu_ucb(ucb_top)/X_09092_(BV_sky130_fd_sc_hd__nor4b_2)/MX8
+WARNING: unknown min gate at net->device: /Xu_ucb/net1139 -> /Xu_ucb(ucb_top)/X_09068_(BV_sky130_fd_sc_hd__mux2_1)/MX4
+WARNING: unknown max gate at net->device: /Xu_ucb/net958 -> /Xu_ucb(ucb_top)/X_09171_(BV_sky130_fd_sc_hd__and2_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net941 -> /Xu_ucb(ucb_top)/X_09118_(BV_sky130_fd_sc_hd__and2_4)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net297 -> /Xu_ucb(ucb_top)/X_09644_(BV_sky130_fd_sc_hd__a31o_1)/MX6
+WARNING: unknown max gate at net->device: /Xu_ucb/net15 -> /Xu_ucb(ucb_top)/X_05697_(BV_sky130_fd_sc_hd__a221oi_1)/MX0
+WARNING: unknown max gate at net->device: /Xu_ucb/net1136 -> /Xu_ucb(ucb_top)/X_09110_(BV_sky130_fd_sc_hd__and4b_2)/MX2
+WARNING: unknown max gate at net->device: /Xu_ucb/net1138 -> /Xu_ucb(ucb_top)/X_09022_(BV_sky130_fd_sc_hd__and3b_1)/MX5
+WARNING: unknown max gate at net->device: /Xu_ucb/net298 -> /Xu_ucb(ucb_top)/X_09629_(BV_sky130_fd_sc_hd__and4_1)/MX1
+WARNING: unknown max gate at net->device: /Xu_ucb/net1130 -> /Xu_ucb(ucb_top)/X_09110_(BV_sky130_fd_sc_hd__and4b_2)/MX10
+CVC: Ignoring invalid calculations...
+CVC:   Removed 36264 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 24104 devices
+Usage MIN/MAX2: Time: 1  Memory: 58780  I/O: 240  Swap: 0
+Power nets 65605
+! Checking overvoltage errors
+
+! Checking nmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Checking mos floating input errors:
+
+! Checking expected values:
+
+CVC: Error Counts
+CVC: Fuse Problems:         0
+CVC: Min Voltage Conflicts: 0
+CVC: Max Voltage Conflicts: 0
+CVC: Leaks:                 0
+CVC: LDD drain->source:     0
+CVC: HI-Z Inputs:           34897
+CVC: Forward Bias Diodes:   0
+CVC: NMOS Source vs Bulk:   0
+CVC: NMOS Gate vs Source:   0
+CVC: NMOS Possible Leaks:   0
+CVC: PMOS Source vs Bulk:   0
+CVC: PMOS Gate vs Source:   0
+CVC: PMOS Possible Leaks:   0
+CVC: Overvoltage-VBG:       0
+CVC: Overvoltage-VBS:       0
+CVC: Overvoltage-VDS:       0
+CVC: Overvoltage-VGS:       0
+CVC: Model errors:          0
+CVC: Unexpected voltage :   28
+CVC: Total:                 34925
+Usage Total: Time: 1  Memory: 59080  I/O: 472  Swap: 0
+Virtual net update/access 487487/17963273
+CVC: Log output to /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/tmp_oeb/cvc.oeb.log
+CVC: End: Tue May 12 09:40:54 2026
+
+** Stage 7/7: Enter command ?> gn io_in[0]
+
+> gn io_in[0]
+Net io_in[0]: 29
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[1]
+
+> gn io_in[1]
+Net io_in[1]: 40
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[2]
+
+> gn io_in[2]
+Net io_in[2]: 51
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[3]
+
+> gn io_in[3]
+Net io_in[3]: 60
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[4]
+
+> gn io_in[4]
+Net io_in[4]: 61
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[5]
+
+> gn io_in[5]
+Net io_in[5]: 62
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[6]
+
+> gn io_in[6]
+Net io_in[6]: 63
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[7]
+
+> gn io_in[7]
+Net io_in[7]: 64
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[8]
+
+> gn io_in[8]
+Net io_in[8]: 65
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[9]
+
+> gn io_in[9]
+Net io_in[9]: 66
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[10]
+
+> gn io_in[10]
+Net io_in[10]: 30
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[11]
+
+> gn io_in[11]
+Net io_in[11]: 31
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[12]
+
+> gn io_in[12]
+Net io_in[12]: 32
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[13]
+
+> gn io_in[13]
+Net io_in[13]: 33
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[14]
+
+> gn io_in[14]
+Net io_in[14]: 34
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[15]
+
+> gn io_in[15]
+Net io_in[15]: 35
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[16]
+
+> gn io_in[16]
+Net io_in[16]: 36
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[17]
+
+> gn io_in[17]
+Net io_in[17]: 37
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[18]
+
+> gn io_in[18]
+Net io_in[18]: 38
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[19]
+
+> gn io_in[19]
+Net io_in[19]: 39
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[20]
+
+> gn io_in[20]
+Net io_in[20]: 41
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[21]
+
+> gn io_in[21]
+Net io_in[21]: 42
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[22]
+
+> gn io_in[22]
+Net io_in[22]: 43
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[23]
+
+> gn io_in[23]
+Net io_in[23]: 44
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[24]
+
+> gn io_in[24]
+Net io_in[24]: 45
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[25]
+
+> gn io_in[25]
+Net io_in[25]: 46
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[26]
+
+> gn io_in[26]
+Net io_in[26]: 47
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[27]
+
+> gn io_in[27]
+Net io_in[27]: 48
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[28]
+
+> gn io_in[28]
+Net io_in[28]: 49
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[29]
+
+> gn io_in[29]
+Net io_in[29]: 50
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[30]
+
+> gn io_in[30]
+Net io_in[30]: 52
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[31]
+
+> gn io_in[31]
+Net io_in[31]: 53
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[32]
+
+> gn io_in[32]
+Net io_in[32]: 54
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[33]
+
+> gn io_in[33]
+Net io_in[33]: 55
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[34]
+
+> gn io_in[34]
+Net io_in[34]: 56
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[35]
+
+> gn io_in[35]
+Net io_in[35]: 57
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[36]
+
+> gn io_in[36]
+Net io_in[36]: 58
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[37]
+
+> gn io_in[37]
+Net io_in[37]: 59
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_out[0]
+
+> gn io_out[0]
+Net io_out[0]: 105
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_out[1]
+
+> gn io_out[1]
+Net io_out[1]: 116
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_out[2]
+
+> gn io_out[2]
+Net io_out[2]: 127
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_out[3]
+
+> gn io_out[3]
+Net io_out[3]: 136
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_out[4]
+
+> gn io_out[4]
+Net io_out[4]: 137
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_out[5]
+
+> gn io_out[5]
+Net io_out[5]: 138
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_out[6]
+
+> gn io_out[6]
+Net io_out[6]: 139
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_out[7]
+
+> gn io_out[7]
+Net io_out[7]: 140
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[7]
+=>io_oeb[0]
+
+Initial max path
+io_out[7]
+=>io_oeb[0]
+
+Initial sim path
+io_out[7]
+=>io_oeb[0]
+
+Min path
+io_out[7]
+=>io_oeb[0]
+
+Max path
+io_out[7]
+=>io_oeb[0]
+
+Sim path
+io_out[7]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[8]
+
+> gn io_out[8]
+Net io_out[8]: 141
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[8]
+=>io_oeb[0]
+
+Initial max path
+io_out[8]
+=>io_oeb[0]
+
+Initial sim path
+io_out[8]
+=>io_oeb[0]
+
+Min path
+io_out[8]
+=>io_oeb[0]
+
+Max path
+io_out[8]
+=>io_oeb[0]
+
+Sim path
+io_out[8]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[9]
+
+> gn io_out[9]
+Net io_out[9]: 142
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[9]
+=>io_oeb[0]
+
+Initial max path
+io_out[9]
+=>io_oeb[0]
+
+Initial sim path
+io_out[9]
+=>io_oeb[0]
+
+Min path
+io_out[9]
+=>io_oeb[0]
+
+Max path
+io_out[9]
+=>io_oeb[0]
+
+Sim path
+io_out[9]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[10]
+
+> gn io_out[10]
+Net io_out[10]: 106
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[10]
+=>io_oeb[0]
+
+Initial max path
+io_out[10]
+=>io_oeb[0]
+
+Initial sim path
+io_out[10]
+=>io_oeb[0]
+
+Min path
+io_out[10]
+=>io_oeb[0]
+
+Max path
+io_out[10]
+=>io_oeb[0]
+
+Sim path
+io_out[10]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[11]
+
+> gn io_out[11]
+Net io_out[11]: 107
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[11]
+=>io_oeb[0]
+
+Initial max path
+io_out[11]
+=>io_oeb[0]
+
+Initial sim path
+io_out[11]
+=>io_oeb[0]
+
+Min path
+io_out[11]
+=>io_oeb[0]
+
+Max path
+io_out[11]
+=>io_oeb[0]
+
+Sim path
+io_out[11]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[12]
+
+> gn io_out[12]
+Net io_out[12]: 108
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[12]
+=>io_oeb[0]
+
+Initial max path
+io_out[12]
+=>io_oeb[0]
+
+Initial sim path
+io_out[12]
+=>io_oeb[0]
+
+Min path
+io_out[12]
+=>io_oeb[0]
+
+Max path
+io_out[12]
+=>io_oeb[0]
+
+Sim path
+io_out[12]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[13]
+
+> gn io_out[13]
+Net io_out[13]: 109
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[13]
+=>io_oeb[0]
+
+Initial max path
+io_out[13]
+=>io_oeb[0]
+
+Initial sim path
+io_out[13]
+=>io_oeb[0]
+
+Min path
+io_out[13]
+=>io_oeb[0]
+
+Max path
+io_out[13]
+=>io_oeb[0]
+
+Sim path
+io_out[13]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[14]
+
+> gn io_out[14]
+Net io_out[14]: 110
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[14]
+=>io_oeb[0]
+
+Initial max path
+io_out[14]
+=>io_oeb[0]
+
+Initial sim path
+io_out[14]
+=>io_oeb[0]
+
+Min path
+io_out[14]
+=>io_oeb[0]
+
+Max path
+io_out[14]
+=>io_oeb[0]
+
+Sim path
+io_out[14]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[15]
+
+> gn io_out[15]
+Net io_out[15]: 111
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[15]
+=>io_oeb[0]
+
+Initial max path
+io_out[15]
+=>io_oeb[0]
+
+Initial sim path
+io_out[15]
+=>io_oeb[0]
+
+Min path
+io_out[15]
+=>io_oeb[0]
+
+Max path
+io_out[15]
+=>io_oeb[0]
+
+Sim path
+io_out[15]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[16]
+
+> gn io_out[16]
+Net io_out[16]: 112
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[16]
+=>io_oeb[0]
+
+Initial max path
+io_out[16]
+=>io_oeb[0]
+
+Initial sim path
+io_out[16]
+=>io_oeb[0]
+
+Min path
+io_out[16]
+=>io_oeb[0]
+
+Max path
+io_out[16]
+=>io_oeb[0]
+
+Sim path
+io_out[16]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[17]
+
+> gn io_out[17]
+Net io_out[17]: 113
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[17]
+=>io_oeb[0]
+
+Initial max path
+io_out[17]
+=>io_oeb[0]
+
+Initial sim path
+io_out[17]
+=>io_oeb[0]
+
+Min path
+io_out[17]
+=>io_oeb[0]
+
+Max path
+io_out[17]
+=>io_oeb[0]
+
+Sim path
+io_out[17]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[18]
+
+> gn io_out[18]
+Net io_out[18]: 114
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[18]
+=>io_oeb[0]
+
+Initial max path
+io_out[18]
+=>io_oeb[0]
+
+Initial sim path
+io_out[18]
+=>io_oeb[0]
+
+Min path
+io_out[18]
+=>io_oeb[0]
+
+Max path
+io_out[18]
+=>io_oeb[0]
+
+Sim path
+io_out[18]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[19]
+
+> gn io_out[19]
+Net io_out[19]: 115
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[19]
+=>io_oeb[0]
+
+Initial max path
+io_out[19]
+=>io_oeb[0]
+
+Initial sim path
+io_out[19]
+=>io_oeb[0]
+
+Min path
+io_out[19]
+=>io_oeb[0]
+
+Max path
+io_out[19]
+=>io_oeb[0]
+
+Sim path
+io_out[19]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[20]
+
+> gn io_out[20]
+Net io_out[20]: 117
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[20]
+=>io_oeb[0]
+
+Initial max path
+io_out[20]
+=>io_oeb[0]
+
+Initial sim path
+io_out[20]
+=>io_oeb[0]
+
+Min path
+io_out[20]
+=>io_oeb[0]
+
+Max path
+io_out[20]
+=>io_oeb[0]
+
+Sim path
+io_out[20]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[21]
+
+> gn io_out[21]
+Net io_out[21]: 118
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[21]
+=>io_oeb[0]
+
+Initial max path
+io_out[21]
+=>io_oeb[0]
+
+Initial sim path
+io_out[21]
+=>io_oeb[0]
+
+Min path
+io_out[21]
+=>io_oeb[0]
+
+Max path
+io_out[21]
+=>io_oeb[0]
+
+Sim path
+io_out[21]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[22]
+
+> gn io_out[22]
+Net io_out[22]: 119
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[22]
+=>io_oeb[0]
+
+Initial max path
+io_out[22]
+=>io_oeb[0]
+
+Initial sim path
+io_out[22]
+=>io_oeb[0]
+
+Min path
+io_out[22]
+=>io_oeb[0]
+
+Max path
+io_out[22]
+=>io_oeb[0]
+
+Sim path
+io_out[22]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[23]
+
+> gn io_out[23]
+Net io_out[23]: 120
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[23]
+=>io_oeb[0]
+
+Initial max path
+io_out[23]
+=>io_oeb[0]
+
+Initial sim path
+io_out[23]
+=>io_oeb[0]
+
+Min path
+io_out[23]
+=>io_oeb[0]
+
+Max path
+io_out[23]
+=>io_oeb[0]
+
+Sim path
+io_out[23]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[24]
+
+> gn io_out[24]
+Net io_out[24]: 121
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[24]
+=>io_oeb[0]
+
+Initial max path
+io_out[24]
+=>io_oeb[0]
+
+Initial sim path
+io_out[24]
+=>io_oeb[0]
+
+Min path
+io_out[24]
+=>io_oeb[0]
+
+Max path
+io_out[24]
+=>io_oeb[0]
+
+Sim path
+io_out[24]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[25]
+
+> gn io_out[25]
+Net io_out[25]: 122
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[25]
+=>io_oeb[0]
+
+Initial max path
+io_out[25]
+=>io_oeb[0]
+
+Initial sim path
+io_out[25]
+=>io_oeb[0]
+
+Min path
+io_out[25]
+=>io_oeb[0]
+
+Max path
+io_out[25]
+=>io_oeb[0]
+
+Sim path
+io_out[25]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[26]
+
+> gn io_out[26]
+Net io_out[26]: 123
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[26]
+=>io_oeb[0]
+
+Initial max path
+io_out[26]
+=>io_oeb[0]
+
+Initial sim path
+io_out[26]
+=>io_oeb[0]
+
+Min path
+io_out[26]
+=>io_oeb[0]
+
+Max path
+io_out[26]
+=>io_oeb[0]
+
+Sim path
+io_out[26]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[27]
+
+> gn io_out[27]
+Net io_out[27]: 124
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[27]
+=>io_oeb[0]
+
+Initial max path
+io_out[27]
+=>io_oeb[0]
+
+Initial sim path
+io_out[27]
+=>io_oeb[0]
+
+Min path
+io_out[27]
+=>io_oeb[0]
+
+Max path
+io_out[27]
+=>io_oeb[0]
+
+Sim path
+io_out[27]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[28]
+
+> gn io_out[28]
+Net io_out[28]: 125
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[28]
+=>io_oeb[0]
+
+Initial max path
+io_out[28]
+=>io_oeb[0]
+
+Initial sim path
+io_out[28]
+=>io_oeb[0]
+
+Min path
+io_out[28]
+=>io_oeb[0]
+
+Max path
+io_out[28]
+=>io_oeb[0]
+
+Sim path
+io_out[28]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[29]
+
+> gn io_out[29]
+Net io_out[29]: 126
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[29]
+=>io_oeb[0]
+
+Initial max path
+io_out[29]
+=>io_oeb[0]
+
+Initial sim path
+io_out[29]
+=>io_oeb[0]
+
+Min path
+io_out[29]
+=>io_oeb[0]
+
+Max path
+io_out[29]
+=>io_oeb[0]
+
+Sim path
+io_out[29]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[30]
+
+> gn io_out[30]
+Net io_out[30]: 128
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[30]
+=>io_oeb[0]
+
+Initial max path
+io_out[30]
+=>io_oeb[0]
+
+Initial sim path
+io_out[30]
+=>io_oeb[0]
+
+Min path
+io_out[30]
+=>io_oeb[0]
+
+Max path
+io_out[30]
+=>io_oeb[0]
+
+Sim path
+io_out[30]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[31]
+
+> gn io_out[31]
+Net io_out[31]: 129
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[31]
+=>io_oeb[0]
+
+Initial max path
+io_out[31]
+=>io_oeb[0]
+
+Initial sim path
+io_out[31]
+=>io_oeb[0]
+
+Min path
+io_out[31]
+=>io_oeb[0]
+
+Max path
+io_out[31]
+=>io_oeb[0]
+
+Sim path
+io_out[31]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[32]
+
+> gn io_out[32]
+Net io_out[32]: 130
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[32]
+=>io_oeb[0]
+
+Initial max path
+io_out[32]
+=>io_oeb[0]
+
+Initial sim path
+io_out[32]
+=>io_oeb[0]
+
+Min path
+io_out[32]
+=>io_oeb[0]
+
+Max path
+io_out[32]
+=>io_oeb[0]
+
+Sim path
+io_out[32]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[33]
+
+> gn io_out[33]
+Net io_out[33]: 131
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[33]
+=>io_oeb[0]
+
+Initial max path
+io_out[33]
+=>io_oeb[0]
+
+Initial sim path
+io_out[33]
+=>io_oeb[0]
+
+Min path
+io_out[33]
+=>io_oeb[0]
+
+Max path
+io_out[33]
+=>io_oeb[0]
+
+Sim path
+io_out[33]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[34]
+
+> gn io_out[34]
+Net io_out[34]: 132
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[34]
+=>io_oeb[0]
+
+Initial max path
+io_out[34]
+=>io_oeb[0]
+
+Initial sim path
+io_out[34]
+=>io_oeb[0]
+
+Min path
+io_out[34]
+=>io_oeb[0]
+
+Max path
+io_out[34]
+=>io_oeb[0]
+
+Sim path
+io_out[34]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[35]
+
+> gn io_out[35]
+Net io_out[35]: 133
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[35]
+=>io_oeb[0]
+
+Initial max path
+io_out[35]
+=>io_oeb[0]
+
+Initial sim path
+io_out[35]
+=>io_oeb[0]
+
+Min path
+io_out[35]
+=>io_oeb[0]
+
+Max path
+io_out[35]
+=>io_oeb[0]
+
+Sim path
+io_out[35]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[36]
+
+> gn io_out[36]
+Net io_out[36]: 134
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[36]
+=>io_oeb[0]
+
+Initial max path
+io_out[36]
+=>io_oeb[0]
+
+Initial sim path
+io_out[36]
+=>io_oeb[0]
+
+Min path
+io_out[36]
+=>io_oeb[0]
+
+Max path
+io_out[36]
+=>io_oeb[0]
+
+Sim path
+io_out[36]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_out[37]
+
+> gn io_out[37]
+Net io_out[37]: 135
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_out[37]
+=>io_oeb[0]
+
+Initial max path
+io_out[37]
+=>io_oeb[0]
+
+Initial sim path
+io_out[37]
+=>io_oeb[0]
+
+Min path
+io_out[37]
+=>io_oeb[0]
+
+Max path
+io_out[37]
+=>io_oeb[0]
+
+Sim path
+io_out[37]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_oeb[0]
+
+> gn io_oeb[0]
+Net io_oeb[0]: 67
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_oeb[1]
+
+> gn io_oeb[1]
+Net io_oeb[1]: 78
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[1]
+=>io_oeb[0]
+
+Initial max path
+io_oeb[1]
+=>io_oeb[0]
+
+Initial sim path
+io_oeb[1]
+=>io_oeb[0]
+
+Min path
+io_oeb[1]
+=>io_oeb[0]
+
+Max path
+io_oeb[1]
+=>io_oeb[0]
+
+Sim path
+io_oeb[1]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_oeb[2]
+
+> gn io_oeb[2]
+Net io_oeb[2]: 89
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[2]
+=>io_oeb[0]
+
+Initial max path
+io_oeb[2]
+=>io_oeb[0]
+
+Initial sim path
+io_oeb[2]
+=>io_oeb[0]
+
+Min path
+io_oeb[2]
+=>io_oeb[0]
+
+Max path
+io_oeb[2]
+=>io_oeb[0]
+
+Sim path
+io_oeb[2]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_oeb[3]
+
+> gn io_oeb[3]
+Net io_oeb[3]: 98
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[3]
+=>io_oeb[0]
+
+Initial max path
+io_oeb[3]
+=>io_oeb[0]
+
+Initial sim path
+io_oeb[3]
+=>io_oeb[0]
+
+Min path
+io_oeb[3]
+=>io_oeb[0]
+
+Max path
+io_oeb[3]
+=>io_oeb[0]
+
+Sim path
+io_oeb[3]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_oeb[4]
+
+> gn io_oeb[4]
+Net io_oeb[4]: 99
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[4]
+=>io_oeb[0]
+
+Initial max path
+io_oeb[4]
+=>io_oeb[0]
+
+Initial sim path
+io_oeb[4]
+=>io_oeb[0]
+
+Min path
+io_oeb[4]
+=>io_oeb[0]
+
+Max path
+io_oeb[4]
+=>io_oeb[0]
+
+Sim path
+io_oeb[4]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_oeb[5]
+
+> gn io_oeb[5]
+Net io_oeb[5]: 100
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[5]
+=>io_oeb[0]
+
+Initial max path
+io_oeb[5]
+=>io_oeb[0]
+
+Initial sim path
+io_oeb[5]
+=>io_oeb[0]
+
+Min path
+io_oeb[5]
+=>io_oeb[0]
+
+Max path
+io_oeb[5]
+=>io_oeb[0]
+
+Sim path
+io_oeb[5]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_oeb[6]
+
+> gn io_oeb[6]
+Net io_oeb[6]: 101
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[6]
+=>io_oeb[0]
+
+Initial max path
+io_oeb[6]
+=>io_oeb[0]
+
+Initial sim path
+io_oeb[6]
+=>io_oeb[0]
+
+Min path
+io_oeb[6]
+=>io_oeb[0]
+
+Max path
+io_oeb[6]
+=>io_oeb[0]
+
+Sim path
+io_oeb[6]
+=>io_oeb[0]
+
+** Stage 7/7: Enter command ?> gn io_oeb[7]
+
+> gn io_oeb[7]
+Net io_oeb[7]: 102
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[7]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[7]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[7]
+=>io_oeb[10]
+
+Min path
+io_oeb[7]
+=>io_oeb[10]
+
+Max path
+io_oeb[7]
+=>io_oeb[10]
+
+Sim path
+io_oeb[7]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[8]
+
+> gn io_oeb[8]
+Net io_oeb[8]: 103
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[8]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[8]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[8]
+=>io_oeb[10]
+
+Min path
+io_oeb[8]
+=>io_oeb[10]
+
+Max path
+io_oeb[8]
+=>io_oeb[10]
+
+Sim path
+io_oeb[8]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[9]
+
+> gn io_oeb[9]
+Net io_oeb[9]: 104
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[9]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[9]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[9]
+=>io_oeb[10]
+
+Min path
+io_oeb[9]
+=>io_oeb[10]
+
+Max path
+io_oeb[9]
+=>io_oeb[10]
+
+Sim path
+io_oeb[9]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[10]
+
+> gn io_oeb[10]
+Net io_oeb[10]: 68
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn io_oeb[11]
+
+> gn io_oeb[11]
+Net io_oeb[11]: 69
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[11]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[11]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[11]
+=>io_oeb[10]
+
+Min path
+io_oeb[11]
+=>io_oeb[10]
+
+Max path
+io_oeb[11]
+=>io_oeb[10]
+
+Sim path
+io_oeb[11]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[12]
+
+> gn io_oeb[12]
+Net io_oeb[12]: 70
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[12]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[12]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[12]
+=>io_oeb[10]
+
+Min path
+io_oeb[12]
+=>io_oeb[10]
+
+Max path
+io_oeb[12]
+=>io_oeb[10]
+
+Sim path
+io_oeb[12]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[13]
+
+> gn io_oeb[13]
+Net io_oeb[13]: 71
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[13]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[13]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[13]
+=>io_oeb[10]
+
+Min path
+io_oeb[13]
+=>io_oeb[10]
+
+Max path
+io_oeb[13]
+=>io_oeb[10]
+
+Sim path
+io_oeb[13]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[14]
+
+> gn io_oeb[14]
+Net io_oeb[14]: 72
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[14]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[14]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[14]
+=>io_oeb[10]
+
+Min path
+io_oeb[14]
+=>io_oeb[10]
+
+Max path
+io_oeb[14]
+=>io_oeb[10]
+
+Sim path
+io_oeb[14]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[15]
+
+> gn io_oeb[15]
+Net io_oeb[15]: 73
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[15]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[15]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[15]
+=>io_oeb[10]
+
+Min path
+io_oeb[15]
+=>io_oeb[10]
+
+Max path
+io_oeb[15]
+=>io_oeb[10]
+
+Sim path
+io_oeb[15]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[16]
+
+> gn io_oeb[16]
+Net io_oeb[16]: 74
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[16]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[16]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[16]
+=>io_oeb[10]
+
+Min path
+io_oeb[16]
+=>io_oeb[10]
+
+Max path
+io_oeb[16]
+=>io_oeb[10]
+
+Sim path
+io_oeb[16]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[17]
+
+> gn io_oeb[17]
+Net io_oeb[17]: 75
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[17]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[17]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[17]
+=>io_oeb[10]
+
+Min path
+io_oeb[17]
+=>io_oeb[10]
+
+Max path
+io_oeb[17]
+=>io_oeb[10]
+
+Sim path
+io_oeb[17]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[18]
+
+> gn io_oeb[18]
+Net io_oeb[18]: 76
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[18]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[18]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[18]
+=>io_oeb[10]
+
+Min path
+io_oeb[18]
+=>io_oeb[10]
+
+Max path
+io_oeb[18]
+=>io_oeb[10]
+
+Sim path
+io_oeb[18]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[19]
+
+> gn io_oeb[19]
+Net io_oeb[19]: 77
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[19]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[19]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[19]
+=>io_oeb[10]
+
+Min path
+io_oeb[19]
+=>io_oeb[10]
+
+Max path
+io_oeb[19]
+=>io_oeb[10]
+
+Sim path
+io_oeb[19]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[20]
+
+> gn io_oeb[20]
+Net io_oeb[20]: 79
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[20]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[20]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[20]
+=>io_oeb[10]
+
+Min path
+io_oeb[20]
+=>io_oeb[10]
+
+Max path
+io_oeb[20]
+=>io_oeb[10]
+
+Sim path
+io_oeb[20]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[21]
+
+> gn io_oeb[21]
+Net io_oeb[21]: 80
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[21]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[21]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[21]
+=>io_oeb[10]
+
+Min path
+io_oeb[21]
+=>io_oeb[10]
+
+Max path
+io_oeb[21]
+=>io_oeb[10]
+
+Sim path
+io_oeb[21]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[22]
+
+> gn io_oeb[22]
+Net io_oeb[22]: 81
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[22]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[22]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[22]
+=>io_oeb[10]
+
+Min path
+io_oeb[22]
+=>io_oeb[10]
+
+Max path
+io_oeb[22]
+=>io_oeb[10]
+
+Sim path
+io_oeb[22]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[23]
+
+> gn io_oeb[23]
+Net io_oeb[23]: 82
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[23]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[23]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[23]
+=>io_oeb[10]
+
+Min path
+io_oeb[23]
+=>io_oeb[10]
+
+Max path
+io_oeb[23]
+=>io_oeb[10]
+
+Sim path
+io_oeb[23]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[24]
+
+> gn io_oeb[24]
+Net io_oeb[24]: 83
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[24]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[24]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[24]
+=>io_oeb[10]
+
+Min path
+io_oeb[24]
+=>io_oeb[10]
+
+Max path
+io_oeb[24]
+=>io_oeb[10]
+
+Sim path
+io_oeb[24]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[25]
+
+> gn io_oeb[25]
+Net io_oeb[25]: 84
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[25]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[25]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[25]
+=>io_oeb[10]
+
+Min path
+io_oeb[25]
+=>io_oeb[10]
+
+Max path
+io_oeb[25]
+=>io_oeb[10]
+
+Sim path
+io_oeb[25]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[26]
+
+> gn io_oeb[26]
+Net io_oeb[26]: 85
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[26]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[26]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[26]
+=>io_oeb[10]
+
+Min path
+io_oeb[26]
+=>io_oeb[10]
+
+Max path
+io_oeb[26]
+=>io_oeb[10]
+
+Sim path
+io_oeb[26]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[27]
+
+> gn io_oeb[27]
+Net io_oeb[27]: 86
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[27]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[27]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[27]
+=>io_oeb[10]
+
+Min path
+io_oeb[27]
+=>io_oeb[10]
+
+Max path
+io_oeb[27]
+=>io_oeb[10]
+
+Sim path
+io_oeb[27]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[28]
+
+> gn io_oeb[28]
+Net io_oeb[28]: 87
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[28]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[28]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[28]
+=>io_oeb[10]
+
+Min path
+io_oeb[28]
+=>io_oeb[10]
+
+Max path
+io_oeb[28]
+=>io_oeb[10]
+
+Sim path
+io_oeb[28]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[29]
+
+> gn io_oeb[29]
+Net io_oeb[29]: 88
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[29]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[29]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[29]
+=>io_oeb[10]
+
+Min path
+io_oeb[29]
+=>io_oeb[10]
+
+Max path
+io_oeb[29]
+=>io_oeb[10]
+
+Sim path
+io_oeb[29]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[30]
+
+> gn io_oeb[30]
+Net io_oeb[30]: 90
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[30]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[30]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[30]
+=>io_oeb[10]
+
+Min path
+io_oeb[30]
+=>io_oeb[10]
+
+Max path
+io_oeb[30]
+=>io_oeb[10]
+
+Sim path
+io_oeb[30]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[31]
+
+> gn io_oeb[31]
+Net io_oeb[31]: 91
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[31]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[31]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[31]
+=>io_oeb[10]
+
+Min path
+io_oeb[31]
+=>io_oeb[10]
+
+Max path
+io_oeb[31]
+=>io_oeb[10]
+
+Sim path
+io_oeb[31]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[32]
+
+> gn io_oeb[32]
+Net io_oeb[32]: 92
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[32]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[32]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[32]
+=>io_oeb[10]
+
+Min path
+io_oeb[32]
+=>io_oeb[10]
+
+Max path
+io_oeb[32]
+=>io_oeb[10]
+
+Sim path
+io_oeb[32]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[33]
+
+> gn io_oeb[33]
+Net io_oeb[33]: 93
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[33]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[33]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[33]
+=>io_oeb[10]
+
+Min path
+io_oeb[33]
+=>io_oeb[10]
+
+Max path
+io_oeb[33]
+=>io_oeb[10]
+
+Sim path
+io_oeb[33]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[34]
+
+> gn io_oeb[34]
+Net io_oeb[34]: 94
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[34]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[34]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[34]
+=>io_oeb[10]
+
+Min path
+io_oeb[34]
+=>io_oeb[10]
+
+Max path
+io_oeb[34]
+=>io_oeb[10]
+
+Sim path
+io_oeb[34]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[35]
+
+> gn io_oeb[35]
+Net io_oeb[35]: 95
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[35]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[35]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[35]
+=>io_oeb[10]
+
+Min path
+io_oeb[35]
+=>io_oeb[10]
+
+Max path
+io_oeb[35]
+=>io_oeb[10]
+
+Sim path
+io_oeb[35]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[36]
+
+> gn io_oeb[36]
+Net io_oeb[36]: 96
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[36]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[36]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[36]
+=>io_oeb[10]
+
+Min path
+io_oeb[36]
+=>io_oeb[10]
+
+Max path
+io_oeb[36]
+=>io_oeb[10]
+
+Sim path
+io_oeb[36]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_oeb[37]
+
+> gn io_oeb[37]
+Net io_oeb[37]: 97
+ connections: gate 0 source 0 drain 0 bulk 0
+
+Initial min path
+io_oeb[37]
+=>io_oeb[10]
+
+Initial max path
+io_oeb[37]
+=>io_oeb[10]
+
+Initial sim path
+io_oeb[37]
+=>io_oeb[10]
+
+Min path
+io_oeb[37]
+=>io_oeb[10]
+
+Max path
+io_oeb[37]
+=>io_oeb[10]
+
+Sim path
+io_oeb[37]
+=>io_oeb[10]
+
+** Stage 7/7: Enter command ?> gn io_in[0]
+
+> gn io_in[0]
+Net io_in[0]: 29
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[1]
+
+> gn io_in[1]
+Net io_in[1]: 40
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[2]
+
+> gn io_in[2]
+Net io_in[2]: 51
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[3]
+
+> gn io_in[3]
+Net io_in[3]: 60
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[4]
+
+> gn io_in[4]
+Net io_in[4]: 61
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[5]
+
+> gn io_in[5]
+Net io_in[5]: 62
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[6]
+
+> gn io_in[6]
+Net io_in[6]: 63
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[7]
+
+> gn io_in[7]
+Net io_in[7]: 64
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[8]
+
+> gn io_in[8]
+Net io_in[8]: 65
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[9]
+
+> gn io_in[9]
+Net io_in[9]: 66
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[10]
+
+> gn io_in[10]
+Net io_in[10]: 30
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[11]
+
+> gn io_in[11]
+Net io_in[11]: 31
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[12]
+
+> gn io_in[12]
+Net io_in[12]: 32
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[13]
+
+> gn io_in[13]
+Net io_in[13]: 33
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[14]
+
+> gn io_in[14]
+Net io_in[14]: 34
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[15]
+
+> gn io_in[15]
+Net io_in[15]: 35
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[16]
+
+> gn io_in[16]
+Net io_in[16]: 36
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[17]
+
+> gn io_in[17]
+Net io_in[17]: 37
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[18]
+
+> gn io_in[18]
+Net io_in[18]: 38
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[19]
+
+> gn io_in[19]
+Net io_in[19]: 39
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[20]
+
+> gn io_in[20]
+Net io_in[20]: 41
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[21]
+
+> gn io_in[21]
+Net io_in[21]: 42
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[22]
+
+> gn io_in[22]
+Net io_in[22]: 43
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[23]
+
+> gn io_in[23]
+Net io_in[23]: 44
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[24]
+
+> gn io_in[24]
+Net io_in[24]: 45
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[25]
+
+> gn io_in[25]
+Net io_in[25]: 46
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[26]
+
+> gn io_in[26]
+Net io_in[26]: 47
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[27]
+
+> gn io_in[27]
+Net io_in[27]: 48
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[28]
+
+> gn io_in[28]
+Net io_in[28]: 49
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[29]
+
+> gn io_in[29]
+Net io_in[29]: 50
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[30]
+
+> gn io_in[30]
+Net io_in[30]: 52
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[31]
+
+> gn io_in[31]
+Net io_in[31]: 53
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[32]
+
+> gn io_in[32]
+Net io_in[32]: 54
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[33]
+
+> gn io_in[33]
+Net io_in[33]: 55
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[34]
+
+> gn io_in[34]
+Net io_in[34]: 56
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[35]
+
+> gn io_in[35]
+Net io_in[35]: 57
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[36]
+
+> gn io_in[36]
+Net io_in[36]: 58
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn io_in[37]
+
+> gn io_in[37]
+Net io_in[37]: 59
+ connections: gate 0 source 0 drain 0 bulk 0
+ base definition io_in[*]
+  default min unknown
+  default sim unknown
+  default max unknown
+ defined as  input min@0.0 max@1.8 =>  min@0.0 max@1.8 input
+
+** Stage 7/7: Enter command ?> gn analog_io[0]
+
+> gn analog_io[0]
+Net analog_io[0]: 0
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[1]
+
+> gn analog_io[1]
+Net analog_io[1]: 11
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[2]
+
+> gn analog_io[2]
+Net analog_io[2]: 21
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[3]
+
+> gn analog_io[3]
+Net analog_io[3]: 22
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[4]
+
+> gn analog_io[4]
+Net analog_io[4]: 23
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[5]
+
+> gn analog_io[5]
+Net analog_io[5]: 24
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[6]
+
+> gn analog_io[6]
+Net analog_io[6]: 25
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[7]
+
+> gn analog_io[7]
+Net analog_io[7]: 26
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[8]
+
+> gn analog_io[8]
+Net analog_io[8]: 27
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[9]
+
+> gn analog_io[9]
+Net analog_io[9]: 28
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[10]
+
+> gn analog_io[10]
+Net analog_io[10]: 1
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[11]
+
+> gn analog_io[11]
+Net analog_io[11]: 2
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[12]
+
+> gn analog_io[12]
+Net analog_io[12]: 3
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[13]
+
+> gn analog_io[13]
+Net analog_io[13]: 4
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[14]
+
+> gn analog_io[14]
+Net analog_io[14]: 5
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[15]
+
+> gn analog_io[15]
+Net analog_io[15]: 6
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[16]
+
+> gn analog_io[16]
+Net analog_io[16]: 7
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[17]
+
+> gn analog_io[17]
+Net analog_io[17]: 8
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[18]
+
+> gn analog_io[18]
+Net analog_io[18]: 9
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[19]
+
+> gn analog_io[19]
+Net analog_io[19]: 10
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[20]
+
+> gn analog_io[20]
+Net analog_io[20]: 12
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[21]
+
+> gn analog_io[21]
+Net analog_io[21]: 13
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[22]
+
+> gn analog_io[22]
+Net analog_io[22]: 14
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[23]
+
+> gn analog_io[23]
+Net analog_io[23]: 15
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[24]
+
+> gn analog_io[24]
+Net analog_io[24]: 16
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[25]
+
+> gn analog_io[25]
+Net analog_io[25]: 17
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[26]
+
+> gn analog_io[26]
+Net analog_io[26]: 18
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[27]
+
+> gn analog_io[27]
+Net analog_io[27]: 19
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> gn analog_io[28]
+
+> gn analog_io[28]
+Net analog_io[28]: 20
+ connections: gate 0 source 0 drain 0 bulk 0
+
+** Stage 7/7: Enter command ?> q
+
+> q
+ gpio/user/analog |   in   |   out  | analog |  oeb min/sim/max  | configuration
+   0 /  0 /       |        |        |        |      /     /      | FIXED_STD_INPUT_NOPULL 
+   1 /  1 /       |        |        |        | io_oeb[1]/io_oeb[1]/io_oeb[1] | FIXED_STD_INPUT_NOPULL 
+   2 /  2 /       |        |        |        | io_oeb[2]/io_oeb[2]/io_oeb[2] | FIXED_STD_INPUT_NOPULL 
+   3 /  3 /       |        |        |        | io_oeb[3]/io_oeb[3]/io_oeb[3] | FIXED_STD_INPUT_PULLUP 
+   4 /  4 /       |        |        |        | io_oeb[4]/io_oeb[4]/io_oeb[4] | FIXED_STD_INPUT_NOPULL 
+   5 /  5 /       |        |        |        | io_oeb[5]/io_oeb[5]/io_oeb[5] | USER_STD_OUTPUT 2 warnings/errors
+   6 /  6 /       |        |        |        | io_oeb[6]/io_oeb[6]/io_oeb[6] | USER_STD_OUTPUT 2 warnings/errors
+   7 /  7 /   0   |        | io_out[7] |        | io_oeb[7]/io_oeb[7]/io_oeb[7] | USER_STD_OUTPUT 2 warnings/errors
+   8 /  8 /   1   |        | io_out[8] |        | io_oeb[8]/io_oeb[8]/io_oeb[8] | USER_STD_OUTPUT 2 warnings/errors
+   9 /  9 /   2   |        | io_out[9] |        | io_oeb[9]/io_oeb[9]/io_oeb[9] | USER_STD_OUTPUT 2 warnings/errors
+  10 / 10 /   3   |        | io_out[10] |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  11 / 11 /   4   |        | io_out[11] |        | io_oeb[11]/io_oeb[11]/io_oeb[11] | USER_STD_OUTPUT 2 warnings/errors
+  12 / 12 /   5   |        | io_out[12] |        | io_oeb[12]/io_oeb[12]/io_oeb[12] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  13 / 13 /   6   |        | io_out[13] |        | io_oeb[13]/io_oeb[13]/io_oeb[13] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  14 / 14 /   7   |        | io_out[14] |        | io_oeb[14]/io_oeb[14]/io_oeb[14] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  15 / 15 /   8   |        | io_out[15] |        | io_oeb[15]/io_oeb[15]/io_oeb[15] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  16 / 16 /   9   |        | io_out[16] |        | io_oeb[16]/io_oeb[16]/io_oeb[16] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  17 / 17 /  10   |        | io_out[17] |        | io_oeb[17]/io_oeb[17]/io_oeb[17] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  18 / 18 /  11   |        | io_out[18] |        | io_oeb[18]/io_oeb[18]/io_oeb[18] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  19 / 19 /  12   |        | io_out[19] |        | io_oeb[19]/io_oeb[19]/io_oeb[19] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  20 / 20 /  13   |        | io_out[20] |        | io_oeb[20]/io_oeb[20]/io_oeb[20] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  21 / 21 /  14   |        | io_out[21] |        | io_oeb[21]/io_oeb[21]/io_oeb[21] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  22 / 22 /  15   |        | io_out[22] |        | io_oeb[22]/io_oeb[22]/io_oeb[22] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  23 / 23 /  16   |        | io_out[23] |        | io_oeb[23]/io_oeb[23]/io_oeb[23] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  24 / 24 /  17   |        | io_out[24] |        | io_oeb[24]/io_oeb[24]/io_oeb[24] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  25 / 25 /  18   |        | io_out[25] |        | io_oeb[25]/io_oeb[25]/io_oeb[25] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  26 / 26 /  19   |        | io_out[26] |        | io_oeb[26]/io_oeb[26]/io_oeb[26] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  27 / 27 /  20   |        | io_out[27] |        | io_oeb[27]/io_oeb[27]/io_oeb[27] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  28 / 28 /  21   |        | io_out[28] |        | io_oeb[28]/io_oeb[28]/io_oeb[28] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  29 / 29 /  22   |        | io_out[29] |        | io_oeb[29]/io_oeb[29]/io_oeb[29] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  30 / 30 /  23   |        | io_out[30] |        | io_oeb[30]/io_oeb[30]/io_oeb[30] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  31 / 31 /  24   |        | io_out[31] |        | io_oeb[31]/io_oeb[31]/io_oeb[31] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  32 / 32 /  25   |        | io_out[32] |        | io_oeb[32]/io_oeb[32]/io_oeb[32] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  33 / 33 /  26   |        | io_out[33] |        | io_oeb[33]/io_oeb[33]/io_oeb[33] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  34 / 34 /  27   |        | io_out[34] |        | io_oeb[34]/io_oeb[34]/io_oeb[34] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  35 / 35 /  28   |        | io_out[35] |        | io_oeb[35]/io_oeb[35]/io_oeb[35] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  36 / 36 /       |        | io_out[36] |        | io_oeb[36]/io_oeb[36]/io_oeb[36] | USER_STD_INPUT_NOPULL 1 warnings/errors
+  37 / 37 /       |        | io_out[37] |        | io_oeb[37]/io_oeb[37]/io_oeb[37] | USER_STD_INPUT_NOPULL 1 warnings/errors
+
+*** Detected the following warnings and/or errors: ***
+GPIO  5: ERROR: missing user output connection for output gpio
+GPIO  5: Warning: user oeb is never low - output never enabled
+GPIO  6: ERROR: missing user output connection for output gpio
+GPIO  6: Warning: user oeb is never low - output never enabled
+GPIO  7: Warning: user output fixed at io_out[7]
+GPIO  7: Warning: user oeb is never low - output never enabled
+GPIO  8: Warning: user output fixed at io_out[8]
+GPIO  8: Warning: user oeb is never low - output never enabled
+GPIO  9: Warning: user output fixed at io_out[9]
+GPIO  9: Warning: user oeb is never low - output never enabled
+GPIO 10: Warning: user output fixed at io_out[10]
+GPIO 10: ERROR: missing user oeb for output gpio
+GPIO 11: Warning: user output fixed at io_out[11]
+GPIO 11: Warning: user oeb is never low - output never enabled
+GPIO 12: Warning: missing user input connection
+GPIO 13: Warning: missing user input connection
+GPIO 14: Warning: missing user input connection
+GPIO 15: Warning: missing user input connection
+GPIO 16: Warning: missing user input connection
+GPIO 17: Warning: missing user input connection
+GPIO 18: Warning: missing user input connection
+GPIO 19: Warning: missing user input connection
+GPIO 20: Warning: missing user input connection
+GPIO 21: Warning: missing user input connection
+GPIO 22: Warning: missing user input connection
+GPIO 23: Warning: missing user input connection
+GPIO 24: Warning: missing user input connection
+GPIO 25: Warning: missing user input connection
+GPIO 26: Warning: missing user input connection
+GPIO 27: Warning: missing user input connection
+GPIO 28: Warning: missing user input connection
+GPIO 29: Warning: missing user input connection
+GPIO 30: Warning: missing user input connection
+GPIO 31: Warning: missing user input connection
+GPIO 32: Warning: missing user input connection
+GPIO 33: Warning: missing user input connection
+GPIO 34: Warning: missing user input connection
+GPIO 35: Warning: missing user input connection
+GPIO 36: Warning: missing user input connection
+GPIO 37: Warning: missing user input connection

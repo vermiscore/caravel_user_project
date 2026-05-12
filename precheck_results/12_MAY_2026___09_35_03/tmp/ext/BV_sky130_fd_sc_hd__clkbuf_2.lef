@@ -1,0 +1,108 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO BV_sky130_fd_sc_hd__clkbuf_2
+  CLASS BLOCK ;
+  FOREIGN BV_sky130_fd_sc_hd__clkbuf_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1.840 BY 2.720 ;
+  PIN VGND
+    USE GROUND ;
+    PORT
+      LAYER met1 ;
+        RECT 0.145 -0.085 0.315 0.085 ;
+    END
+  END VGND
+  PIN VPWR
+    USE POWER ;
+    PORT
+      LAYER met1 ;
+        RECT 0.145 2.635 0.315 2.805 ;
+    END
+  END VPWR
+  PIN A
+    PORT
+      LAYER li1 ;
+        RECT 0.605 0.765 0.775 0.935 ;
+    END
+    PORT
+      LAYER li1 ;
+        RECT 0.605 1.105 0.775 1.275 ;
+    END
+  END A
+  PIN X
+    PORT
+      LAYER li1 ;
+        RECT 1.525 1.105 1.695 1.275 ;
+    END
+    PORT
+      LAYER li1 ;
+        RECT 1.525 0.765 1.695 0.935 ;
+    END
+    PORT
+      LAYER li1 ;
+        RECT 1.525 1.445 1.695 1.615 ;
+    END
+    PORT
+      LAYER li1 ;
+        RECT 1.525 1.785 1.695 1.955 ;
+    END
+  END X
+  PIN VPB
+    PORT
+      LAYER nwell ;
+        RECT 0.145 2.635 0.315 2.805 ;
+    END
+  END VPB
+  PIN VNB
+    PORT
+      LAYER pwell ;
+        RECT 0.145 -0.085 0.315 0.085 ;
+    END
+  END VNB
+  OBS
+      LAYER nwell ;
+        RECT -0.190 2.805 2.030 2.910 ;
+        RECT -0.190 2.635 0.145 2.805 ;
+        RECT 0.315 2.635 2.030 2.805 ;
+        RECT -0.190 1.305 2.030 2.635 ;
+        RECT 0.000 0.085 1.840 1.305 ;
+      LAYER li1 ;
+        RECT 0.000 2.720 0.145 2.805 ;
+        RECT 0.315 2.720 0.605 2.805 ;
+        RECT 0.775 2.720 1.065 2.805 ;
+        RECT 1.235 2.720 1.525 2.805 ;
+        RECT 1.695 2.720 1.840 2.805 ;
+        RECT 0.000 2.125 1.840 2.720 ;
+        RECT 0.000 1.445 1.355 2.125 ;
+        RECT 0.000 0.595 0.435 1.445 ;
+        RECT 0.945 0.595 1.355 1.445 ;
+        RECT 0.000 0.000 1.840 0.595 ;
+        RECT 0.000 -0.085 0.145 0.000 ;
+        RECT 0.315 -0.085 0.605 0.000 ;
+        RECT 0.775 -0.085 1.065 0.000 ;
+        RECT 1.235 -0.085 1.525 0.000 ;
+        RECT 1.695 -0.085 1.840 0.000 ;
+      LAYER met1 ;
+        RECT 0.000 2.805 1.840 2.960 ;
+        RECT 0.000 2.635 0.145 2.805 ;
+        RECT 0.315 2.720 0.605 2.805 ;
+        RECT 0.775 2.720 1.065 2.805 ;
+        RECT 1.235 2.720 1.525 2.805 ;
+        RECT 1.695 2.720 1.840 2.805 ;
+        RECT 0.315 2.635 1.840 2.720 ;
+        RECT 0.595 2.355 1.840 2.635 ;
+        RECT 0.000 0.365 1.840 2.355 ;
+        RECT 0.595 0.085 1.840 0.365 ;
+        RECT 0.000 -0.085 0.145 0.085 ;
+        RECT 0.315 0.000 1.840 0.085 ;
+        RECT 0.315 -0.085 0.605 0.000 ;
+        RECT 0.775 -0.085 1.065 0.000 ;
+        RECT 1.235 -0.085 1.525 0.000 ;
+        RECT 1.695 -0.085 1.840 0.000 ;
+        RECT 0.000 -0.240 1.840 -0.085 ;
+  END
+END BV_sky130_fd_sc_hd__clkbuf_2
+END LIBRARY
+

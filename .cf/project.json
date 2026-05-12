@@ -45,17 +45,66 @@
     "platform_project_id": "2444a5e5-a612-49b9-b2d8-b0f519a20cb0"
   },
   "precheck": {
-    "version": "1.3.1",
-    "timestamp": "2026-05-12T07:48:05.839831+00:00",
+    "version": "1.3.3",
+    "timestamp": "2026-05-12T09:40:55.066206+00:00",
     "pdk": "sky130A",
     "passed": false,
     "checks": {
+      "topcell_check": {
+        "status": "pass",
+        "duration_s": 0.29
+      },
+      "gpio_defines": {
+        "status": "pass",
+        "duration_s": 1.15
+      },
+      "xor": {
+        "status": "pass",
+        "duration_s": 16.35
+      },
+      "klayout_feol": {
+        "status": "pass",
+        "duration_s": 33.53
+      },
+      "klayout_beol": {
+        "status": "pass",
+        "duration_s": 113.38
+      },
+      "klayout_offgrid": {
+        "status": "pass",
+        "duration_s": 20.56
+      },
+      "klayout_met_min_ca_density": {
+        "status": "pass",
+        "duration_s": 10.79
+      },
+      "klayout_pin_label_purposes_overlapping_drawing": {
+        "status": "pass",
+        "duration_s": 7.1
+      },
+      "klayout_zeroarea": {
+        "status": "pass",
+        "duration_s": 4.26
+      },
+      "spike_check": {
+        "status": "pass",
+        "duration_s": 5.74
+      },
+      "illegal_cellname_check": {
+        "status": "pass",
+        "duration_s": 0.31
+      },
+      "lvs": {
+        "status": "fail",
+        "duration_s": 136.16,
+        "details": "LVS FAILED (stat=1), see /tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/logs/LVS_check.log"
+      },
       "oeb": {
         "status": "fail",
-        "duration_s": 73.87,
-        "details": "1 error, 42 warnings across 38 GPIOs",
+        "duration_s": 1.74,
+        "details": "3 errors, 37 warnings across 38 GPIOs",
         "report": {
-          "report_relpath": "/home/user/Desktop/myfolder/project/ucb64arms_openlane2/caravel_user_project/precheck_results/12_MAY_2026___07_46_51/outputs/reports/cvc.oeb.report",
+          "report_relpath": "/tmp/tmpvbyuj49e/repo/precheck_results/12_MAY_2026___09_35_03/outputs/reports/cvc.oeb.report",
           "design_type": "caravel",
           "gpios": [
             {
@@ -63,14 +112,14 @@
               "user_index": 0,
               "analog_index": null,
               "in": null,
-              "out": "2",
+              "out": null,
               "analog": null,
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
               "configuration": "FIXED_STD_INPUT_NOPULL",
               "resolved_mode": "FIXED_STD_INPUT_NOPULL",
-              "warning_count": 1,
+              "warning_count": 0,
               "error_count": 0
             },
             {
@@ -78,14 +127,14 @@
               "user_index": 1,
               "analog_index": null,
               "in": null,
-              "out": "2",
+              "out": null,
               "analog": null,
               "oeb_min": "io_oeb[1]",
               "oeb_sim": "io_oeb[1]",
               "oeb_max": "io_oeb[1]",
               "configuration": "FIXED_STD_INPUT_NOPULL",
               "resolved_mode": "FIXED_STD_INPUT_NOPULL",
-              "warning_count": 1,
+              "warning_count": 0,
               "error_count": 0
             },
             {
@@ -93,14 +142,14 @@
               "user_index": 2,
               "analog_index": null,
               "in": null,
-              "out": "2",
+              "out": null,
               "analog": null,
               "oeb_min": "io_oeb[2]",
               "oeb_sim": "io_oeb[2]",
               "oeb_max": "io_oeb[2]",
               "configuration": "FIXED_STD_INPUT_NOPULL",
               "resolved_mode": "FIXED_STD_INPUT_NOPULL",
-              "warning_count": 1,
+              "warning_count": 0,
               "error_count": 0
             },
             {
@@ -108,14 +157,14 @@
               "user_index": 3,
               "analog_index": null,
               "in": null,
-              "out": "2",
+              "out": null,
               "analog": null,
               "oeb_min": "io_oeb[3]",
               "oeb_sim": "io_oeb[3]",
               "oeb_max": "io_oeb[3]",
               "configuration": "FIXED_STD_INPUT_PULLUP",
               "resolved_mode": "FIXED_STD_INPUT_PULLUP",
-              "warning_count": 1,
+              "warning_count": 0,
               "error_count": 0
             },
             {
@@ -123,14 +172,14 @@
               "user_index": 4,
               "analog_index": null,
               "in": null,
-              "out": "2",
+              "out": null,
               "analog": null,
               "oeb_min": "io_oeb[4]",
               "oeb_sim": "io_oeb[4]",
               "oeb_max": "io_oeb[4]",
               "configuration": "FIXED_STD_INPUT_NOPULL",
               "resolved_mode": "FIXED_STD_INPUT_NOPULL",
-              "warning_count": 1,
+              "warning_count": 0,
               "error_count": 0
             },
             {
@@ -138,7 +187,7 @@
               "user_index": 5,
               "analog_index": null,
               "in": null,
-              "out": "2",
+              "out": null,
               "analog": null,
               "oeb_min": "io_oeb[5]",
               "oeb_sim": "io_oeb[5]",
@@ -146,14 +195,14 @@
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 1,
-              "error_count": 0
+              "error_count": 1
             },
             {
               "gpio": 6,
               "user_index": 6,
               "analog_index": null,
               "in": null,
-              "out": "2",
+              "out": null,
               "analog": null,
               "oeb_min": "io_oeb[6]",
               "oeb_sim": "io_oeb[6]",
@@ -161,7 +210,7 @@
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 1,
-              "error_count": 0
+              "error_count": 1
             },
             {
               "gpio": 7,
@@ -631,34 +680,19 @@
           ],
           "messages": [
             {
-              "gpio": 0,
-              "severity": "warning",
-              "text": "user output connection to fixed input gpio - firmware override required"
-            },
-            {
-              "gpio": 1,
-              "severity": "warning",
-              "text": "user output connection to fixed input gpio - firmware override required"
-            },
-            {
-              "gpio": 2,
-              "severity": "warning",
-              "text": "user output connection to fixed input gpio - firmware override required"
-            },
-            {
-              "gpio": 3,
-              "severity": "warning",
-              "text": "user output connection to fixed input gpio - firmware override required"
-            },
-            {
-              "gpio": 4,
-              "severity": "warning",
-              "text": "user output connection to fixed input gpio - firmware override required"
+              "gpio": 5,
+              "severity": "error",
+              "text": "missing user output connection for output gpio"
             },
             {
               "gpio": 5,
               "severity": "warning",
               "text": "user oeb is never low - output never enabled"
+            },
+            {
+              "gpio": 6,
+              "severity": "error",
+              "text": "missing user output connection for output gpio"
             },
             {
               "gpio": 6,
@@ -848,8 +882,8 @@
           ],
           "summary": {
             "total": 38,
-            "errors": 1,
-            "warnings": 42,
+            "errors": 3,
+            "warnings": 37,
             "no_issues_banner": false
           }
         }
@@ -860,6 +894,6 @@
         "reason": "optional (use --magic-drc to include)"
       }
     },
-    "input_file_hash": "e21383d41017664276564d97f74c4e6840a19a7d"
+    "input_file_hash": "643df9543160e82a8fcb5fb43c83e7f8d04a24a5"
   }
 }
