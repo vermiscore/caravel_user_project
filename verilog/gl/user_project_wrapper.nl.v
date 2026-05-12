@@ -73,8 +73,8 @@ module user_project_wrapper (user_clock2,
     io_out[2],
     io_out[1],
     io_out[0]}));
- sky130_fd_sc_hd__conb_1 TIE_ZERO_zero_ (.LO(zero_), .VNB(vssd1), .VPB(vccd1));
- sky130_fd_sc_hd__conb_1 TIE_ONE_one_ (.HI(one_), .VNB(vssd1), .VPB(vccd1));
+ sky130_fd_sc_hd__conb_1 TIE_ZERO_zero_ (.LO(zero_));
+ sky130_fd_sc_hd__conb_1 TIE_ONE_one_ (.HI(one_));
  assign io_oeb[10] = one_;
  assign io_oeb[11] = one_;
  assign io_oeb[12] = one_;

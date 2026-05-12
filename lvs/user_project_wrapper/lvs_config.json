@@ -1,26 +1,16 @@
 {
     "TOP_SOURCE": "user_project_wrapper",
     "TOP_LAYOUT": "$TOP_SOURCE",
-    "EXTRACT_FLATGLOB": [
-        ""
-    ],
+    "EXTRACT_FLATGLOB": [""],
     "EXTRACT_ABSTRACT": [
         "*__fill_*",
         "*__fakediode_*",
         "*__tapvpwrvgnd_*"
     ],
-    "EXTRACT_CREATE_SUBCUT": [
-        ""
-    ],
-    "LVS_FLATTEN": [
-        "user_project_wrapper"
-    ],
-    "LVS_NOFLATTEN": [
-        ""
-    ],
-    "LVS_IGNORE": [
-        ""
-    ],
+    "EXTRACT_CREATE_SUBCUT": [""],
+    "LVS_FLATTEN": ["user_project_wrapper"],
+    "LVS_NOFLATTEN": [""],
+    "LVS_IGNORE": [""],
     "LVS_SPICE_FILES": [
         "$PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice",
         "$PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"
@@ -30,7 +20,5 @@
         "$UPRJ_ROOT/verilog/gl/user_project_wrapper.nl.v"
     ],
     "LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds",
-    "LVS_GLOBALS": [
-        "VSUBS"
-    ]
+    "EXTRACT_SHORT_RESISTOR": true
 }
