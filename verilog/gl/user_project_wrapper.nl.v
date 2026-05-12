@@ -37,6 +37,8 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
+ wire one_;
+ wire zero_;
 
  ucb_top mprj (.clk(wb_clk_i),
     .reward_valid(la_data_in[1]),
@@ -71,6 +73,44 @@ module user_project_wrapper (user_clock2,
     io_out[2],
     io_out[1],
     io_out[0]}));
-assign io_oeb[6:0] = 7'b0;
-    assign io_oeb[37:7] = 31'h7FFFFFFF;
+ sky130_fd_sc_hd__conb_1 TIE_ZERO_zero_ (.LO(zero_));
+ sky130_fd_sc_hd__conb_1 TIE_ONE_one_ (.HI(one_));
+ assign io_oeb[10] = one_;
+ assign io_oeb[11] = one_;
+ assign io_oeb[12] = one_;
+ assign io_oeb[13] = one_;
+ assign io_oeb[14] = one_;
+ assign io_oeb[15] = one_;
+ assign io_oeb[16] = one_;
+ assign io_oeb[17] = one_;
+ assign io_oeb[18] = one_;
+ assign io_oeb[19] = one_;
+ assign io_oeb[20] = one_;
+ assign io_oeb[21] = one_;
+ assign io_oeb[22] = one_;
+ assign io_oeb[23] = one_;
+ assign io_oeb[24] = one_;
+ assign io_oeb[25] = one_;
+ assign io_oeb[26] = one_;
+ assign io_oeb[27] = one_;
+ assign io_oeb[28] = one_;
+ assign io_oeb[29] = one_;
+ assign io_oeb[30] = one_;
+ assign io_oeb[31] = one_;
+ assign io_oeb[32] = one_;
+ assign io_oeb[33] = one_;
+ assign io_oeb[34] = one_;
+ assign io_oeb[35] = one_;
+ assign io_oeb[36] = one_;
+ assign io_oeb[37] = one_;
+ assign io_oeb[7] = one_;
+ assign io_oeb[8] = one_;
+ assign io_oeb[9] = one_;
+ assign io_oeb[0] = zero_;
+ assign io_oeb[1] = zero_;
+ assign io_oeb[2] = zero_;
+ assign io_oeb[3] = zero_;
+ assign io_oeb[4] = zero_;
+ assign io_oeb[5] = zero_;
+ assign io_oeb[6] = zero_;
 endmodule

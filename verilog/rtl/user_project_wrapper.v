@@ -34,5 +34,7 @@ module user_project_wrapper #(
         .selected_arm(io_out[5:0]),
         .valid_out(io_out[6])
     );
+    assign io_oeb[6:0] = 7'b0;
+    assign io_oeb[37:7] = 31'h7FFFFFFF;
 endmodule
 `default_nettype wire
