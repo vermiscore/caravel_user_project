@@ -1,0 +1,7 @@
+BEGIN: Tue May 12 11:52:31 2026
+Creating /tmp/tmpgjvo3b9m/repo/precheck_results/12_MAY_2026___11_48_47/tmp/verilog.cells from the following files...
+	/tmp/tmpgjvo3b9m/repo/verilog/gl/ucb_top.v
+	/tmp/tmpgjvo3b9m/repo/verilog/gl/user_project_wrapper.nl.v
+Hierarchy check for user_project_wrapper failed. See /tmp/tmpgjvo3b9m/repo/precheck_results/12_MAY_2026___11_48_47/tmp/hier.csv
+END: Tue May 12 11:52:31 2026
+Runtime: 0:00:00 (hh:mm:ss)

@@ -1,0 +1,421 @@
+! Switch shorts
+
+! Finished
+
+! Resistor Errors
+
+! Finished
+
+! Power/Ground path through fuse
+
+! Finished
+
+! ... voltage already set
+
+! Finished
+
+! Checking forward bias diode errors: 
+
+/Xmprj(ucb_top)/XANTENNA_input18_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[13]
+ Min: la_data_in[13]@0 r=0
+ Sim: la_data_in[13]
+ Max: la_data_in[13]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input23_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[1]
+ Min: la_data_in[1]@0 r=0
+ Sim: la_data_in[1]
+ Max: la_data_in[1]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input16_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[11]
+ Min: la_data_in[11]@0 r=0
+ Sim: la_data_in[11]
+ Max: la_data_in[11]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input8_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[18]
+ Min: la_data_in[18]@0 r=0
+ Sim: la_data_in[18]
+ Max: la_data_in[18]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_clkbuf_0_clk_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: wb_clk_i
+ Min: wb_clk_i@0 r=0
+ Sim: wb_clk_i
+ Max: wb_clk_i@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input21_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[16]
+ Min: la_data_in[16]@0 r=0
+ Sim: la_data_in[16]
+ Max: la_data_in[16]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input14_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[9]
+ Min: la_data_in[9]@0 r=0
+ Sim: la_data_in[9]
+ Max: la_data_in[9]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input6_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[7]
+ Min: la_data_in[7]@0 r=0
+ Sim: la_data_in[7]
+ Max: la_data_in[7]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input12_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[22]
+ Min: la_data_in[22]@0 r=0
+ Sim: la_data_in[22]
+ Max: la_data_in[22]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input4_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[5]
+ Min: la_data_in[5]@0 r=0
+ Sim: la_data_in[5]
+ Max: la_data_in[5]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input10_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[20]
+ Min: la_data_in[20]@0 r=0
+ Sim: la_data_in[20]
+ Max: la_data_in[20]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input2_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[3]
+ Min: la_data_in[3]@0 r=0
+ Sim: la_data_in[3]
+ Max: la_data_in[3]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input19_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[14]
+ Min: la_data_in[14]@0 r=0
+ Sim: la_data_in[14]
+ Max: la_data_in[14]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input24_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[127]
+ Min: la_data_in[127]@0 r=0
+ Sim: la_data_in[127]
+ Max: la_data_in[127]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input17_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[12]
+ Min: la_data_in[12]@0 r=0
+ Sim: la_data_in[12]
+ Max: la_data_in[12]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input9_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[19]
+ Min: la_data_in[19]@0 r=0
+ Sim: la_data_in[19]
+ Max: la_data_in[19]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input22_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[17]
+ Min: la_data_in[17]@0 r=0
+ Sim: la_data_in[17]
+ Max: la_data_in[17]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input15_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[10]
+ Min: la_data_in[10]@0 r=0
+ Sim: la_data_in[10]
+ Max: la_data_in[10]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input7_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[8]
+ Min: la_data_in[8]@0 r=0
+ Sim: la_data_in[8]
+ Max: la_data_in[8]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input20_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[15]
+ Min: la_data_in[15]@0 r=0
+ Sim: la_data_in[15]
+ Max: la_data_in[15]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input13_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[23]
+ Min: la_data_in[23]@0 r=0
+ Sim: la_data_in[23]
+ Max: la_data_in[23]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input5_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[6]
+ Min: la_data_in[6]@0 r=0
+ Sim: la_data_in[6]
+ Max: la_data_in[6]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input11_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[21]
+ Min: la_data_in[21]@0 r=0
+ Sim: la_data_in[21]
+ Max: la_data_in[21]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input3_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[4]
+ Min: la_data_in[4]@0 r=0
+ Sim: la_data_in[4]
+ Max: la_data_in[4]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input1_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[2]
+ Min: la_data_in[2]@0 r=0
+ Sim: la_data_in[2]
+ Max: la_data_in[2]@1800 r=0
+
+/Xmprj(ucb_top)/XANTENNA_input25_A(M4_sky130_fd_sc_hd__diode_2)/DX0 D sky130_fd_pr__diode_pw2nd_05v5 perim=2.64e+06 area=4.347e+11 (r=1)
+S: /VSUBS
+ Min: /VSUBS
+ Sim: /VSUBS
+ Max: /VSUBS
+D: la_data_in[0]
+ Min: la_data_in[0]@0 r=0
+ Sim: la_data_in[0]
+ Max: la_data_in[0]@1800 r=0
+
+! Checking forward bias diode errors: 
+INFO: SUBCKT (M4_sky130_fd_sc_hd__diode_2)/DX0(sky130_fd_pr__diode_pw2nd_05v5) error count 26/9768 checksum()
+
+! Finished
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Finished
+
+! Checking nmos gate vs source errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Finished
+
+! Checking pmos source/drain vs bias errors: 
+
+! Checking pmos source/drain vs bias errors: 
+
+! Finished
+
+! Checking pmos gate vs source errors: 
+
+! Checking pmos gate vs source errors: 
+
+! Finished
+
+! Logic shorts 1
+
+! Finished
+
+! Logic shorts 2
+
+! Finished
+
+! Checking LDD errors for model: 
+
+! Finished
+
+! Power/Ground path through fuse
+
+! Finished
+
+! ... voltage already set
+
+! Finished
+
+! Checking Vbg overvoltage errors
+
+! Checking Vbg overvoltage errors
+
+! Finished
+
+! Checking Vbs overvoltage errors
+
+! Checking Vbs overvoltage errors
+
+! Finished
+
+! Checking Vds overvoltage errors
+
+! Checking Vds overvoltage errors
+
+! Finished
+
+! Checking Vgs overvoltage errors
+
+! Checking Vgs overvoltage errors
+
+! Finished
+
+! Checking Model errors
+
+! Checking Model errors
+
+! Finished
+
+! Checking nmos possible leak errors: 
+
+! Checking nmos possible leak errors: 
+
+! Finished
+
+! Checking pmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Finished
+
+! Checking mos floating input errors:
+
+! Checking mos floating input errors:
+
+! Finished
+
+! Checking expected values:
+
+Expected minimum io_out[0] = 0.0 but found unknown
+Expected maximum io_out[0] = 1.8 but found unknown
+
+Expected minimum io_out[1] = 0.0 but found unknown
+Expected maximum io_out[1] = 1.8 but found unknown
+
+Expected minimum io_out[2] = 0.0 but found unknown
+Expected maximum io_out[2] = 1.8 but found unknown
+
+Expected minimum io_out[3] = 0.0 but found unknown
+Expected maximum io_out[3] = 1.8 but found unknown
+
+Expected minimum io_out[4] = 0.0 but found unknown
+Expected maximum io_out[4] = 1.8 but found unknown
+
+Expected minimum io_out[5] = 0.0 but found unknown
+Expected maximum io_out[5] = 1.8 but found unknown
+
+Expected minimum io_out[6] = 0.0 but found unknown
+Expected maximum io_out[6] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+! Finished
+
