@@ -5,8 +5,7 @@
     "EXTRACT_ABSTRACT": [
         "*__fill_*",
         "*__fakediode_*",
-        "*__tapvpwrvgnd_*",
-        "ucb_top"
+        "*__tapvpwrvgnd_*"
     ],
     "EXTRACT_CREATE_SUBCUT": [""],
     "LVS_FLATTEN": ["user_project_wrapper"],

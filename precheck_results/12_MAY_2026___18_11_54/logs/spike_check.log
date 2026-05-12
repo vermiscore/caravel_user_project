@@ -1,0 +1,14 @@
+Running gdsArea0 on file=/tmp/tmpb8g2m4zu/repo/gds/user_project_wrapper.gds (passive, no gdsFileOut)
+  args: '-V','-m','/tmp/tmpb8g2m4zu/repo/precheck_results/12_MAY_2026___18_11_54/outputs/reports/spike_check.xml','/tmp/tmpb8g2m4zu/repo/gds/user_project_wrapper.gds'
+dbu=0.001 Float inv:1000.0
+number shapes: box=638951 path=256 poly=1330
+writing marker-DB: /tmp/tmpb8g2m4zu/repo/precheck_results/12_MAY_2026___18_11_54/outputs/reports/spike_check.xml ...
+       0 area-zero shapes,         0 zero-area shapes deleted.
+       0 zero-length paths,        0 zero-length paths deleted.
+       0 path spikes
+       0 path octagonal acute angles
+       0 path any-angle acute angles
+       0 paths2poly
+       0 total errors,             0 total shapes deleted, 0 exit-status.
+VmPeak:	  638752 kB
+VmHWM:	  454400 kB
