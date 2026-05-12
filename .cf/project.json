@@ -45,21 +45,66 @@
     "platform_project_id": "2444a5e5-a612-49b9-b2d8-b0f519a20cb0"
   },
   "precheck": {
-    "version": "1.3.1",
-    "timestamp": "2026-05-12T13:41:03.016835+00:00",
+    "version": "1.3.3",
+    "timestamp": "2026-05-12T17:19:03.039093+00:00",
     "pdk": "sky130A",
     "passed": false,
     "checks": {
+      "topcell_check": {
+        "status": "pass",
+        "duration_s": 0.3
+      },
       "gpio_defines": {
         "status": "pass",
-        "duration_s": 0.67
+        "duration_s": 1.2
+      },
+      "xor": {
+        "status": "pass",
+        "duration_s": 17.6
+      },
+      "klayout_feol": {
+        "status": "pass",
+        "duration_s": 36.67
+      },
+      "klayout_beol": {
+        "status": "pass",
+        "duration_s": 118.58
+      },
+      "klayout_offgrid": {
+        "status": "pass",
+        "duration_s": 21.75
+      },
+      "klayout_met_min_ca_density": {
+        "status": "pass",
+        "duration_s": 11.2
+      },
+      "klayout_pin_label_purposes_overlapping_drawing": {
+        "status": "pass",
+        "duration_s": 7.55
+      },
+      "klayout_zeroarea": {
+        "status": "pass",
+        "duration_s": 4.44
+      },
+      "spike_check": {
+        "status": "pass",
+        "duration_s": 5.94
+      },
+      "illegal_cellname_check": {
+        "status": "pass",
+        "duration_s": 0.32
+      },
+      "lvs": {
+        "status": "fail",
+        "duration_s": 128.25,
+        "details": "LVS FAILED (stat=1), see /tmp/tmpxd8wjgfo/repo/precheck_results/12_MAY_2026___17_13_07/logs/LVS_check.log"
       },
       "oeb": {
         "status": "fail",
-        "duration_s": 76.03,
-        "details": "64 errors, 31 warnings across 38 GPIOs",
+        "duration_s": 1.21,
+        "details": "32 errors, 37 warnings across 38 GPIOs",
         "report": {
-          "report_relpath": "/home/user/Desktop/myfolder/project/ucb64arms_openlane2/caravel_user_project/precheck_results/12_MAY_2026___13_39_45/outputs/reports/cvc.oeb.report",
+          "report_relpath": "/tmp/tmpxd8wjgfo/repo/precheck_results/12_MAY_2026___17_13_07/outputs/reports/cvc.oeb.report",
           "design_type": "caravel",
           "gpios": [
             {
@@ -84,9 +129,9 @@
               "in": null,
               "out": "2",
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[1]",
+              "oeb_sim": "io_oeb[1]",
+              "oeb_max": "io_oeb[1]",
               "configuration": "FIXED_STD_INPUT_NOPULL",
               "resolved_mode": "FIXED_STD_INPUT_NOPULL",
               "warning_count": 1,
@@ -99,9 +144,9 @@
               "in": null,
               "out": "2",
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[2]",
+              "oeb_sim": "io_oeb[2]",
+              "oeb_max": "io_oeb[2]",
               "configuration": "FIXED_STD_INPUT_NOPULL",
               "resolved_mode": "FIXED_STD_INPUT_NOPULL",
               "warning_count": 1,
@@ -114,9 +159,9 @@
               "in": null,
               "out": "2",
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[3]",
+              "oeb_sim": "io_oeb[3]",
+              "oeb_max": "io_oeb[3]",
               "configuration": "FIXED_STD_INPUT_PULLUP",
               "resolved_mode": "FIXED_STD_INPUT_PULLUP",
               "warning_count": 1,
@@ -129,9 +174,9 @@
               "in": null,
               "out": "2",
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[4]",
+              "oeb_sim": "io_oeb[4]",
+              "oeb_max": "io_oeb[4]",
               "configuration": "FIXED_STD_INPUT_NOPULL",
               "resolved_mode": "FIXED_STD_INPUT_NOPULL",
               "warning_count": 1,
@@ -144,13 +189,13 @@
               "in": null,
               "out": "2",
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[5]",
+              "oeb_sim": "io_oeb[5]",
+              "oeb_max": "io_oeb[5]",
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
-              "warning_count": 0,
-              "error_count": 1
+              "warning_count": 1,
+              "error_count": 0
             },
             {
               "gpio": 6,
@@ -159,13 +204,13 @@
               "in": null,
               "out": "2",
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[6]",
+              "oeb_sim": "io_oeb[6]",
+              "oeb_max": "io_oeb[6]",
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
-              "warning_count": 0,
-              "error_count": 1
+              "warning_count": 1,
+              "error_count": 0
             },
             {
               "gpio": 7,
@@ -174,13 +219,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[7]",
+              "oeb_sim": "io_oeb[7]",
+              "oeb_max": "io_oeb[7]",
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
-              "warning_count": 0,
-              "error_count": 2
+              "warning_count": 1,
+              "error_count": 1
             },
             {
               "gpio": 8,
@@ -189,13 +234,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[8]",
+              "oeb_sim": "io_oeb[8]",
+              "oeb_max": "io_oeb[8]",
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
-              "warning_count": 0,
-              "error_count": 2
+              "warning_count": 1,
+              "error_count": 1
             },
             {
               "gpio": 9,
@@ -204,13 +249,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[9]",
+              "oeb_sim": "io_oeb[9]",
+              "oeb_max": "io_oeb[9]",
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
-              "warning_count": 0,
-              "error_count": 2
+              "warning_count": 1,
+              "error_count": 1
             },
             {
               "gpio": 10,
@@ -234,13 +279,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[11]",
+              "oeb_sim": "io_oeb[11]",
+              "oeb_max": "io_oeb[11]",
               "configuration": "USER_STD_OUTPUT",
               "resolved_mode": "USER_STD_OUTPUT",
-              "warning_count": 0,
-              "error_count": 2
+              "warning_count": 1,
+              "error_count": 1
             },
             {
               "gpio": 12,
@@ -249,13 +294,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[12]",
+              "oeb_sim": "io_oeb[12]",
+              "oeb_max": "io_oeb[12]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 13,
@@ -264,13 +309,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[13]",
+              "oeb_sim": "io_oeb[13]",
+              "oeb_max": "io_oeb[13]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 14,
@@ -279,13 +324,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[14]",
+              "oeb_sim": "io_oeb[14]",
+              "oeb_max": "io_oeb[14]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 15,
@@ -294,13 +339,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[15]",
+              "oeb_sim": "io_oeb[15]",
+              "oeb_max": "io_oeb[15]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 16,
@@ -309,13 +354,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[16]",
+              "oeb_sim": "io_oeb[16]",
+              "oeb_max": "io_oeb[16]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 17,
@@ -324,13 +369,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[17]",
+              "oeb_sim": "io_oeb[17]",
+              "oeb_max": "io_oeb[17]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 18,
@@ -339,13 +384,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[18]",
+              "oeb_sim": "io_oeb[18]",
+              "oeb_max": "io_oeb[18]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 19,
@@ -354,13 +399,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[19]",
+              "oeb_sim": "io_oeb[19]",
+              "oeb_max": "io_oeb[19]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 20,
@@ -369,13 +414,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[20]",
+              "oeb_sim": "io_oeb[20]",
+              "oeb_max": "io_oeb[20]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 21,
@@ -384,13 +429,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[21]",
+              "oeb_sim": "io_oeb[21]",
+              "oeb_max": "io_oeb[21]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 22,
@@ -399,13 +444,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[22]",
+              "oeb_sim": "io_oeb[22]",
+              "oeb_max": "io_oeb[22]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 23,
@@ -414,13 +459,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[23]",
+              "oeb_sim": "io_oeb[23]",
+              "oeb_max": "io_oeb[23]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 24,
@@ -429,13 +474,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[24]",
+              "oeb_sim": "io_oeb[24]",
+              "oeb_max": "io_oeb[24]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 25,
@@ -444,13 +489,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[25]",
+              "oeb_sim": "io_oeb[25]",
+              "oeb_max": "io_oeb[25]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 26,
@@ -459,13 +504,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[26]",
+              "oeb_sim": "io_oeb[26]",
+              "oeb_max": "io_oeb[26]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 27,
@@ -474,13 +519,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[27]",
+              "oeb_sim": "io_oeb[27]",
+              "oeb_max": "io_oeb[27]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 28,
@@ -489,13 +534,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[28]",
+              "oeb_sim": "io_oeb[28]",
+              "oeb_max": "io_oeb[28]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 29,
@@ -504,13 +549,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[29]",
+              "oeb_sim": "io_oeb[29]",
+              "oeb_max": "io_oeb[29]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 30,
@@ -519,13 +564,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[30]",
+              "oeb_sim": "io_oeb[30]",
+              "oeb_max": "io_oeb[30]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 31,
@@ -534,13 +579,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[31]",
+              "oeb_sim": "io_oeb[31]",
+              "oeb_max": "io_oeb[31]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 32,
@@ -549,13 +594,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[32]",
+              "oeb_sim": "io_oeb[32]",
+              "oeb_max": "io_oeb[32]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 33,
@@ -564,13 +609,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[33]",
+              "oeb_sim": "io_oeb[33]",
+              "oeb_max": "io_oeb[33]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 34,
@@ -579,13 +624,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[34]",
+              "oeb_sim": "io_oeb[34]",
+              "oeb_max": "io_oeb[34]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 35,
@@ -594,13 +639,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[35]",
+              "oeb_sim": "io_oeb[35]",
+              "oeb_max": "io_oeb[35]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 36,
@@ -609,13 +654,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[36]",
+              "oeb_sim": "io_oeb[36]",
+              "oeb_max": "io_oeb[36]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             },
             {
               "gpio": 37,
@@ -624,13 +669,13 @@
               "in": null,
               "out": null,
               "analog": null,
-              "oeb_min": null,
-              "oeb_sim": null,
-              "oeb_max": null,
+              "oeb_min": "io_oeb[37]",
+              "oeb_sim": "io_oeb[37]",
+              "oeb_max": "io_oeb[37]",
               "configuration": "USER_STD_INPUT_NOPULL",
               "resolved_mode": "USER_STD_INPUT_NOPULL",
               "warning_count": 1,
-              "error_count": 2
+              "error_count": 1
             }
           ],
           "messages": [
@@ -661,13 +706,13 @@
             },
             {
               "gpio": 5,
-              "severity": "error",
-              "text": "missing user oeb for output gpio"
+              "severity": "warning",
+              "text": "user oeb is never low - output never enabled"
             },
             {
               "gpio": 6,
-              "severity": "error",
-              "text": "missing user oeb for output gpio"
+              "severity": "warning",
+              "text": "user oeb is never low - output never enabled"
             },
             {
               "gpio": 7,
@@ -676,8 +721,8 @@
             },
             {
               "gpio": 7,
-              "severity": "error",
-              "text": "missing user oeb for output gpio"
+              "severity": "warning",
+              "text": "user oeb is never low - output never enabled"
             },
             {
               "gpio": 8,
@@ -686,8 +731,8 @@
             },
             {
               "gpio": 8,
-              "severity": "error",
-              "text": "missing user oeb for output gpio"
+              "severity": "warning",
+              "text": "user oeb is never low - output never enabled"
             },
             {
               "gpio": 9,
@@ -696,8 +741,8 @@
             },
             {
               "gpio": 9,
-              "severity": "error",
-              "text": "missing user oeb for output gpio"
+              "severity": "warning",
+              "text": "user oeb is never low - output never enabled"
             },
             {
               "gpio": 10,
@@ -716,8 +761,8 @@
             },
             {
               "gpio": 11,
-              "severity": "error",
-              "text": "missing user oeb for output gpio"
+              "severity": "warning",
+              "text": "user oeb is never low - output never enabled"
             },
             {
               "gpio": 12,
@@ -730,11 +775,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 12,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 13,
               "severity": "warning",
               "text": "missing user input connection"
@@ -743,11 +783,6 @@
               "gpio": 13,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 13,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 14,
@@ -760,11 +795,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 14,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 15,
               "severity": "warning",
               "text": "missing user input connection"
@@ -773,11 +803,6 @@
               "gpio": 15,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 15,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 16,
@@ -790,11 +815,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 16,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 17,
               "severity": "warning",
               "text": "missing user input connection"
@@ -803,11 +823,6 @@
               "gpio": 17,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 17,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 18,
@@ -820,11 +835,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 18,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 19,
               "severity": "warning",
               "text": "missing user input connection"
@@ -833,11 +843,6 @@
               "gpio": 19,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 19,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 20,
@@ -850,11 +855,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 20,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 21,
               "severity": "warning",
               "text": "missing user input connection"
@@ -863,11 +863,6 @@
               "gpio": 21,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 21,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 22,
@@ -880,11 +875,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 22,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 23,
               "severity": "warning",
               "text": "missing user input connection"
@@ -893,11 +883,6 @@
               "gpio": 23,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 23,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 24,
@@ -910,11 +895,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 24,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 25,
               "severity": "warning",
               "text": "missing user input connection"
@@ -923,11 +903,6 @@
               "gpio": 25,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 25,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 26,
@@ -940,11 +915,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 26,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 27,
               "severity": "warning",
               "text": "missing user input connection"
@@ -953,11 +923,6 @@
               "gpio": 27,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 27,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 28,
@@ -970,11 +935,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 28,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 29,
               "severity": "warning",
               "text": "missing user input connection"
@@ -983,11 +943,6 @@
               "gpio": 29,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 29,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 30,
@@ -1000,11 +955,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 30,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 31,
               "severity": "warning",
               "text": "missing user input connection"
@@ -1013,11 +963,6 @@
               "gpio": 31,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 31,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 32,
@@ -1030,11 +975,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 32,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 33,
               "severity": "warning",
               "text": "missing user input connection"
@@ -1043,11 +983,6 @@
               "gpio": 33,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 33,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 34,
@@ -1060,11 +995,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 34,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 35,
               "severity": "warning",
               "text": "missing user input connection"
@@ -1073,11 +1003,6 @@
               "gpio": 35,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 35,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             },
             {
               "gpio": 36,
@@ -1090,11 +1015,6 @@
               "text": "user mode requires output connection"
             },
             {
-              "gpio": 36,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
-            },
-            {
               "gpio": 37,
               "severity": "warning",
               "text": "missing user input connection"
@@ -1103,17 +1023,12 @@
               "gpio": 37,
               "severity": "error",
               "text": "user mode requires output connection"
-            },
-            {
-              "gpio": 37,
-              "severity": "error",
-              "text": "user mode requires oeb connection"
             }
           ],
           "summary": {
             "total": 38,
-            "errors": 64,
-            "warnings": 31,
+            "errors": 32,
+            "warnings": 37,
             "no_issues_banner": false
           }
         }
@@ -1124,6 +1039,6 @@
         "reason": "optional (use --magic-drc to include)"
       }
     },
-    "input_file_hash": "4a05890392a3dab916209911014cd8c23c174ff1"
+    "input_file_hash": "aaab9ab54b14e1f7c0bf3aa74340723644cefbcb"
   }
 }
