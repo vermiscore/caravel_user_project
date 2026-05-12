@@ -1,0 +1,167 @@
+
+TOP SOURCE: user_project_wrapper
+SOURCE FILE(S): /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_20_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_40_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_60_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_80_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+ /tmp/tmpkztbk_dw/repo/verilog/gl/ucb_top.v
+ /tmp/tmpkztbk_dw/repo/verilog/gl/user_project_wrapper.nl.v
+TOP LAYOUT: user_project_wrapper
+LAYOUT FILE: /tmp/tmpkztbk_dw/repo/spi/lvs/user_project_wrapper.spice
+EXTRACT_FLATGLOB: 
+EXTRACT_ABSTRACT: *__fill_*
+ *__fakediode_*
+ *__tapvpwrvgnd_*
+LVS_FLATTEN: user_project_wrapper
+LVS_NOFLATTEN: 
+LVS_IGNORE: 
+WORK_ROOT   : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp
+LOG_ROOT    : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs
+SIGNOFF_ROOT: /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/outputs/reports
+ 
+Running hierarchical comparison between verilog and layout...
+Creating /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/verilog.cells from the following files...
+	/tmp/tmpkztbk_dw/repo/verilog/gl/ucb_top.v
+	/tmp/tmpkztbk_dw/repo/verilog/gl/user_project_wrapper.nl.v
+Hierarchy check for user_project_wrapper failed. See /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/hier.csv
+ 
+Running LVS...
+TOP SOURCE: user_project_wrapper
+SOURCE FILE(S): /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_20_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_40_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_60_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_80_12.spice
+ /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+ /tmp/tmpkztbk_dw/repo/verilog/gl/ucb_top.v
+ /tmp/tmpkztbk_dw/repo/verilog/gl/user_project_wrapper.nl.v
+TOP LAYOUT: user_project_wrapper
+LAYOUT FILE: /tmp/tmpkztbk_dw/repo/spi/lvs/user_project_wrapper.spice
+EXTRACT_FLATGLOB: 
+EXTRACT_ABSTRACT: *__fill_*
+ *__fakediode_*
+ *__tapvpwrvgnd_*
+LVS_FLATTEN: user_project_wrapper
+LVS_NOFLATTEN: 
+LVS_IGNORE: 
+WORK_ROOT   : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp
+LOG_ROOT    : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs
+SIGNOFF_ROOT: /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/outputs/reports
+ 
+Running extract...
+TOP LAYOUT: user_project_wrapper
+LAYOUT FILE: /tmp/tmpkztbk_dw/repo/spi/lvs/user_project_wrapper.spice
+EXTRACT_FLATGLOB: 
+EXTRACT_ABSTRACT: *__fill_*
+ *__fakediode_*
+ *__tapvpwrvgnd_*
+WORK_ROOT   : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp
+LOG_ROOT    : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs
+SIGNOFF_ROOT: /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/outputs/reports
+LOG FILE: /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs/ext.log
+Adding subcutout style to tech file.
+/opt/pdks/sky130A/libs.tech/magic/sky130A.tech: version 1.0.493
+Extracting to /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/ext
+ 
+
+Magic 8.3 revision 471 - Compiled on Wed Apr 22 16:23:58 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design magicrc.well for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Loading tech file /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/sky130A.tech
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/ext/abstract.tcl" from command line.
+Abstracting
+CIF input style is now "sky130()"
+Abstracting /tmp/tmpkztbk_dw/repo/spi/lvs/user_project_wrapper.spice
+Warning: Calma reading is not undoable!  I hope that's OK.
+Error while reading cell "(UNNAMED)" (byte position 4): Unexpected record type in input: 
+    Expected HEADER record but got 78.
+freeMagic called with NULL argument.
+
+TIME: read GDS: 00:00:00 
+
+
+TIME: create subcut: 00:00:00 
+
+
+TIME: create abstract: 00:00:00 
+
+Using technology "sky130A", version 1.0.493
+
+Magic 8.3 revision 471 - Compiled on Wed Apr 22 16:23:58 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design magicrc.well for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Loading tech file /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/sky130A.tech
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/ext/extract.tcl" from command line.
+Extracting with top ports unique (digital)
+CIF input style is now "sky130()"
+Flattening 
+
+Extracting /tmp/tmpkztbk_dw/repo/spi/lvs/user_project_wrapper.spice
+Warning: Calma reading is not undoable!  I hope that's OK.
+Error while reading cell "(UNNAMED)" (byte position 4): Unexpected record type in input: 
+    Expected HEADER record but got 78.
+freeMagic called with NULL argument.
+
+TIME: read GDS: 00:00:00 
+
+
+TIME: add subcut: 00:00:00 
+
+
+TIME: set abstract: 00:00:00 
+
+Cell user_project_wrapper couldn't be read
+No such file or directory
+Creating new cell
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Extraction style is now "ngspice()"
+
+TIME: extract: 00:00:00 
+
+
+TIME: netlist: 00:00:00 
+
+Using technology "sky130A", version 1.0.493
+Creating layout hierarchy in /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/ext/user_project_wrapper.hier...
+awk: /usr/local/lib/python3.9/site-packages/cf_precheck/be_checks/scripts/ext.hier.awk:2: fatal: cannot open file `/tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp/ext/*.ext' for reading: No such file or directory
+
+Error: extraction did not complete successfully
+
+Error: extraction did not complete successfully
+DESIGN NAME: user_project_wrapper
+WORK_ROOT   : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/tmp
+LOG_ROOT    : /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs
+SIGNOFF_ROOT: /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/outputs/reports
+ 
+Running CVC...
+Could not create cdl file from /tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/outputs/reports/user_project_wrapper.gds.spice.gz
+
+LVS result:
+tail: cannot open '/tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs/lvs.log' for reading: No such file or directory
+LVS problem: check the following files
+/tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs/ext.log
+/tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/logs/lvs.log
+/tmp/tmpkztbk_dw/repo/precheck_results/12_MAY_2026___12_40_46/outputs/reports/lvs.report
+
+Runtime: 0:00:01 (hh:mm:ss)
+
+WARNING: possible errors SOFT - LVS 4 CVC 2 OEB -
