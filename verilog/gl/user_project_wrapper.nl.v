@@ -41,7 +41,7 @@ module user_project_wrapper (user_clock2,
  wire valid_out;
  wire zero_;
 
- ucb_top u_ucb (.clk(wb_clk_i),
+ ucb_top mprj (.clk(wb_clk_i),
     .reward_valid(la_data_in[1]),
     .rst_n(la_data_in[127]),
     .start(la_data_in[0]),
