@@ -68,7 +68,7 @@ module user_project_wrapper (user_clock2, VSUBS,
     la_data_in[10],
     la_data_in[9],
     la_data_in[8]}),
-    .VGND(VSUBS),
+
     .selected_arm({io_out[5],
     io_out[4],
     io_out[3],
