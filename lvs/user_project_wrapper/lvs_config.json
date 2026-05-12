@@ -30,5 +30,5 @@
         "$UPRJ_ROOT/verilog/gl/user_project_wrapper.nl.v"
     ],
     "LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds",
-    "EXTRACT_SHORT_RESISTOR": true
+    "EXTRACT_SHORT_RESISTOR": "true"
 }
