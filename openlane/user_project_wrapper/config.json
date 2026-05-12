@@ -107,5 +107,6 @@
         "dir::../../verilog/gl/ucb_top.v"
     ],
     "ERROR_ON_NL_ASSIGN_STATEMENTS": false,
-    "ERROR_ON_UNMAPPED_CELLS": false
+    "ERROR_ON_UNMAPPED_CELLS": false,
+    "MAGIC_EXT_SHORT_RESISTOR": true
 }
