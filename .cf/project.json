@@ -45,17 +45,66 @@
     "platform_project_id": "2444a5e5-a612-49b9-b2d8-b0f519a20cb0"
   },
   "precheck": {
-    "version": "1.3.1",
-    "timestamp": "2026-05-12T07:48:05.839831+00:00",
+    "version": "1.3.3",
+    "timestamp": "2026-05-12T10:45:08.298191+00:00",
     "pdk": "sky130A",
     "passed": false,
     "checks": {
+      "topcell_check": {
+        "status": "pass",
+        "duration_s": 0.3
+      },
+      "gpio_defines": {
+        "status": "pass",
+        "duration_s": 1.19
+      },
+      "xor": {
+        "status": "pass",
+        "duration_s": 17.37
+      },
+      "klayout_feol": {
+        "status": "pass",
+        "duration_s": 35.44
+      },
+      "klayout_beol": {
+        "status": "pass",
+        "duration_s": 118.58
+      },
+      "klayout_offgrid": {
+        "status": "pass",
+        "duration_s": 21.69
+      },
+      "klayout_met_min_ca_density": {
+        "status": "pass",
+        "duration_s": 11.2
+      },
+      "klayout_pin_label_purposes_overlapping_drawing": {
+        "status": "pass",
+        "duration_s": 7.4
+      },
+      "klayout_zeroarea": {
+        "status": "pass",
+        "duration_s": 4.39
+      },
+      "spike_check": {
+        "status": "pass",
+        "duration_s": 5.9
+      },
+      "illegal_cellname_check": {
+        "status": "pass",
+        "duration_s": 0.33
+      },
+      "lvs": {
+        "status": "fail",
+        "duration_s": 126.53,
+        "details": "LVS FAILED (stat=1), see /tmp/tmpeemsctja/repo/precheck_results/12_MAY_2026___10_39_15/logs/LVS_check.log"
+      },
       "oeb": {
         "status": "fail",
-        "duration_s": 73.87,
+        "duration_s": 1.2,
         "details": "1 error, 42 warnings across 38 GPIOs",
         "report": {
-          "report_relpath": "/home/user/Desktop/myfolder/project/ucb64arms_openlane2/caravel_user_project/precheck_results/12_MAY_2026___07_46_51/outputs/reports/cvc.oeb.report",
+          "report_relpath": "/tmp/tmpeemsctja/repo/precheck_results/12_MAY_2026___10_39_15/outputs/reports/cvc.oeb.report",
           "design_type": "caravel",
           "gpios": [
             {
@@ -860,6 +909,6 @@
         "reason": "optional (use --magic-drc to include)"
       }
     },
-    "input_file_hash": "e21383d41017664276564d97f74c4e6840a19a7d"
+    "input_file_hash": "d0716fd9ee1772e19af862a1a9da83cbf37e9cf6"
   }
 }
