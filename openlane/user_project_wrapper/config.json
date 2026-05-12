@@ -108,5 +108,15 @@
     ],
     "ERROR_ON_NL_ASSIGN_STATEMENTS": false,
     "ERROR_ON_UNMAPPED_CELLS": false,
-    "MAGIC_EXT_SHORT_RESISTOR": true
+    "MAGIC_EXT_SHORT_RESISTOR": true,
+    "KLAYOUT_DRC_OPTIONS": {
+        "feol": true,
+        "beol": true,
+        "offgrid": true,
+        "floating_metal": false,
+        "seal": false,
+        "io_sites": false,
+        "corner_sites": false,
+        "unselected_metal": false
+    }
 }
