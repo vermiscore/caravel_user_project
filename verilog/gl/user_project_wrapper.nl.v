@@ -1,4 +1,4 @@
-module user_project_wrapper (user_clock2, VSUBS,
+module user_project_wrapper (user_clock2,
     wb_clk_i,
     wb_rst_i,
     wbs_ack_o,
@@ -18,7 +18,6 @@ module user_project_wrapper (user_clock2, VSUBS,
     wbs_dat_o,
     wbs_sel_i);
  input user_clock2;
- inout VSUBS;
  input wb_clk_i;
  input wb_rst_i;
  output wbs_ack_o;
@@ -38,11 +37,8 @@ module user_project_wrapper (user_clock2, VSUBS,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
- wire one_;
- wire zero_;
 
  ucb_top mprj (.clk(wb_clk_i),
-    .VGND(VSUBS),
     .reward_valid(la_data_in[1]),
     .rst_n(la_data_in[127]),
     .start(la_data_in[0]),
@@ -69,15 +65,28 @@ module user_project_wrapper (user_clock2, VSUBS,
     la_data_in[10],
     la_data_in[9],
     la_data_in[8]}),
-
     .selected_arm({io_out[5],
     io_out[4],
     io_out[3],
     io_out[2],
     io_out[1],
     io_out[0]}));
- sky130_fd_sc_hd__conb_1 TIE_ZERO_zero_ (.LO(zero_), .VNB(VSUBS));
- sky130_fd_sc_hd__conb_1 TIE_ONE_one_ (.HI(one_), .VNB(VSUBS));
+assign io_oeb[6:0] = 7'b0;
+    assign io_oeb[37:7] = 31'h7FFFFFFF;
+ wire one_;
+ wire zero_;
+ sky130_fd_sc_hd__conb_1 TIE_ZERO_zero_ (.LO(zero_), .VNB(vssd1), .VPB(vccd1));
+ sky130_fd_sc_hd__conb_1 TIE_ONE_one_ (.HI(one_), .VNB(vssd1), .VPB(vccd1));
+ assign io_oeb[0] = zero_;
+ assign io_oeb[1] = zero_;
+ assign io_oeb[2] = zero_;
+ assign io_oeb[3] = zero_;
+ assign io_oeb[4] = zero_;
+ assign io_oeb[5] = zero_;
+ assign io_oeb[6] = zero_;
+ assign io_oeb[7] = one_;
+ assign io_oeb[8] = one_;
+ assign io_oeb[9] = one_;
  assign io_oeb[10] = one_;
  assign io_oeb[11] = one_;
  assign io_oeb[12] = one_;
@@ -106,14 +115,4 @@ module user_project_wrapper (user_clock2, VSUBS,
  assign io_oeb[35] = one_;
  assign io_oeb[36] = one_;
  assign io_oeb[37] = one_;
- assign io_oeb[7] = one_;
- assign io_oeb[8] = one_;
- assign io_oeb[9] = one_;
- assign io_oeb[0] = zero_;
- assign io_oeb[1] = zero_;
- assign io_oeb[2] = zero_;
- assign io_oeb[3] = zero_;
- assign io_oeb[4] = zero_;
- assign io_oeb[5] = zero_;
- assign io_oeb[6] = zero_;
 endmodule
