@@ -8,9 +8,9 @@
         "*__tapvpwrvgnd_*"
     ],
     "EXTRACT_CREATE_SUBCUT": [""],
-    "LVS_FLATTEN": ["user_project_wrapper"],
+    "LVS_FLATTEN": ["user_project_wrapper", "ucb_top"],
     "LVS_NOFLATTEN": [""],
-    "LVS_IGNORE": ["sky130_fd_sc_hd__conb_1"],
+    "LVS_IGNORE": [""],
     "LVS_SPICE_FILES": [
         "$PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice",
         "$PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"
