@@ -1,0 +1,33 @@
+2026-05-13 14:50:17 [INFO] Extracting compressed files in: /tmp/tmpjktlz_pc/repo
+2026-05-13 14:50:18 [INFO] make uncompress produced 3 gds/*.gds file(s): ucb_top.gds, user_proj_example.gds, user_project_wrapper.gds (make exit 2)
+2026-05-13 14:50:18 [INFO] Project type: digital
+2026-05-13 14:50:18 [INFO] GDS hash (user_project_wrapper): c326a5bfb6d77773f0b10d9fcb33a8c9edebd417
+2026-05-13 14:50:18 [INFO] Tools: KLayout v0.29.2 | Magic v8.3.471
+2026-05-13 14:50:18 [INFO] PDK: SKY130A unknown
+2026-05-13 14:50:18 [INFO] Running 2 checks: [lvs, oeb]
+2026-05-13 14:50:18 [INFO] Loading LVS environment from /tmp/tmpjktlz_pc/repo/lvs/user_project_wrapper/lvs_config.json
+2026-05-13 14:50:18 [INFO] EXTRACT_FLATGLOB: 
+2026-05-13 14:50:18 [INFO] EXTRACT_ABSTRACT: *__fill_* *__fakediode_* *__tapvpwrvgnd_*
+2026-05-13 14:50:18 [INFO] EXTRACT_CREATE_SUBCUT: 
+2026-05-13 14:50:18 [INFO] LVS_FLATTEN: 
+2026-05-13 14:50:18 [INFO] LVS_NOFLATTEN: 
+2026-05-13 14:50:18 [INFO] LVS_IGNORE: 
+2026-05-13 14:50:18 [INFO] LVS_SPICE_FILES: /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+2026-05-13 14:50:18 [INFO] LVS_VERILOG_FILES: /tmp/tmpjktlz_pc/repo/verilog/gl/ucb_top.v /tmp/tmpjktlz_pc/repo/verilog/gl/user_project_wrapper.v
+2026-05-13 14:50:18 [INFO] LAYOUT_FILE: /tmp/tmpjktlz_pc/repo/gds/user_project_wrapper.gds
+2026-05-13 14:50:18 [INFO] Running: run_be_checks --nooeb
+2026-05-13 14:50:18 [INFO] LVS output directory: /tmp/tmpjktlz_pc/repo/precheck_results/13_MAY_2026___14_50_17
+2026-05-13 14:52:13 [ERROR] LVS FAILED (stat=1), see /tmp/tmpjktlz_pc/repo/precheck_results/13_MAY_2026___14_50_17/logs/LVS_check.log
+2026-05-13 14:52:13 [INFO] Loading LVS environment from /tmp/tmpjktlz_pc/repo/lvs/user_project_wrapper/lvs_config.json
+2026-05-13 14:52:13 [INFO] EXTRACT_FLATGLOB: 
+2026-05-13 14:52:13 [INFO] EXTRACT_ABSTRACT: *__fill_* *__fakediode_* *__tapvpwrvgnd_*
+2026-05-13 14:52:13 [INFO] EXTRACT_CREATE_SUBCUT: 
+2026-05-13 14:52:13 [INFO] LVS_FLATTEN: 
+2026-05-13 14:52:13 [INFO] LVS_NOFLATTEN: 
+2026-05-13 14:52:13 [INFO] LVS_IGNORE: 
+2026-05-13 14:52:13 [INFO] LVS_SPICE_FILES: /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+2026-05-13 14:52:13 [INFO] LVS_VERILOG_FILES: /tmp/tmpjktlz_pc/repo/verilog/gl/ucb_top.v /tmp/tmpjktlz_pc/repo/verilog/gl/user_project_wrapper.v
+2026-05-13 14:52:13 [INFO] LAYOUT_FILE: /tmp/tmpjktlz_pc/repo/gds/user_project_wrapper.gds
+2026-05-13 14:52:13 [INFO] Running: run_oeb_check --noextract
+2026-05-13 14:52:13 [INFO] OEB output directory: /tmp/tmpjktlz_pc/repo/precheck_results/13_MAY_2026___14_50_17
+2026-05-13 14:52:14 [ERROR] OEB FAILED (stat=6), see /tmp/tmpjktlz_pc/repo/precheck_results/13_MAY_2026___14_50_17/logs/OEB_check.log
