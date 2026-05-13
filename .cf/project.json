@@ -45,21 +45,22 @@
     "platform_project_id": "2444a5e5-a612-49b9-b2d8-b0f519a20cb0"
   },
   "precheck": {
-    "version": "1.3.1",
-    "timestamp": "2026-05-12T13:41:03.016835+00:00",
+    "version": "1.3.3",
+    "timestamp": "2026-05-13T12:50:06.884047+00:00",
     "pdk": "sky130A",
     "passed": false,
     "checks": {
-      "gpio_defines": {
-        "status": "pass",
-        "duration_s": 0.67
+      "lvs": {
+        "status": "fail",
+        "duration_s": 127.33,
+        "details": "LVS FAILED (stat=1), see /tmp/tmpsil4kqjk/repo/precheck_results/13_MAY_2026___12_47_58/logs/LVS_check.log"
       },
       "oeb": {
         "status": "fail",
-        "duration_s": 76.03,
+        "duration_s": 0.83,
         "details": "64 errors, 31 warnings across 38 GPIOs",
         "report": {
-          "report_relpath": "/home/user/Desktop/myfolder/project/ucb64arms_openlane2/caravel_user_project/precheck_results/12_MAY_2026___13_39_45/outputs/reports/cvc.oeb.report",
+          "report_relpath": "/tmp/tmpsil4kqjk/repo/precheck_results/13_MAY_2026___12_47_58/outputs/reports/cvc.oeb.report",
           "design_type": "caravel",
           "gpios": [
             {
@@ -1124,6 +1125,6 @@
         "reason": "optional (use --magic-drc to include)"
       }
     },
-    "input_file_hash": "4a05890392a3dab916209911014cd8c23c174ff1"
+    "input_file_hash": "c062a5195935b44716f5b8a460e300f3bcef3eaf"
   }
 }
