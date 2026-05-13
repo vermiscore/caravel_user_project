@@ -1,0 +1,1070 @@
+BEGIN: Wed May 13 13:56:52 2026
+Extracting as digital. Top ports unique.
+
+Magic 8.3 revision 471 - Compiled on Wed Apr 22 16:23:58 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design magicrc.well for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Loading tech file /tmp/tmpmfpuckoy/repo/precheck_results/13_MAY_2026___13_56_49/tmp/sky130A.tech
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/tmp/tmpmfpuckoy/repo/precheck_results/13_MAY_2026___13_56_49/tmp/ext/abstract.tcl" from command line.
+Abstracting
+CIF input style is now "sky130()"
+Abstracting /tmp/tmpmfpuckoy/repo/gds/user_project_wrapper.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: user_project_wrapper
+Reading "ucb_top".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+Reading "user_project_wrapper".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__o22ai_4".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__o22a_2".
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xor2_4".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__or4bb_4".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__or4b_4".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__a31o_1".
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__and4bb_4".
+Reading "sky130_fd_sc_hd__and4b_2".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__and4_2".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__and4bb_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__a2111o_2".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__o31ai_1".
+
+TIME: read GDS: 00:00:08 
+
+
+TIME: create subcut: 00:00:00 
+
+Abstracting sky130_fd_sc_hd__fill_1
+instance count:0 port count:5
+Abstracting sky130_fd_sc_hd__fill_2
+instance count:0 port count:5
+Abstracting sky130_fd_sc_hd__tapvpwrvgnd_1
+instance count:0 port count:3
+
+TIME: create abstract: 00:00:00 
+
+Using technology "sky130A", version 1.0.493
+
+Magic 8.3 revision 471 - Compiled on Wed Apr 22 16:23:58 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design magicrc.well for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Loading tech file /tmp/tmpmfpuckoy/repo/precheck_results/13_MAY_2026___13_56_49/tmp/sky130A.tech
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/tmp/tmpmfpuckoy/repo/precheck_results/13_MAY_2026___13_56_49/tmp/ext/extract.tcl" from command line.
+Extracting with top ports unique (digital)
+CIF input style is now "sky130()"
+Flattening 
+
+Extracting /tmp/tmpmfpuckoy/repo/gds/user_project_wrapper.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: user_project_wrapper
+Reading "ucb_top".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__o22ai_4".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__o22a_2".
+    5000 uses
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__a21oi_1".
+    10000 uses
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xor2_4".
+    15000 uses
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__or4bb_4".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__or4b_4".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__a31o_1".
+    20000 uses
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__and4bb_4".
+Reading "sky130_fd_sc_hd__and4b_2".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__and4_2".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__and4bb_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__a2111o_2".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+    25000 uses
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__o31ai_1".
+    30000 uses
+Reading "user_project_wrapper".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "sky130_ef_sc_hd__decap_12".
+Error while reading cell "user_project_wrapper" (byte position 38291514): Cell "sky130_ef_sc_hd__decap_12" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38291514): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__decap_3".
+Error while reading cell "user_project_wrapper" (byte position 38295314): Cell "sky130_fd_sc_hd__decap_3" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38295314): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__fill_1".
+Error while reading cell "user_project_wrapper" (byte position 38297994): Cell "sky130_fd_sc_hd__fill_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38297994): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Error while reading cell "user_project_wrapper" (byte position 38299314): Cell "sky130_fd_sc_hd__tapvpwrvgnd_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38299314): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__decap_4".
+Error while reading cell "user_project_wrapper" (byte position 38300996): Cell "sky130_fd_sc_hd__decap_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38300996): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__decap_6".
+Error while reading cell "user_project_wrapper" (byte position 38303804): Cell "sky130_fd_sc_hd__decap_6" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38303804): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nor2_1".
+Error while reading cell "user_project_wrapper" (byte position 38306964): Cell "sky130_fd_sc_hd__nor2_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38306964): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__decap_8".
+Error while reading cell "user_project_wrapper" (byte position 38310644): Cell "sky130_fd_sc_hd__decap_8" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38310644): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__diode_2".
+Error while reading cell "user_project_wrapper" (byte position 38314188): Cell "sky130_fd_sc_hd__diode_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38314188): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Error while reading cell "user_project_wrapper" (byte position 38317706): Cell "sky130_fd_sc_hd__clkbuf_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38317706): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__fill_2".
+Error while reading cell "user_project_wrapper" (byte position 38321530): Cell "sky130_fd_sc_hd__fill_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38321530): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__buf_1".
+Error while reading cell "user_project_wrapper" (byte position 38322970): Cell "sky130_fd_sc_hd__buf_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38322970): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nand2b_1".
+Error while reading cell "user_project_wrapper" (byte position 38326954): Cell "sky130_fd_sc_hd__nand2b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38326954): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nand2_1".
+Error while reading cell "user_project_wrapper" (byte position 38331558): Cell "sky130_fd_sc_hd__nand2_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38331558): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or2_1".
+Error while reading cell "user_project_wrapper" (byte position 38335522): Cell "sky130_fd_sc_hd__or2_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38335522): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nor3_1".
+Error while reading cell "user_project_wrapper" (byte position 38339762): Cell "sky130_fd_sc_hd__nor3_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38339762): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o21a_1".
+Error while reading cell "user_project_wrapper" (byte position 38344016): Cell "sky130_fd_sc_hd__o21a_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38344016): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and2_2".
+Error while reading cell "user_project_wrapper" (byte position 38349662): Cell "sky130_fd_sc_hd__and2_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38349662): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Error while reading cell "user_project_wrapper" (byte position 38355122): Cell "sky130_fd_sc_hd__dfrtp_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38355122): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and2_1".
+Error while reading cell "user_project_wrapper" (byte position 38370424): Cell "sky130_fd_sc_hd__and2_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38370424): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__xnor2_1".
+Error while reading cell "user_project_wrapper" (byte position 38375340): Cell "sky130_fd_sc_hd__xnor2_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38375340): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a21o_1".
+Error while reading cell "user_project_wrapper" (byte position 38380718): Cell "sky130_fd_sc_hd__a21o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38380718): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a21bo_1".
+Error while reading cell "user_project_wrapper" (byte position 38386782): Cell "sky130_fd_sc_hd__a21bo_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38386782): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__xnor2_2".
+Error while reading cell "user_project_wrapper" (byte position 38394402): Cell "sky130_fd_sc_hd__xnor2_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38394402): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Error while reading cell "user_project_wrapper" (byte position 38403162): Cell "sky130_fd_sc_hd__dlygate4sd3_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38403162): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or3_1".
+Error while reading cell "user_project_wrapper" (byte position 38409154): Cell "sky130_fd_sc_hd__or3_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38409154): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__mux2_1".
+Error while reading cell "user_project_wrapper" (byte position 38414298): Cell "sky130_fd_sc_hd__mux2_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38414298): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Error while reading cell "user_project_wrapper" (byte position 38421202): Cell "sky130_fd_sc_hd__clkbuf_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38421202): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nand3_1".
+Error while reading cell "user_project_wrapper" (byte position 38425810): Cell "sky130_fd_sc_hd__nand3_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38425810): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nor2_2".
+Error while reading cell "user_project_wrapper" (byte position 38430226): Cell "sky130_fd_sc_hd__nor2_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38430226): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o21ai_1".
+Error while reading cell "user_project_wrapper" (byte position 38435042): Cell "sky130_fd_sc_hd__o21ai_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38435042): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__buf_2".
+Error while reading cell "user_project_wrapper" (byte position 38439832): Cell "sky130_fd_sc_hd__buf_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38439832): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__buf_8".
+Error while reading cell "user_project_wrapper" (byte position 38444340): Cell "sky130_fd_sc_hd__buf_8" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38444340): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Error while reading cell "user_project_wrapper" (byte position 38453248): Cell "sky130_fd_sc_hd__clkbuf_8" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38453248): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Error while reading cell "user_project_wrapper" (byte position 38461078): Cell "sky130_fd_sc_hd__clkbuf_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38461078): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Error while reading cell "user_project_wrapper" (byte position 38466312): Cell "sky130_fd_sc_hd__clkinvlp_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38466312): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__buf_6".
+Error while reading cell "user_project_wrapper" (byte position 38471424): Cell "sky130_fd_sc_hd__buf_6" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38471424): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__buf_4".
+Error while reading cell "user_project_wrapper" (byte position 38478474): Cell "sky130_fd_sc_hd__buf_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38478474): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkinv_4".
+Error while reading cell "user_project_wrapper" (byte position 38483898): Cell "sky130_fd_sc_hd__clkinv_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38483898): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkinv_2".
+Error while reading cell "user_project_wrapper" (byte position 38489780): Cell "sky130_fd_sc_hd__clkinv_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38489780): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__bufinv_16".
+Error while reading cell "user_project_wrapper" (byte position 38494098): Cell "sky130_fd_sc_hd__bufinv_16" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38494098): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Error while reading cell "user_project_wrapper" (byte position 38510998): Cell "sky130_fd_sc_hd__dfrtp_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38510998): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Error while reading cell "user_project_wrapper" (byte position 38527164): Cell "sky130_fd_sc_hd__dlymetal6s2s_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38527164): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Error while reading cell "user_project_wrapper" (byte position 38535016): Cell "sky130_fd_sc_hd__clkbuf_16" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38535016): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__inv_8".
+Error while reading cell "user_project_wrapper" (byte position 38547748): Cell "sky130_fd_sc_hd__inv_8" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38547748): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or4_1".
+Error while reading cell "user_project_wrapper" (byte position 38555320): Cell "sky130_fd_sc_hd__or4_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38555320): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a22o_1".
+Error while reading cell "user_project_wrapper" (byte position 38561416): Cell "sky130_fd_sc_hd__a22o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38561416): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and2_4".
+Error while reading cell "user_project_wrapper" (byte position 38568078): Cell "sky130_fd_sc_hd__and2_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38568078): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a221o_1".
+Error while reading cell "user_project_wrapper" (byte position 38573838): Cell "sky130_fd_sc_hd__a221o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38573838): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o21ai_4".
+Error while reading cell "user_project_wrapper" (byte position 38581044): Cell "sky130_fd_sc_hd__o21ai_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38581044): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a2111o_1".
+Error while reading cell "user_project_wrapper" (byte position 38589174): Cell "sky130_fd_sc_hd__a2111o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38589174): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__inv_6".
+Error while reading cell "user_project_wrapper" (byte position 38597938): Cell "sky130_fd_sc_hd__inv_6" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38597938): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o22ai_4".
+Error while reading cell "user_project_wrapper" (byte position 38603962): Cell "sky130_fd_sc_hd__o22ai_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38603962): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or4_2".
+Error while reading cell "user_project_wrapper" (byte position 38614638): Cell "sky130_fd_sc_hd__or4_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38614638): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nor4_1".
+Error while reading cell "user_project_wrapper" (byte position 38621262): Cell "sky130_fd_sc_hd__nor4_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38621262): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Error while reading cell "user_project_wrapper" (byte position 38626058): Cell "sky130_fd_sc_hd__a2bb2o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38626058): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o22a_4".
+Error while reading cell "user_project_wrapper" (byte position 38633300): Cell "sky130_fd_sc_hd__o22a_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38633300): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o22a_2".
+Error while reading cell "user_project_wrapper" (byte position 38643000): Cell "sky130_fd_sc_hd__o22a_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38643000): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Error while reading cell "user_project_wrapper" (byte position 38649670): Cell "sky130_fd_sc_hd__a2bb2o_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38649670): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nand2_2".
+Error while reading cell "user_project_wrapper" (byte position 38657472): Cell "sky130_fd_sc_hd__nand2_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38657472): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Error while reading cell "user_project_wrapper" (byte position 38662528): Cell "sky130_fd_sc_hd__o2bb2a_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38662528): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__inv_12".
+Error while reading cell "user_project_wrapper" (byte position 38668994): Cell "sky130_fd_sc_hd__inv_12" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38668994): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o21ai_2".
+Error while reading cell "user_project_wrapper" (byte position 38679376): Cell "sky130_fd_sc_hd__o21ai_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38679376): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o22a_1".
+Error while reading cell "user_project_wrapper" (byte position 38685894): Cell "sky130_fd_sc_hd__o22a_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38685894): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and3_1".
+Error while reading cell "user_project_wrapper" (byte position 38691986): Cell "sky130_fd_sc_hd__and3_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38691986): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a21oi_1".
+Error while reading cell "user_project_wrapper" (byte position 38699166): Cell "sky130_fd_sc_hd__a21oi_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38699166): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a21bo_2".
+Error while reading cell "user_project_wrapper" (byte position 38703910): Cell "sky130_fd_sc_hd__a21bo_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38703910): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__clkinv_8".
+Error while reading cell "user_project_wrapper" (byte position 38710282): Cell "sky130_fd_sc_hd__clkinv_8" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38710282): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__xor2_1".
+Error while reading cell "user_project_wrapper" (byte position 38719546): Cell "sky130_fd_sc_hd__xor2_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38719546): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or3b_1".
+Error while reading cell "user_project_wrapper" (byte position 38725002): Cell "sky130_fd_sc_hd__or3b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38725002): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o221a_1".
+Error while reading cell "user_project_wrapper" (byte position 38731282): Cell "sky130_fd_sc_hd__o221a_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38731282): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a211o_1".
+Error while reading cell "user_project_wrapper" (byte position 38738586): Cell "sky130_fd_sc_hd__a211o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38738586): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a221oi_1".
+Error while reading cell "user_project_wrapper" (byte position 38745008): Cell "sky130_fd_sc_hd__a221oi_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38745008): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o31a_1".
+Error while reading cell "user_project_wrapper" (byte position 38751652): Cell "sky130_fd_sc_hd__o31a_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38751652): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__inv_2".
+Error while reading cell "user_project_wrapper" (byte position 38758288): Cell "sky130_fd_sc_hd__inv_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38758288): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o21ba_1".
+Error while reading cell "user_project_wrapper" (byte position 38762110): Cell "sky130_fd_sc_hd__o21ba_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38762110): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or3_2".
+Error while reading cell "user_project_wrapper" (byte position 38768286): Cell "sky130_fd_sc_hd__or3_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38768286): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__xor2_2".
+Error while reading cell "user_project_wrapper" (byte position 38773974): Cell "sky130_fd_sc_hd__xor2_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38773974): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__xor2_4".
+Error while reading cell "user_project_wrapper" (byte position 38783126): Cell "sky130_fd_sc_hd__xor2_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38783126): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a32o_1".
+Error while reading cell "user_project_wrapper" (byte position 38797606): Cell "sky130_fd_sc_hd__a32o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38797606): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and3_2".
+Error while reading cell "user_project_wrapper" (byte position 38805054): Cell "sky130_fd_sc_hd__and3_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38805054): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and2b_1".
+Error while reading cell "user_project_wrapper" (byte position 38810940): Cell "sky130_fd_sc_hd__and2b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38810940): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nor2_4".
+Error while reading cell "user_project_wrapper" (byte position 38816490): Cell "sky130_fd_sc_hd__nor2_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38816490): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or4_4".
+Error while reading cell "user_project_wrapper" (byte position 38823608): Cell "sky130_fd_sc_hd__or4_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38823608): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a21boi_1".
+Error while reading cell "user_project_wrapper" (byte position 38830930): Cell "sky130_fd_sc_hd__a21boi_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38830930): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and3b_1".
+Error while reading cell "user_project_wrapper" (byte position 38837240): Cell "sky130_fd_sc_hd__and3b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38837240): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or3b_4".
+Error while reading cell "user_project_wrapper" (byte position 38843656): Cell "sky130_fd_sc_hd__or3b_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38843656): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__inv_4".
+Error while reading cell "user_project_wrapper" (byte position 38850162): Cell "sky130_fd_sc_hd__inv_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38850162): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nand4b_1".
+Error while reading cell "user_project_wrapper" (byte position 38855228): Cell "sky130_fd_sc_hd__nand4b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38855228): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or4bb_4".
+Error while reading cell "user_project_wrapper" (byte position 38861116): Cell "sky130_fd_sc_hd__or4bb_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38861116): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nor2_8".
+Error while reading cell "user_project_wrapper" (byte position 38869948): Cell "sky130_fd_sc_hd__nor2_8" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38869948): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or2_4".
+Error while reading cell "user_project_wrapper" (byte position 38881418): Cell "sky130_fd_sc_hd__or2_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38881418): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a41o_1".
+Error while reading cell "user_project_wrapper" (byte position 38887194): Cell "sky130_fd_sc_hd__a41o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38887194): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or4b_4".
+Error while reading cell "user_project_wrapper" (byte position 38895150): Cell "sky130_fd_sc_hd__or4b_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38895150): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Error while reading cell "user_project_wrapper" (byte position 38903656): Cell "sky130_fd_sc_hd__dfxtp_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38903656): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or3_4".
+Error while reading cell "user_project_wrapper" (byte position 38915790): Cell "sky130_fd_sc_hd__or3_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38915790): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a21boi_2".
+Error while reading cell "user_project_wrapper" (byte position 38922924): Cell "sky130_fd_sc_hd__a21boi_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38922924): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o211a_1".
+Error while reading cell "user_project_wrapper" (byte position 38929630): Cell "sky130_fd_sc_hd__o211a_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38929630): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a31oi_1".
+Error while reading cell "user_project_wrapper" (byte position 38936488): Cell "sky130_fd_sc_hd__a31oi_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38936488): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a31o_1".
+Error while reading cell "user_project_wrapper" (byte position 38941808): Cell "sky130_fd_sc_hd__a31o_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38941808): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and2b_2".
+Error while reading cell "user_project_wrapper" (byte position 38948368): Cell "sky130_fd_sc_hd__and2b_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38948368): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__nor4b_1".
+Error while reading cell "user_project_wrapper" (byte position 38954046): Cell "sky130_fd_sc_hd__nor4b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38954046): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o22ai_2".
+Error while reading cell "user_project_wrapper" (byte position 38959326): Cell "sky130_fd_sc_hd__o22ai_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38959326): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and4bb_4".
+Error while reading cell "user_project_wrapper" (byte position 38967278): Cell "sky130_fd_sc_hd__and4bb_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38967278): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and4b_2".
+Error while reading cell "user_project_wrapper" (byte position 38976010): Cell "sky130_fd_sc_hd__and4b_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38976010): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and4b_1".
+Error while reading cell "user_project_wrapper" (byte position 38984296): Cell "sky130_fd_sc_hd__and4b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38984296): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and4_2".
+Error while reading cell "user_project_wrapper" (byte position 38991924): Cell "sky130_fd_sc_hd__and4_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38991924): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__dfstp_1".
+Error while reading cell "user_project_wrapper" (byte position 38999216): Cell "sky130_fd_sc_hd__dfstp_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 38999216): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and4bb_1".
+Error while reading cell "user_project_wrapper" (byte position 39014822): Cell "sky130_fd_sc_hd__and4bb_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39014822): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and4bb_2".
+Error while reading cell "user_project_wrapper" (byte position 39023238): Cell "sky130_fd_sc_hd__and4bb_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39023238): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and3_4".
+Error while reading cell "user_project_wrapper" (byte position 39031248): Cell "sky130_fd_sc_hd__and3_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39031248): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a2111o_2".
+Error while reading cell "user_project_wrapper" (byte position 39038160): Cell "sky130_fd_sc_hd__a2111o_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39038160): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__and4_1".
+Error while reading cell "user_project_wrapper" (byte position 39047294): Cell "sky130_fd_sc_hd__and4_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39047294): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Error while reading cell "user_project_wrapper" (byte position 39053722): Cell "sky130_fd_sc_hd__dfrtp_4" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39053722): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__a21oi_2".
+Error while reading cell "user_project_wrapper" (byte position 39071660): Cell "sky130_fd_sc_hd__a21oi_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39071660): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o21bai_1".
+Error while reading cell "user_project_wrapper" (byte position 39077600): Cell "sky130_fd_sc_hd__o21bai_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39077600): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o32a_2".
+Error while reading cell "user_project_wrapper" (byte position 39083186): Cell "sky130_fd_sc_hd__o32a_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39083186): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+Error while reading cell "user_project_wrapper" (byte position 39090996): Cell "sky130_fd_sc_hd__o2bb2a_2" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39090996): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__or4b_1".
+Error while reading cell "user_project_wrapper" (byte position 39098118): Cell "sky130_fd_sc_hd__or4b_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39098118): Ignoring duplicate definition
+Reading "sky130_fd_sc_hd__o31ai_1".
+Error while reading cell "user_project_wrapper" (byte position 39105416): Cell "sky130_fd_sc_hd__o31ai_1" was already defined in this file.
+Error while reading cell "user_project_wrapper" (byte position 39105416): Ignoring duplicate definition
+
+TIME: read GDS: 00:02:49 
+
+
+TIME: add subcut: 00:00:00 
+
+Abstracting sky130_fd_sc_hd__fill_1
+Abstracting sky130_fd_sc_hd__fill_2
+Abstracting sky130_fd_sc_hd__tapvpwrvgnd_1
+
+TIME: set abstract: 00:00:00 
+
+Processing sky130_fd_sc_hd__decap_3
+Processing sky130_ef_sc_hd__decap_12
+Processing sky130_fd_sc_hd__decap_6
+Processing sky130_fd_sc_hd__buf_2
+Processing sky130_fd_sc_hd__decap_4
+Processing sky130_fd_sc_hd__dlygate4sd3_1
+Processing sky130_fd_sc_hd__mux2_1
+Processing sky130_fd_sc_hd__diode_2
+Processing sky130_fd_sc_hd__dfrtp_1
+Processing sky130_fd_sc_hd__decap_8
+Processing sky130_fd_sc_hd__clkbuf_8
+Processing sky130_fd_sc_hd__clkinvlp_4
+Processing sky130_fd_sc_hd__bufinv_16
+Processing sky130_fd_sc_hd__clkinv_2
+Processing sky130_fd_sc_hd__clkbuf_2
+Processing sky130_fd_sc_hd__clkbuf_4
+Processing sky130_fd_sc_hd__dlymetal6s2s_1
+Processing sky130_fd_sc_hd__nor2_1
+Processing sky130_fd_sc_hd__and2_1
+Processing sky130_fd_sc_hd__nand2_1
+Processing sky130_fd_sc_hd__a21oi_1
+Processing sky130_fd_sc_hd__and3_1
+Processing sky130_fd_sc_hd__xor2_1
+Processing sky130_fd_sc_hd__inv_8
+Processing sky130_fd_sc_hd__xnor2_1
+Processing sky130_fd_sc_hd__or2_1
+Processing sky130_fd_sc_hd__buf_1
+Processing sky130_fd_sc_hd__or4_1
+Processing sky130_fd_sc_hd__nor3_1
+Processing sky130_fd_sc_hd__a22o_1
+Processing sky130_fd_sc_hd__buf_4
+Processing sky130_fd_sc_hd__inv_6
+Processing sky130_fd_sc_hd__a2111o_1
+Processing sky130_fd_sc_hd__buf_6
+Processing sky130_fd_sc_hd__a221o_1
+Processing sky130_fd_sc_hd__or3b_1
+Processing sky130_fd_sc_hd__buf_8
+Processing sky130_fd_sc_hd__clkinv_8
+Processing sky130_fd_sc_hd__or3_1
+Processing sky130_fd_sc_hd__o31ai_1
+Processing sky130_fd_sc_hd__nor4_1
+Processing sky130_fd_sc_hd__or4_2
+Processing sky130_fd_sc_hd__clkinv_4
+Processing sky130_fd_sc_hd__o21a_1
+Processing sky130_fd_sc_hd__a211o_1
+Processing sky130_fd_sc_hd__o21ai_1
+Processing sky130_fd_sc_hd__a2bb2o_1
+Processing sky130_fd_sc_hd__o21ba_1
+Processing sky130_fd_sc_hd__and2b_1
+Processing sky130_fd_sc_hd__or4b_1
+Processing sky130_fd_sc_hd__inv_2
+Processing sky130_fd_sc_hd__o22a_1
+Processing sky130_fd_sc_hd__clkbuf_16
+Processing sky130_fd_sc_hd__a31o_1
+Processing sky130_fd_sc_hd__and4_1
+Processing sky130_fd_sc_hd__clkbuf_1
+Processing sky130_fd_sc_hd__dfxtp_1
+Processing sky130_fd_sc_hd__inv_12
+Processing sky130_fd_sc_hd__o22ai_4
+Processing sky130_fd_sc_hd__o22a_4
+Processing sky130_fd_sc_hd__o22a_2
+Processing sky130_fd_sc_hd__a2bb2o_2
+Processing sky130_fd_sc_hd__o2bb2a_2
+Processing sky130_fd_sc_hd__nand2b_1
+Processing sky130_fd_sc_hd__a21oi_2
+Processing sky130_fd_sc_hd__a21o_1
+Processing sky130_fd_sc_hd__xnor2_2
+Processing sky130_fd_sc_hd__o21ai_2
+Processing sky130_fd_sc_hd__o32a_2
+Processing sky130_fd_sc_hd__and2_4
+Processing sky130_fd_sc_hd__o21bai_1
+Processing sky130_fd_sc_hd__and3_2
+Processing sky130_fd_sc_hd__nor2_2
+Processing sky130_fd_sc_hd__xor2_2
+Processing sky130_fd_sc_hd__xor2_4
+Processing sky130_fd_sc_hd__dfrtp_4
+Processing sky130_fd_sc_hd__o31a_1
+Processing sky130_fd_sc_hd__or4_4
+Processing sky130_fd_sc_hd__and3b_1
+Processing sky130_fd_sc_hd__a2111o_2
+Processing sky130_fd_sc_hd__nor4b_1
+Processing sky130_fd_sc_hd__and4b_1
+Processing sky130_fd_sc_hd__o2bb2a_1
+Processing sky130_fd_sc_hd__and3_4
+Processing sky130_fd_sc_hd__and4bb_1
+Processing sky130_fd_sc_hd__and4bb_2
+Processing sky130_fd_sc_hd__dfstp_1
+Processing sky130_fd_sc_hd__and4_2
+Processing sky130_fd_sc_hd__and4b_2
+Processing sky130_fd_sc_hd__and4bb_4
+Processing sky130_fd_sc_hd__o22ai_2
+Processing sky130_fd_sc_hd__and2b_2
+Processing sky130_fd_sc_hd__dfrtp_2
+Processing sky130_fd_sc_hd__a21bo_1
+Processing sky130_fd_sc_hd__or3b_4
+Processing sky130_fd_sc_hd__inv_4
+Processing sky130_fd_sc_hd__a31oi_1
+Processing sky130_fd_sc_hd__o211a_1
+Processing sky130_fd_sc_hd__a21boi_2
+Processing sky130_fd_sc_hd__nor2_4
+Processing sky130_fd_sc_hd__or3_4
+Processing sky130_fd_sc_hd__or4b_4
+Processing sky130_fd_sc_hd__or4bb_4
+Processing sky130_fd_sc_hd__nor2_8
+Processing sky130_fd_sc_hd__a41o_1
+Processing sky130_fd_sc_hd__or2_4
+Processing sky130_fd_sc_hd__nand4b_1
+Processing sky130_fd_sc_hd__a21boi_1
+Processing sky130_fd_sc_hd__nand3_1
+Processing sky130_fd_sc_hd__a32o_1
+Processing sky130_fd_sc_hd__o221a_1
+Processing sky130_fd_sc_hd__o21ai_4
+Processing sky130_fd_sc_hd__or3_2
+Processing sky130_fd_sc_hd__a221oi_1
+Processing sky130_fd_sc_hd__a21bo_2
+Processing sky130_fd_sc_hd__nand2_2
+Processing sky130_fd_sc_hd__and2_2
+Processing ucb_top
+Processing user_project_wrapper
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Extraction style is now "ngspice()"
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
+sky130_fd_sc_hd__decap_3: 2 warnings
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Extracting sky130_ef_sc_hd__decap_12 into sky130_ef_sc_hd__decap_12.ext:
+sky130_ef_sc_hd__decap_12: 2 warnings
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
+sky130_fd_sc_hd__decap_6: 2 warnings
+Extracting sky130_fd_sc_hd__buf_2 into sky130_fd_sc_hd__buf_2.ext:
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+sky130_fd_sc_hd__decap_4: 2 warnings
+Extracting sky130_fd_sc_hd__dlygate4sd3_1 into sky130_fd_sc_hd__dlygate4sd3_1.ext:
+Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
+Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
+sky130_fd_sc_hd__diode_2: 1 warning
+Extracting sky130_fd_sc_hd__dfrtp_1 into sky130_fd_sc_hd__dfrtp_1.ext:
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
+sky130_fd_sc_hd__decap_8: 2 warnings
+Extracting sky130_fd_sc_hd__clkbuf_8 into sky130_fd_sc_hd__clkbuf_8.ext:
+Extracting sky130_fd_sc_hd__clkinvlp_4 into sky130_fd_sc_hd__clkinvlp_4.ext:
+Extracting sky130_fd_sc_hd__bufinv_16 into sky130_fd_sc_hd__bufinv_16.ext:
+Extracting sky130_fd_sc_hd__clkinv_2 into sky130_fd_sc_hd__clkinv_2.ext:
+Extracting sky130_fd_sc_hd__clkbuf_2 into sky130_fd_sc_hd__clkbuf_2.ext:
+Extracting sky130_fd_sc_hd__clkbuf_4 into sky130_fd_sc_hd__clkbuf_4.ext:
+Extracting sky130_fd_sc_hd__dlymetal6s2s_1 into sky130_fd_sc_hd__dlymetal6s2s_1.ext:
+Extracting sky130_fd_sc_hd__nor2_1 into sky130_fd_sc_hd__nor2_1.ext:
+Extracting sky130_fd_sc_hd__and2_1 into sky130_fd_sc_hd__and2_1.ext:
+Extracting sky130_fd_sc_hd__nand2_1 into sky130_fd_sc_hd__nand2_1.ext:
+Extracting sky130_fd_sc_hd__a21oi_1 into sky130_fd_sc_hd__a21oi_1.ext:
+Extracting sky130_fd_sc_hd__and3_1 into sky130_fd_sc_hd__and3_1.ext:
+Extracting sky130_fd_sc_hd__xor2_1 into sky130_fd_sc_hd__xor2_1.ext:
+Extracting sky130_fd_sc_hd__inv_8 into sky130_fd_sc_hd__inv_8.ext:
+Extracting sky130_fd_sc_hd__xnor2_1 into sky130_fd_sc_hd__xnor2_1.ext:
+Extracting sky130_fd_sc_hd__or2_1 into sky130_fd_sc_hd__or2_1.ext:
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Extracting sky130_fd_sc_hd__or4_1 into sky130_fd_sc_hd__or4_1.ext:
+Extracting sky130_fd_sc_hd__nor3_1 into sky130_fd_sc_hd__nor3_1.ext:
+Extracting sky130_fd_sc_hd__a22o_1 into sky130_fd_sc_hd__a22o_1.ext:
+Extracting sky130_fd_sc_hd__buf_4 into sky130_fd_sc_hd__buf_4.ext:
+Extracting sky130_fd_sc_hd__inv_6 into sky130_fd_sc_hd__inv_6.ext:
+Extracting sky130_fd_sc_hd__a2111o_1 into sky130_fd_sc_hd__a2111o_1.ext:
+Extracting sky130_fd_sc_hd__buf_6 into sky130_fd_sc_hd__buf_6.ext:
+Extracting sky130_fd_sc_hd__a221o_1 into sky130_fd_sc_hd__a221o_1.ext:
+Extracting sky130_fd_sc_hd__or3b_1 into sky130_fd_sc_hd__or3b_1.ext:
+Extracting sky130_fd_sc_hd__buf_8 into sky130_fd_sc_hd__buf_8.ext:
+Extracting sky130_fd_sc_hd__clkinv_8 into sky130_fd_sc_hd__clkinv_8.ext:
+Extracting sky130_fd_sc_hd__or3_1 into sky130_fd_sc_hd__or3_1.ext:
+Extracting sky130_fd_sc_hd__o31ai_1 into sky130_fd_sc_hd__o31ai_1.ext:
+Extracting sky130_fd_sc_hd__nor4_1 into sky130_fd_sc_hd__nor4_1.ext:
+Extracting sky130_fd_sc_hd__or4_2 into sky130_fd_sc_hd__or4_2.ext:
+Extracting sky130_fd_sc_hd__clkinv_4 into sky130_fd_sc_hd__clkinv_4.ext:
+Extracting sky130_fd_sc_hd__o21a_1 into sky130_fd_sc_hd__o21a_1.ext:
+Extracting sky130_fd_sc_hd__a211o_1 into sky130_fd_sc_hd__a211o_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_1 into sky130_fd_sc_hd__o21ai_1.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_1 into sky130_fd_sc_hd__a2bb2o_1.ext:
+Extracting sky130_fd_sc_hd__o21ba_1 into sky130_fd_sc_hd__o21ba_1.ext:
+Extracting sky130_fd_sc_hd__and2b_1 into sky130_fd_sc_hd__and2b_1.ext:
+Extracting sky130_fd_sc_hd__or4b_1 into sky130_fd_sc_hd__or4b_1.ext:
+Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
+Extracting sky130_fd_sc_hd__o22a_1 into sky130_fd_sc_hd__o22a_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Extracting sky130_fd_sc_hd__a31o_1 into sky130_fd_sc_hd__a31o_1.ext:
+Extracting sky130_fd_sc_hd__and4_1 into sky130_fd_sc_hd__and4_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
+Extracting sky130_fd_sc_hd__dfxtp_1 into sky130_fd_sc_hd__dfxtp_1.ext:
+Extracting sky130_fd_sc_hd__inv_12 into sky130_fd_sc_hd__inv_12.ext:
+Extracting sky130_fd_sc_hd__o22ai_4 into sky130_fd_sc_hd__o22ai_4.ext:
+Extracting sky130_fd_sc_hd__o22a_4 into sky130_fd_sc_hd__o22a_4.ext:
+Extracting sky130_fd_sc_hd__o22a_2 into sky130_fd_sc_hd__o22a_2.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_2 into sky130_fd_sc_hd__a2bb2o_2.ext:
+Extracting sky130_fd_sc_hd__o2bb2a_2 into sky130_fd_sc_hd__o2bb2a_2.ext:
+Extracting sky130_fd_sc_hd__nand2b_1 into sky130_fd_sc_hd__nand2b_1.ext:
+Extracting sky130_fd_sc_hd__a21oi_2 into sky130_fd_sc_hd__a21oi_2.ext:
+Extracting sky130_fd_sc_hd__a21o_1 into sky130_fd_sc_hd__a21o_1.ext:
+Extracting sky130_fd_sc_hd__xnor2_2 into sky130_fd_sc_hd__xnor2_2.ext:
+Extracting sky130_fd_sc_hd__o21ai_2 into sky130_fd_sc_hd__o21ai_2.ext:
+Extracting sky130_fd_sc_hd__o32a_2 into sky130_fd_sc_hd__o32a_2.ext:
+Extracting sky130_fd_sc_hd__and2_4 into sky130_fd_sc_hd__and2_4.ext:
+Extracting sky130_fd_sc_hd__o21bai_1 into sky130_fd_sc_hd__o21bai_1.ext:
+Extracting sky130_fd_sc_hd__and3_2 into sky130_fd_sc_hd__and3_2.ext:
+Extracting sky130_fd_sc_hd__nor2_2 into sky130_fd_sc_hd__nor2_2.ext:
+Extracting sky130_fd_sc_hd__xor2_2 into sky130_fd_sc_hd__xor2_2.ext:
+Extracting sky130_fd_sc_hd__xor2_4 into sky130_fd_sc_hd__xor2_4.ext:
+Extracting sky130_fd_sc_hd__dfrtp_4 into sky130_fd_sc_hd__dfrtp_4.ext:
+Extracting sky130_fd_sc_hd__o31a_1 into sky130_fd_sc_hd__o31a_1.ext:
+Extracting sky130_fd_sc_hd__or4_4 into sky130_fd_sc_hd__or4_4.ext:
+Extracting sky130_fd_sc_hd__and3b_1 into sky130_fd_sc_hd__and3b_1.ext:
+Extracting sky130_fd_sc_hd__a2111o_2 into sky130_fd_sc_hd__a2111o_2.ext:
+Extracting sky130_fd_sc_hd__nor4b_1 into sky130_fd_sc_hd__nor4b_1.ext:
+Extracting sky130_fd_sc_hd__and4b_1 into sky130_fd_sc_hd__and4b_1.ext:
+Extracting sky130_fd_sc_hd__o2bb2a_1 into sky130_fd_sc_hd__o2bb2a_1.ext:
+Extracting sky130_fd_sc_hd__and3_4 into sky130_fd_sc_hd__and3_4.ext:
+Extracting sky130_fd_sc_hd__and4bb_1 into sky130_fd_sc_hd__and4bb_1.ext:
+Extracting sky130_fd_sc_hd__and4bb_2 into sky130_fd_sc_hd__and4bb_2.ext:
+Extracting sky130_fd_sc_hd__dfstp_1 into sky130_fd_sc_hd__dfstp_1.ext:
+Extracting sky130_fd_sc_hd__and4_2 into sky130_fd_sc_hd__and4_2.ext:
+Extracting sky130_fd_sc_hd__and4b_2 into sky130_fd_sc_hd__and4b_2.ext:
+Extracting sky130_fd_sc_hd__and4bb_4 into sky130_fd_sc_hd__and4bb_4.ext:
+Extracting sky130_fd_sc_hd__o22ai_2 into sky130_fd_sc_hd__o22ai_2.ext:
+Extracting sky130_fd_sc_hd__and2b_2 into sky130_fd_sc_hd__and2b_2.ext:
+Extracting sky130_fd_sc_hd__dfrtp_2 into sky130_fd_sc_hd__dfrtp_2.ext:
+Extracting sky130_fd_sc_hd__a21bo_1 into sky130_fd_sc_hd__a21bo_1.ext:
+Extracting sky130_fd_sc_hd__or3b_4 into sky130_fd_sc_hd__or3b_4.ext:
+Extracting sky130_fd_sc_hd__inv_4 into sky130_fd_sc_hd__inv_4.ext:
+Extracting sky130_fd_sc_hd__a31oi_1 into sky130_fd_sc_hd__a31oi_1.ext:
+Extracting sky130_fd_sc_hd__o211a_1 into sky130_fd_sc_hd__o211a_1.ext:
+Extracting sky130_fd_sc_hd__a21boi_2 into sky130_fd_sc_hd__a21boi_2.ext:
+Extracting sky130_fd_sc_hd__nor2_4 into sky130_fd_sc_hd__nor2_4.ext:
+Extracting sky130_fd_sc_hd__or3_4 into sky130_fd_sc_hd__or3_4.ext:
+Extracting sky130_fd_sc_hd__or4b_4 into sky130_fd_sc_hd__or4b_4.ext:
+Extracting sky130_fd_sc_hd__or4bb_4 into sky130_fd_sc_hd__or4bb_4.ext:
+Extracting sky130_fd_sc_hd__nor2_8 into sky130_fd_sc_hd__nor2_8.ext:
+Extracting sky130_fd_sc_hd__a41o_1 into sky130_fd_sc_hd__a41o_1.ext:
+Extracting sky130_fd_sc_hd__or2_4 into sky130_fd_sc_hd__or2_4.ext:
+Extracting sky130_fd_sc_hd__nand4b_1 into sky130_fd_sc_hd__nand4b_1.ext:
+Extracting sky130_fd_sc_hd__a21boi_1 into sky130_fd_sc_hd__a21boi_1.ext:
+Extracting sky130_fd_sc_hd__nand3_1 into sky130_fd_sc_hd__nand3_1.ext:
+Extracting sky130_fd_sc_hd__a32o_1 into sky130_fd_sc_hd__a32o_1.ext:
+Extracting sky130_fd_sc_hd__o221a_1 into sky130_fd_sc_hd__o221a_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_4 into sky130_fd_sc_hd__o21ai_4.ext:
+Extracting sky130_fd_sc_hd__or3_2 into sky130_fd_sc_hd__or3_2.ext:
+Extracting sky130_fd_sc_hd__a221oi_1 into sky130_fd_sc_hd__a221oi_1.ext:
+Extracting sky130_fd_sc_hd__a21bo_2 into sky130_fd_sc_hd__a21bo_2.ext:
+Extracting sky130_fd_sc_hd__nand2_2 into sky130_fd_sc_hd__nand2_2.ext:
+Extracting sky130_fd_sc_hd__and2_2 into sky130_fd_sc_hd__and2_2.ext:
+Extracting ucb_top into ucb_top.ext:
+Extracting user_project_wrapper into user_project_wrapper.ext:
+Total of 11 warnings.
+
+TIME: extract: 00:01:16 
+
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 16
+Devs merged: 22
+Devs merged: 28
+Devs merged: 40
+Devs merged: 40
+Devs merged: 40
+Devs merged: 40
+Devs merged: 52
+Devs merged: 54
+Devs merged: 54
+Devs merged: 56
+Devs merged: 66
+Devs merged: 84
+Devs merged: 84
+Devs merged: 84
+Devs merged: 84
+Devs merged: 86
+Devs merged: 122
+Devs merged: 122
+Devs merged: 125
+Devs merged: 125
+Devs merged: 127
+Devs merged: 145
+Devs merged: 145
+Devs merged: 145
+Devs merged: 151
+Devs merged: 151
+Devs merged: 151
+Devs merged: 151
+Devs merged: 157
+Devs merged: 201
+Devs merged: 225
+Devs merged: 253
+Devs merged: 257
+Devs merged: 257
+Devs merged: 259
+Devs merged: 259
+Devs merged: 289
+Devs merged: 289
+Devs merged: 307
+Devs merged: 309
+Devs merged: 319
+Devs merged: 321
+Devs merged: 321
+Devs merged: 335
+Devs merged: 337
+Devs merged: 343
+Devs merged: 351
+Devs merged: 365
+Devs merged: 367
+Devs merged: 367
+Devs merged: 373
+Devs merged: 379
+Devs merged: 379
+Devs merged: 382
+Devs merged: 388
+Devs merged: 388
+Devs merged: 390
+Devs merged: 390
+Devs merged: 390
+Devs merged: 390
+Devs merged: 396
+Devs merged: 396
+Devs merged: 400
+Devs merged: 402
+Devs merged: 404
+Devs merged: 408
+Devs merged: 408
+Devs merged: 430
+Devs merged: 440
+Devs merged: 440
+Devs merged: 440
+Devs merged: 440
+Devs merged: 440
+Devs merged: 446
+Devs merged: 446
+Devs merged: 446
+Devs merged: 448
+Devs merged: 450
+Devs merged: 450
+Devs merged: 450
+Devs merged: 454
+Devs merged: 460
+Devs merged: 460
+Devs merged: 460
+Devs merged: 466
+Devs merged: 466
+Devs merged: 468
+Devs merged: 468
+Devs merged: 470
+Devs merged: 476
+Devs merged: 478
+Devs merged: 484
+Devs merged: 484
+Devs merged: 492
+Devs merged: 492
+Devs merged: 492
+Devs merged: 494
+Devs merged: 494
+Devs merged: 494
+Devs merged: 494
+Devs merged: 494
+exttospice finished.
+
+TIME: netlist: 00:00:03 
+
+Using technology "sky130A", version 1.0.493
+END: Wed May 13 14:01:12 2026
+Runtime: 0:04:20 (hh:mm:ss)
