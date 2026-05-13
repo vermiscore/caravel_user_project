@@ -1,0 +1,20 @@
+puts "Reading layout /tmp/tmpg4xf81w9/repo/precheck_results/13_MAY_2026___13_15_00/tmp/ext/user_project_wrapper.gds.spice..."
+set layout [readnet spice /tmp/tmpg4xf81w9/repo/precheck_results/13_MAY_2026___13_15_00/tmp/ext/user_project_wrapper.gds.spice]
+set source [readnet spice /dev/null]
+puts "Reading source /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice..."
+readnet spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice $source
+puts "Reading source /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_20_12.spice..."
+readnet spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_20_12.spice $source
+puts "Reading source /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_40_12.spice..."
+readnet spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_40_12.spice $source
+puts "Reading source /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_60_12.spice..."
+readnet spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_60_12.spice $source
+puts "Reading source /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_80_12.spice..."
+readnet spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_80_12.spice $source
+puts "Reading source /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice..."
+readnet spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice $source
+puts "Reading source /tmp/tmpg4xf81w9/repo/verilog/gl/ucb_top.v..."
+readnet verilog /tmp/tmpg4xf81w9/repo/verilog/gl/ucb_top.v $source
+puts "Reading source /tmp/tmpg4xf81w9/repo/verilog/gl/user_project_wrapper.nl.v..."
+readnet verilog /tmp/tmpg4xf81w9/repo/verilog/gl/user_project_wrapper.nl.v $source
+lvs "$layout user_project_wrapper" "$source user_project_wrapper" /tmp/tmpg4xf81w9/repo/precheck_results/13_MAY_2026___13_15_00/tmp/sky130A_setup.tcl /tmp/tmpg4xf81w9/repo/precheck_results/13_MAY_2026___13_15_00/tmp/lvs.report -blackbox -json -noflatten=/tmp/tmpg4xf81w9/repo/precheck_results/13_MAY_2026___13_15_00/tmp/noflatten.glob
