@@ -8,7 +8,7 @@
         "*__tapvpwrvgnd_*"
     ],
     "EXTRACT_CREATE_SUBCUT": [""],
-    "LVS_FLATTEN": ["user_project_wrapper"],
+    "LVS_FLATTEN": [""],
     "LVS_NOFLATTEN": [""],
     "LVS_IGNORE": [""],
     "LVS_SPICE_FILES": [
@@ -17,7 +17,7 @@
     ],
     "LVS_VERILOG_FILES": [
         "$UPRJ_ROOT/verilog/gl/ucb_top.v",
-        "$UPRJ_ROOT/verilog/gl/user_project_wrapper.nl.v"
+        "$UPRJ_ROOT/verilog/gl/user_project_wrapper.v"
     ],
     "LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds"
 }
