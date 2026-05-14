@@ -1,0 +1,20 @@
+2026-05-14 12:03:56 [INFO] Extracting compressed files in: /tmp/tmpcgksswbz/repo
+2026-05-14 12:03:56 [INFO] make uncompress produced 3 gds/*.gds file(s): ucb_top.gds, user_proj_example.gds, user_project_wrapper.gds (make exit 2)
+2026-05-14 12:03:56 [INFO] Project type: digital
+2026-05-14 12:03:57 [INFO] GDS hash (user_project_wrapper): 6e2b362d3c437b5fc9147831668edc5c9ba8e667
+2026-05-14 12:03:57 [INFO] Tools: KLayout v0.29.2 | Magic v8.3.471
+2026-05-14 12:03:57 [INFO] PDK: SKY130A unknown
+2026-05-14 12:03:57 [INFO] Running 1 checks: [lvs]
+2026-05-14 12:03:57 [INFO] Loading LVS environment from /tmp/tmpcgksswbz/repo/lvs/user_project_wrapper/lvs_config.json
+2026-05-14 12:03:57 [INFO] EXTRACT_FLATGLOB: 
+2026-05-14 12:03:57 [INFO] EXTRACT_ABSTRACT: *__fill_* *__fakediode_* *__tapvpwrvgnd_*
+2026-05-14 12:03:57 [INFO] EXTRACT_CREATE_SUBCUT: 
+2026-05-14 12:03:57 [INFO] LVS_FLATTEN: 
+2026-05-14 12:03:57 [INFO] LVS_NOFLATTEN: 
+2026-05-14 12:03:57 [INFO] LVS_IGNORE: 
+2026-05-14 12:03:57 [INFO] LVS_SPICE_FILES: /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap*.spice /opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+2026-05-14 12:03:57 [INFO] LVS_VERILOG_FILES: /tmp/tmpcgksswbz/repo/verilog/gl/ucb_top.v /tmp/tmpcgksswbz/repo/verilog/gl/user_project_wrapper.v
+2026-05-14 12:03:57 [INFO] LAYOUT_FILE: /tmp/tmpcgksswbz/repo/gds/user_project_wrapper.gds
+2026-05-14 12:03:57 [INFO] Running: run_be_checks --nooeb
+2026-05-14 12:03:57 [INFO] LVS output directory: /tmp/tmpcgksswbz/repo/precheck_results/14_MAY_2026___12_03_56
+2026-05-14 12:06:13 [ERROR] LVS FAILED (stat=1), see /tmp/tmpcgksswbz/repo/precheck_results/14_MAY_2026___12_03_56/logs/LVS_check.log
