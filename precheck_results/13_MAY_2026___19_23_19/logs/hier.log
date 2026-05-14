@@ -1,0 +1,9 @@
+BEGIN: Wed May 13 19:23:19 2026
+Creating /tmp/tmpktxzdf_u/repo/precheck_results/13_MAY_2026___19_23_19/tmp/verilog.cells from the following files...
+	/tmp/tmpktxzdf_u/repo/verilog/gl/ucb_top.v
+	/tmp/tmpktxzdf_u/repo/verilog/gl/user_project_wrapper.v
+[INFO] Changing from /tmp/tmpktxzdf_u/repo/gds/user_project_wrapper.gds
+	to /tmp/tmpktxzdf_u/repo/precheck_results/13_MAY_2026___19_23_19/tmp/layout.txt
+Hierarchy check for user_project_wrapper failed. See /tmp/tmpktxzdf_u/repo/precheck_results/13_MAY_2026___19_23_19/tmp/hier.csv
+END: Wed May 13 19:23:22 2026
+Runtime: 0:00:03 (hh:mm:ss)
