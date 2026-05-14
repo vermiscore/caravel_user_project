@@ -1,0 +1,160 @@
+! Switch shorts
+
+! Finished
+
+! Resistor Errors
+
+! Finished
+
+! Power/Ground path through fuse
+
+! Finished
+
+! ... voltage already set
+
+! Finished
+
+! Checking forward bias diode errors: 
+
+! Checking forward bias diode errors: 
+
+! Finished
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Finished
+
+! Checking nmos gate vs source errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Finished
+
+! Checking pmos source/drain vs bias errors: 
+
+! Checking pmos source/drain vs bias errors: 
+
+! Finished
+
+! Checking pmos gate vs source errors: 
+
+! Checking pmos gate vs source errors: 
+
+! Finished
+
+! Logic shorts 1
+
+! Finished
+
+! Logic shorts 2
+
+! Finished
+
+! Checking LDD errors for model: 
+
+! Finished
+
+! Power/Ground path through fuse
+
+! Finished
+
+! ... voltage already set
+
+! Finished
+
+! Checking Vbg overvoltage errors
+
+! Checking Vbg overvoltage errors
+
+! Finished
+
+! Checking Vbs overvoltage errors
+
+! Checking Vbs overvoltage errors
+
+! Finished
+
+! Checking Vds overvoltage errors
+
+! Checking Vds overvoltage errors
+
+! Finished
+
+! Checking Vgs overvoltage errors
+
+! Checking Vgs overvoltage errors
+
+! Finished
+
+! Checking Model errors
+
+! Checking Model errors
+
+! Finished
+
+! Checking nmos possible leak errors: 
+
+! Checking nmos possible leak errors: 
+
+! Finished
+
+! Checking pmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Finished
+
+! Checking mos floating input errors:
+
+! Checking mos floating input errors:
+
+! Finished
+
+! Checking expected values:
+
+Expected minimum io_out[0] = 0.0 but found unknown
+Expected maximum io_out[0] = 1.8 but found unknown
+
+Expected minimum io_out[1] = 0.0 but found unknown
+Expected maximum io_out[1] = 1.8 but found unknown
+
+Expected minimum io_out[2] = 0.0 but found unknown
+Expected maximum io_out[2] = 1.8 but found unknown
+
+Expected minimum io_out[3] = 0.0 but found unknown
+Expected maximum io_out[3] = 1.8 but found unknown
+
+Expected minimum io_out[4] = 0.0 but found unknown
+Expected maximum io_out[4] = 1.8 but found unknown
+
+Expected minimum io_out[5] = 0.0 but found unknown
+Expected maximum io_out[5] = 1.8 but found unknown
+
+Expected minimum io_out[6] = 0.0 but found unknown
+Expected maximum io_out[6] = 1.8 but found unknown
+
+Expected minimum io_oeb[0] = 0.0 but found unknown
+Expected maximum io_oeb[0] = 1.8 but found unknown
+
+Expected minimum io_oeb[1] = 0.0 but found unknown
+Expected maximum io_oeb[1] = 1.8 but found unknown
+
+Expected minimum io_oeb[2] = 0.0 but found unknown
+Expected maximum io_oeb[2] = 1.8 but found unknown
+
+Expected minimum io_oeb[3] = 0.0 but found unknown
+Expected maximum io_oeb[3] = 1.8 but found unknown
+
+Expected minimum io_oeb[4] = 0.0 but found unknown
+Expected maximum io_oeb[4] = 1.8 but found unknown
+
+Expected minimum io_oeb[5] = 0.0 but found unknown
+Expected maximum io_oeb[5] = 1.8 but found unknown
+
+Expected minimum io_oeb[6] = 0.0 but found unknown
+Expected maximum io_oeb[6] = 1.8 but found unknown
+
+! Finished
+
